@@ -1,0 +1,2688 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage[breakable]{tcolorbox}
+\usepackage[shortlabels]{enumitem}
+\usepackage{amsmath, amssymb, bm}
+\usepackage{physics, siunitx}
+\usepackage{hyperref}
+
+% Package options
+% --------------------------------------------- %
+\geometry{margin=3.0cm}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=cyan}
+\sisetup{separate-uncertainty=true, exponent-product=\cdot, range-units=single}
+\setlength{\parindent}{0pt}
+\setlist{itemsep=-3.0pt, topsep=3pt}
+\setcounter{section}{-1}
+% --------------------------------------------- %
+
+% Header configuration
+% --------------------------------------------- %
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}  % section
+% \fancyhead[R]{\rightmark}  % subsection
+\fancyfoot[C]{\thepage} 
+% --------------------------------------------- %
+
+% Custom environments
+% --------------------------------------------- %
+\newenvironment{course}[3]{
+\subsection{#1}%
+Link: \href{#2}{official FMF page}\\%
+ECTS: #3%
+\vspace{1ex}
+\\
+{\large \textsc{Contents}}\\[-0.9ex]%
+\rule{\textwidth}{0.5pt}
+\vspace{-3ex}
+}
+{}
+
+\newenvironment{shortcourse}[3]{
+\subsection{#1}%
+Link: \href{#2}{official FMF page}\\%
+ECTS: #3%
+\vspace{1ex}
+\\
+}
+{}
+
+\newenvironment{chapter}[1]{
+\begin{tcolorbox}[title=#1, breakable]
+}
+{\end{tcolorbox}}
+% --------------------------------------------- %
+
+
+\begin{document}
+
+\tableofcontents
+\section{Overview}
+
+\href{https://telecos.upc.edu/en/study-programs/degrees/bachelor2019s-degree-in-engineering-physics}{ETSETB Engineering physics bachelors curriculum}
+
+\href{https://telecos.upc.edu/en/study-programs/degrees/bachelors-degree-in-telecommunications-technologies-and-services-engineering}{ETSETB Telecom bachelors curriculum}
+\vspace{2ex}
+
+\begin{tabular}{|l|c|}
+
+    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
+    \textbf{Course} & \textbf{ECTS}\\
+    \hline
+    \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
+    Electronics 1 & 3 \\
+    Electronics 2 & 3 \\
+    Electronics Laboratory & 3 \\
+    Collecting and Processing Data & 3 \\
+    Measurement Techniques & 7 \\
+    Numerical Methods & 3 \\
+    Computational Mathematical Physics & 6 \\
+    \hline
+
+\end{tabular}
+
+\begin{tabular}{|l|c|}
+
+    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
+    \textbf{Course} & \textbf{ECTS}\\
+    \hline
+    \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
+    Mathematics 1 & 10\\
+    Mathematics 2 & 8\\
+    Classical Physics & 20\\
+    Computational Tools in Physics & 3\\
+    Proseminar A & 3\\
+    Physics Laboratory 1 & 4\\
+    Physics Laboratory 2 & 4\\
+    Computing Laboratory & 3\\
+    Chemistry 1 & 3\\
+    How Things Work & 3\\
+    \hline
+
+\end{tabular}
+
+\begin{tabular}{|l|c|}
+    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
+    \textbf{Course} & \textbf{ECTS}\\
+    \hline
+    \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
+    Mathematics 3 & 8\\
+    Mathematics 4 & 6\\
+    Modern Physics 1 & 8\\
+    Modern Physics 2 & 5\\
+    Classical Mechanics & 5\\
+    Statistical Thermodynamics & 5\\
+    Physics Laboratory 3 & 4\\
+    Physics Laboratory 4 & 4\\
+    Probability in Physics & 3\\
+    Numerical Methods & 3\\
+    Electronics 1 & 3\\
+    Electronics 2 & 3\\
+    Electronics Laboratory & 3\\
+    \hline
+\end{tabular}
+
+
+\begin{tabular}{|l|c|}
+
+    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
+    \textbf{Course} & \textbf{ECTS}\\
+    \hline
+    \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
+    Electromagnetic Fields & 7\\
+    Quantum Mechanics & 7\\
+    Optics & 5\\
+    Mechanics of Continuous Media & 5\\
+    Solid State Physics & 7\\
+    Mathematical Physics Lab & 6\\
+    Physics Laboratory 5 & 7\\
+    Industrial Physics & 3\\
+    Measurement of Ionizing Radiation & 5\\
+    Collecting and Processing Data & 3\\
+    Measurement Techniques & 7\\
+    Seminar & 3\\
+    \hline
+
+\end{tabular}
+
+
+\newpage
+\section{Year 1}
+
+\begin{course}{Mathematics 1 (Real Analysis)}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/520/}{10}
+    
+    \begin{chapter}{Sets and functions}
+        \begin{itemize}
+        
+            \item Fundamentals of set theory: operations on sets (intersection, difference, union, Cartesian product); complement of a set; indexed families of sets; de Morgan's laws; relations and equivalence relations; set cardinality.
+
+            \item Introduction to functions: definition of a function; the domain, codomain, and graph of a function; image of a function and subset of a function's domain; restriction of a function to a subset and inclusion of a function into a superset; injective, surjective, and bijective functions; composition of functions; the inverse and left and right inverse of a function.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Numbers}
+        \begin{itemize}
+        
+            \item Natural numbers: the Peano axioms for the natural numbers; formulation of addition and multiplication using the Peano axioms; mathematical induction. 
+
+            \item Real numbers: axioms defining the real numbers; axiomatic definition of real addition and multiplication; Dedekind's axiom; definition of a bounded set; the supremum, infimum, maximum, and minimum of a set; decimal representation of real numbers; definition and existence of the real square root; intervals and neighborhoods, open and closed intervals; absolute value.
+
+            \item Complex numbers: axioms defining the complex numbers; axiomatic definitions of complex addition and multiplication; component representation of complex number; the absolute value and complex conjugate; polar representation of complex numbers in the plane; complex disks and neighborhoods, open and closed disks; De Moivre's formula and roots of unity.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Geometry of the Euclidean space $ \mathbb{R}^{3} $}
+        \begin{itemize}
+        
+            \item Definition of $ \mathbb{R}^{3} $; the operations of vector addition and scalar multiplication; definition and properties of vector spaces.
+
+            \item Cartesian unit vectors, coordinates, and the standard basis for $ \mathbb{R}^{3} $.
+
+            \item The scalar product: definition and properties of the scalar product; the length of a vector and the distance between two vectors; the Cauchy-Schwartz and triangle inequalities; orthogonal projection onto a subspace of $ \mathbb{R}^{3} $.
+
+            \item Definition and properties of the cross product and the scalar-valued and vector-valued triple product; applications to the area of parallelograms and volumes of parallelepipeds; linear independent and orthogonal vectors.
+        
+            \item Planes and lines in $ \mathbb{R}^{3} $: equation and parameterization of a plane; the normal vector to a plane and the standard equation of a plane; equation and parameterization of a line; the standard equation of a plane; the distances between planes, points, and lines; angles between lines and planes.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Number sequences}
+        \begin{itemize}
+        
+            \item Foundational concepts: definition of a sequence of numbers as a function from $ \mathbb{N} $ to $ \mathbb{C} $; bounded sequences; supremum and infimum of a sequence; (strictly) increasing, decreasing, and monotone sequences.
+
+            \item Definition and theory of cluster points of sequences; the Bolzano-Weierstrass theorem;
+            definition and theory of the limit of a sequence; computation of limits.
+
+            \item Convergence: definition and theory of convergent and divergent sequences; tests for convergence;
+            subsequences: definition, properties, and theory of subsequences;
+            Cauchy sequences and the Cauchy criterion for the convergence of a sequence.
+
+            \item Arithmetic operations on sequences; sequence definition of Euler's number $ e $.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Series of numbers}
+        \begin{itemize}
+        
+            \item Foundational concepts: definition of a series of numbers and the sequence of partial sums.
+
+            \item Definition and theory of convergence of series; formulae for the summation of simple series; Cauchy convergence criterion for series; absolute convergence.
+
+            \item Theory and application of series convergence tests: comparison test, root test, quotient test, Raabe's test, the Leibniz test.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Functions of a single variable}
+        \begin{itemize}
+        
+            \item Foundational concepts: definition of scalar function; (strictly) increasing, decreasing, and monotone functions; bounded functions and the supremum, infimum, minimum, and maximum of a function; even and odd functions.
+
+            \item Operations with functions: the sum, product, and quotient of a function; function composition and the review of the inverse of a function.
+
+            \item Limit of a function: cluster points and isolated points of subsets of $ \mathbb{R} $; definition of the limit of a function; left and right limits; asymptotes and limits at infinity; properties and computation of limits.
+
+            \item Continuity of functions: definition of continuity at a point and on the entire domain; theory and properties of continuous real functions; definition and theory of uniform continuity.
+
+            \item Examples of common functions:  the identify function, constant functions, linear, quadratic, and general polynomial functions; the exponential, logarithmic, and power functions; hyperbolic functions; the trigonometric and cyclometric functions.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Differential calculus}
+        \begin{itemize}
+        
+            \item Foundational concepts: definition of differentiability at a point and on a function's domain and the definition of a function's derivative; relationship of differentiability and continuity; higher derivatives and smooth functions.
+
+            \item Differentiation rules: derivatives of sums of functions and scaled functions; the product, quotient, and chain rules;
+            derivatives of common functions: polynomials, rational functions, power functions, the square root, the logarithm and exponential functions; sinusoidal functions.
+
+            \item Extrema: definitions of local and global maxima and minima;
+            Rolle's theorem and Lagrange's and Cauchy's mean value theorems;
+            necessary and sufficient conditions for extrema; application of the derivative to the computation of extrema.
+
+            \item Definitions and theory of convexity, concavity, and points of inflection; tests for convexity and concavity; application of the derivative to curve sketching.
+
+            \item Applications: L'Hopital's rule for the computation of limits and Newton's method for computing the zeros of functions.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Integral calculus}
+        \begin{itemize}
+            \item Definition and properties of the indefinite integral; computation of the indefinite integrals of polynomial, power, rational, trigonometric, exponential, and certain irrational functions.
+
+            \item Techniques for indefinite integration: integration by parts, change of variables; partial fraction decomposition; integration using ansatzes; integration of trigonometric functions.
+
+            \item Darboux integration: partitions, upper and lower sums; upper and lower integrals; definition of Darboux integrability and the Darboux integral of a function; theory of Darboux-integrable functions.
+
+            \item Riemann integration: definition of Riemann integrability and the Riemann integral of a function; relationship of Riemann and Darboux integrability; theory of Riemann-integrable functions.
+
+            \item The average value of a function and the first and second fundamental theorems of calculus.
+
+            \item Numerical integration: the trapezoidal and Simpson's rule
+
+            \item Improper integrals: definition, convergence, and practical computation of integrals at infinity and integrals crossing asymptotes and discontinuities.
+
+            \item Applications of integration: area under a curve, surface area and volume of a surface of revolution; arc length of a curve.
+
+            \item Curves in three-dimensional space: parameterization of curves; arc length; curvature and torsion; the tangent, normal, and binormal vectors and the Frenet–Serret formulae.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Taylor and power series}
+        \begin{itemize}
+        
+            \item Foundational concepts: the $ n $-th degree Taylor polynomial of function; Taylor's formula and the Lagrange and Cauchy form of the remainder.
+
+            \item Definition and properties of the Taylor series of a function.
+
+            \item Taylor series for the exponential, sine, cosine, and logarithm functions.
+
+            \item Definition and properties of complex power series; definition of the exponential function on the complex numbers.
+
+            \item Convergence of power series: convergence and absolute convergence; radius of convergence; Cauchy product of power series.
+
+            \item Series of functions: uniform and point-wise convergence of function sequences; continuity and differentiability of function series; differentiation and integration of function series.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Higher-dimensional Euclidean space}
+        \begin{itemize}
+        
+            \item Foundational concepts: generalization of intervals, openness, and boundedness to $ \mathbb{R}^{N} $; distance and orthogonality in $ \mathbb{R}^{N} $; path-connected and compact sets in $ \mathbb{R}^{N} $.
+
+            \item Vector-valued functions of multiple variables: domain and graph of vector-valued functions; limits and continuity of vector valued functions
+
+            \item Differentiation of vector-valued functions: partial differentiability and partial derivatives; the tangent hyperplane; total differentiability; the gradient operator and directional derivatives; higher-order partial derivatives.
+
+            \item Taylor's formula for multivariable functions; 
+            definition of and conditions for the extrema of multivariable functions.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Mathematics 2 (Linear Algebra and Vector Spaces)}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/521/}{7}
+
+    \begin{chapter}{Matrices}
+        \begin{itemize}
+        
+            \item Fundamentals of matrices: definition of a matrix; square, diagonal, symmetric, and upper and lower triangular matrices;
+            sub-matrices and block matrices.
+
+            \item Computations with matrices: definition and properties of matrix addition and scalar multiplication; definition and properties of matrix multiplication;
+            the transpose, conjugate, and Hermitian conjugate of a matrix.
+
+            \item The inverse of matrix: definition of an inverse and a left and right inverse; conditions for matrix invertibility.
+
+            \item Elementary row and column operations and elementary matrices; row-equivalent and column-equivalent matrices; the row-echelon and reduced row-echelon form of matrix.
+            
+            \item Gaussian elimination: algorithms for Gaussian and Gauss-Jordan elimination; the rank of a matrix; application of Gauss-Jordan elimination to computing matrix inverses.
+
+            \item Systems of linear equations: Matrix formulation of a system of linear equations; homogeneous and associated homogeneous systems of equations; homogeneous and particular solutions; existence of a solution to a system of linear equations; application of Gauss-Jordan elimination to solving systems of linear equations.
+
+            \item Permutations: definition and properties of permutations and cycles; the symmetric group of permutations; decomposition of permutations into compositions of disjoint cycles and transpositions; the sign of a permutation; even and odd permutations.
+
+            \item The determinant of a matrix: definition of the determinant in terms of symmetric permutations; properties of the determinant; computation of the determinant for triangular and diagonal matrices; transformation of the determinant under elementary row and column operations; relationship of the determinant and invertibility; row and column expansion of determinants; Cramer's rule; minors and principal minors.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Finite-dimensional vector spaces}
+        \begin{itemize}
+        
+            \item Definition of a vector space over a scalar field; definition and properties of the zero element and additive inverse; closed subsets of vector spaces.
+
+            \item Frames: linear combinations of vectors; definition and properties of the span of a set of vectors; definition and properties of a frame for a vector space; 
+
+            \item Bases: definition and theory of linearly independent and linearly dependent vectors; definition of the basis for a vector space; countable and ordered basis; conditions that a set of vectors form a basis; the standard basis.
+
+            \item Linear transformations: definition and theory of linear transformations; compositions of linear transformations; monomorphic, epimorphic, and isomorphic transformations; endomorphisms and automorphisms of vector spaces; the kernel and image of linear transformation; transformation of bases; matrix representation of linear transformations.
+
+            \item Dimension: definition of infinite-dimensional and finite-dimensional vector spaces; 
+            isomorphism of an $ n $-dimensional vector space to $ \mathbb{C}^{n} $;
+            relationship of dimension to frames and bases;
+            dimension of vector subspaces.
+
+            \item Vector subspaces: dimension of a vector subspace; affine subspaces; definition and properties of the intersection, sum, and direct sum of vector spaces; complementary vector spaces.
+
+            \item Rank of a linear transformation: relationship of the rank, dimension, and image of a matrix; definition and properties of the rank and nullity of a linear transformation; the rank-nullity theorem.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Endomorphisms of vector spaces}
+        \begin{itemize}
+            \item Characteristic polynomial: definition and properties of matrix similarity; relationship between similarity, trace, and the determinant of a matrix; the determinant and trace of an endomorphism; the characteristic polynomial of an endomorphism.
+
+            \item Eigenvalues and eigenvectors: endomorphism-invariance of a vector subspace; definition and properties of the eigenvalues of an endomorphism; algebraic and geometric multiplicity of an eigenvalue; definition and properties of the eigenvectors and eigenspaces of an endomorphism; linear independence of eigenvectors.
+
+            \item Diagonalizability: definition of the coordinate matrix of an endomorphism in a given basis; definition and properties of diagonalizable endomorphisms; relationship between diagonalizability and multiplicity of eigenvalues.
+
+            \item The Schur decomposition; Schur's theorem and its consequences; the Cayley-Hamilton theorem; functions of endomorphisms.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Inner product spaces}
+        \begin{itemize}
+        
+            \item Fundamental concepts: the inner product of vectors; definition of an inner product space; norm of a vector and the distance between vectors; norms induced by inner products; orthogonality and orthogonal projections;
+
+            \item Theorems arising from the inner product: the Pythagorean theorem, parallelogram rule, triangle inequality, and Cauchy-Schwartz inequality; the polarization equation.
+
+            \item Orthonormal bases: normalization of vectors; definition and properties of an orthonormal basis for a finite-dimensional vector space; expansion and norm of a vector in an orthonormal basis; orthogonal projection onto a subspace; the Gram-Schmidt algorithm for orthogonalization of a basis; existence of an orthonormal basis; definition and properties of the orthogonal complement to a vector subspace.
+
+            \item Dual spaces: definition and properties of linear functionals; definition and properties of the dual space; dual bases; the Riesz representation theorem.
+
+        \end{itemize}
+    \end{chapter}
+        
+    \begin{chapter}{Endomorphisms of inner product spaces}
+        \begin{itemize}
+
+            \item Definition and properties of adjoint operators; image and kernel of an adjoint operator; relationships between endomorphisms and their adjoints; definition and properties of linear isometries and isometric isomorphisms.
+
+            \item Unitary operators: definition and properties of orthogonal and unitary operators; orthogonal (unitary) similarity; diagonalization of orthogonal (unitary) operators and matrices; examples of orthogonal transformations: rotations, reflections, and compositions of rotations and reflections.
+
+            \item Normal matrices and endomorphisms; diagonalization and eigenspaces of normal endomorphisms.
+
+            \item Definition and properties of self-adjoint endomorphisms; matrix representation of self-adjoint operators; eigenvalues, eigenvectors, and eigenspaces of self-adjoint endomorphisms and matrices
+
+            \item Definition of a positive and negative-(semi)definite matrix and operator; properties of positive-definite endomorphisms; Sylvester's criterion for a positive-definite matrix.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Quadratic forms}
+        \begin{itemize}
+        
+            \item Definition and properties of bilinear forms on vector spaces over the real numbers; symmetric bilinear forms; definition and properties of quadratic forms; matrix representation of symmetric bilinear forms; relationship between self-adjoint endomorphisms and symmetric bilinear forms.
+
+            \item Diagonalization of a bilinear form and its associated quadratic form; the coefficient matrix of a symmetric bilinear form in a given basis; Sylvester's law of inertia for real quadratic forms; index of positivity, index of negativity, signature, and rank of a symmetric bilinear form.
+
+            \item Definition and properties of curves, surfaces, and second-order hyperplanes and their representation with quadratic forms; degenerate and non-degenerate hyperplanes; classification of quadratic surfaces.
+        
+        \end{itemize}
+    \end{chapter}
+ 
+    \begin{chapter}{Vector functions of several variables}
+        \begin{itemize}
+        
+            \item Metric spaces: definition and properties of a metric and a metric space; metric subspaces; definition and properties of open and closed sets and neighborhoods and of the interior, closure and boundary of metric spaces; properties of continuous mappings between metric spaces; definition and properties of compact Euclidean metric spaces; path-connected metric spaces and Banach's fixed-point theorem.
+
+            \item Calculus of vector-valued functions:limits and continuity of vector valued functions: 
+            partial differentiability and partial derivatives; the gradient operator and directional derivatives;
+            the total derivative, Jacobian matrix, and Jacobian determinant of a vector-valued function.
+
+            \item The inverse and implicit function theorems.
+
+            \item Constrained extrema and the method of Lagrange multipliers.
+
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Classical Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1154/}{20}
+
+\begin{chapter}{Mechanics}
+
+    \begin{itemize}
+    
+        \item Kinematics of a point mass: position, velocity, and acceleration; kinematics of free fall and projectile motion; rotational kinematics; uniform and general circular motion; Galilean relativity.
+
+        \item Dynamics of a point mass: force, definition of inertial frames of reference, Newton's laws of motion; common forces from daily life: weight, friction, the normal force, spring force, tension; generalization of Newton's laws in non-inertial frames of reference, pseudo-forces.
+     
+        \item Energy: work and kinetic energy; the work-energy theorem; conservation of energy; potential energy and conservative forces; power.
+
+        \item Linear momentum and conservation of linear momentum.
+
+        \item Rotational dynamics: torque, moment of inertia, the parallel axis theorem; equilibrium and dynamics of rigid bodies; rotation about a fixed axis and rolling without slipping; combined kinetic energy of rotation and translation.
+
+        \item Angular momentum and conservation of angular momentum
+
+        \item Deformations and elasticity
+
+        \item Oscillation: simple harmonic motion, Hooke's law, and the motion of pendulums for small oscillations about equilibrium; damped and forced oscillations, resonance.
+
+        \item Gravitation: Newton's law of gravitation; general form of gravitational potential energy; conservative forces; conservation of energy and angular momentum under central force motion; Kepler's laws of planetary motion.
+
+        \item Introductory fluid mechanics: static fluids, flow of non-viscous and viscous fluids, Bernoulli's equation, motion in fluids. 
+    \end{itemize}
+
+\end{chapter}
+
+\begin{chapter}{Mechanical waves}
+    \begin{itemize}
+        \item The wave equation and propagation of mechanical disturbances in elastic media; waves in one, two and three dimensions.
+
+        \item Reflection, refraction, diffraction, and interference of waves; superposition of waves and standing waves.
+
+        \item Energy and power in wave motion.
+
+        \item The Doppler effect.
+
+        \item Wave dispersion.
+        
+    \end{itemize}
+\end{chapter}
+
+\begin{chapter}{Introduction to classical thermodynamics}
+    \begin{itemize}
+    
+        \item Thermodynamic systems and variables, thermodynamic equilibrium; temperature the definition of temperature scales
+        \item Heat, specific and latent heat, and heat transfer. 
+        \item Equations of state, phase transitions, and phase diagrams.
+        \item Internal energy and enthalpy
+        \item The first and second laws of thermodynamics; entropy, reversible and irreversible processes, cycles; heat engines and refrigerators.
+        \item Thermodynamics of ideal gases; the kinetic theory of gases; the Maxwell-Boltzmann distribution and statistical description of kinetic theory. 
+    
+    \end{itemize}
+\end{chapter}
+
+\begin{chapter}{Electrostatics}
+    \begin{itemize}
+
+        \item Electric charge; the electrostatic force, electric field and the electric potential; Gauss’s law.
+        
+        \item Conductors and dielectrics in an external electric field. 
+
+        \item The capacitor; electric energy and electric energy density. 
+
+        \item The microscopic theory electric current and conduction in metals.
+
+        \item Electric circuits: voltage, current and electric power; voltage and current sources; Ohm’s law and Kirchhoff’s laws; the voltmeter and ammeter; alternating current circuits.
+
+    \end{itemize}
+\end{chapter}
+
+\begin{chapter}{Magnetostatics and magnetic induction}
+    \begin{itemize}
+    
+        \item Mechanisms for the magnetic field: charged particles in motion, and electric current; permanent magnets.
+
+        \item The magnetic force and the Lorentz force on charged particle in a magnetic field; magnetic flux density; magnetic torque on a magnetic dipole.
+
+        \item The Ampere and Biot-Savart laws; Gauss's law for the magnetic field.
+
+        \item The inductor, magnetic induction, Lenz's law, self-induction, mutual induction; magnetic field energy.
+
+        \item Circuits with inductors: electric oscillators, RL and RLC circuits; simple model of the radio receiver.
+
+        \item Magnetism of matter: diamagnetic, paramagnetic, and ferromagnetic materials. 
+    \end{itemize}
+\end{chapter}
+
+\begin{chapter}{Electromagnetic wave propagation}
+    \begin{itemize}
+
+        \item Maxwell’s equations in free space.
+
+        \item Electromagnetic energy and power; the Poynting vector.
+
+        \item The dipole antenna and Hertz radiation.
+
+        \item Confined wave propagation: the coaxial cable, waveguides, and impedance.
+
+        \item Topics from wave optics: reflection and refraction; interference and diffraction; the index of refraction; dispersion.
+
+        \item Polarization of electromagnetic waves and optically anisotropic matter.
+
+    \end{itemize}
+\end{chapter}
+
+\begin{chapter}{Geometrical optics}
+    Postulates of geometrical optics; magnification and focus; common optical instruments: mirrors, lenses, microscopes, telescopes, the human eye.
+\end{chapter}
+
+\end{course}
+
+\begin{course}{Proseminar A}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1170/}{3}
+    \begin{chapter}{Material}
+        \begin{itemize}
+            
+            \item Course summary: the use of vector algebra as well as differential and integral calculus for solving advanced problems from Classical Physics.
+
+            \item The Cartesian, cylindrical, and spherical coordinate systems; example: analysis of circular and helical motion in a cylindrical basis and coordinate system;
+
+            \item Vector calculus in cylindrical and spherical coordinates; differential area and volume elements; transformation of coordinates in integration; line and surface integrals; example: Ampere's law.
+
+            \item Ordinary first and second-order differential equations: separation of variables and exact equations; homogeneous and particular solutions.
+
+            \item Oscillation: analysis of oscillation with complex exponentials; simple harmonic motion; damped oscillation; coupled differential equations and the example of the coupled pendulum.
+
+            \item Introduction the Lagrangian formalism: the Lagrangian function; the Euler-Lagrange equations; examples: Lagrangian analysis of a coupled pendulum and of the vibration of the $ \mathrm{CO}_{2} $ molecule.
+
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Chemistry 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1152/}{3}
+
+    \begin{chapter}{Material}
+        \begin{itemize}
+            
+            \item Introduction to the microscopic composition and structure of matter.
+
+            \item Nomenclature of simple compounds.
+
+            \item Stoichiometric laws; Quantitative information from balanced equations; limiting reactant and theoretical yield of reactions.
+
+            \item Enthalpies of reaction; Hess's law; calculation of enthalpy changes.
+
+            \item Atomic structure; quantum numbers and orbitals;electron configurations and the structure of the periodic table.
+
+            \item Chemical bonds and the geometry of simple molecules; interactions between molecules.
+
+            \item Types of crystalline solids and their properties.
+
+            \item Liquids and solutions: colligative properties, electrolytes, dissociation, adsorption.
+
+            \item Reaction rates and reaction kinetics; influence of concentration and temperature; the Arrhenius equation; catalysis.
+
+            \item Chemical equilibrium; Le Chatelier's principle; ionic reactions and solubility equilibria.
+
+            \item Definitions of acids and bases; pH; strong and weak acids and bases; buffers and indicators.
+
+            \item Oxidation and reduction, standard electrode potentials, and electrochemistry.
+
+            \item Coordination compounds, coordination numbers, coordination polyhedra, isomerism, and bonding in coordination species.
+
+            \item Introduction to organic chemistry: types of organic compounds and typical reactions of organic compounds.
+            
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Computational Tools in Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1172/}{3}
+
+    \begin{chapter}{Material}
+        \begin{itemize}
+            
+            \item Plotting: 2D plots and trajectories; histograms; log and log-log plots; plotting a family of curves; 3D plots; false-color presentation.
+
+            \item Software: \LaTeX; the scientific Python stack (\texttt{Numpy}, \texttt{Matplotlib}, \texttt{SciPy}); Jupyter notebooks; Bash shell scripting.
+
+            \item Linear and non-linear regression; least squares error minimization; linear and non-linear curve fitting with the SciPy library.
+        
+            \item Numerical differentiation; symmetric and asymmetric finite differences; Taylor expansions and error bounds.
+
+            \item Numerical integration: the trapezoidal rule and Simpson's rule.
+
+            \item Numerical methods for ordinary differential equations: explicit and implicit Euler method, Crank-Nicholson method, Runge-Kutta methods; solving higher-order and vector-valued ODEs.
+
+            \item Distributions: discrete and continuous distributions; binning and histograms; computing quantiles and distribution parameters, e.g. mean, variance, median, and higher-order moments.
+
+            \item Data processing: tabulation of data; sorting; noise reduction; one-pass operations: sums, scalar products, and averages.
+
+            \item Correlation: the correlation coefficient; cross-correlation and auto-correlation; applications of auto-correlation to analyzing noisy periodic signals.
+
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Physics Laboratory 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1142/}{4}
+
+    \begin{chapter}{Experiments}
+        \begin{itemize}
+        
+            \item Magnitude of the gravitational acceleration $ g $
+
+            \item Bernoulli's equation
+
+            \item The moment of inertia of a rotating rigid body
+
+            \item Hooke's law and the elastic modulus; regimes of linearity, elasticity, and plasticity in a copper wire
+
+            \item Viscosity
+
+            \item The specific heat of solids
+
+            \item The dynamics of a coupled pendulum
+
+            \item Ultrasound and the speed of sound.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Physics Laboratory 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1143/}{4}
+
+    \begin{chapter}{Experiments}
+        \begin{itemize}
+        
+            \item Wheatstone bridge
+
+            \item Driven oscillations of a resonant circuit
+
+            \item Magnetic force on a current-carrying conductor
+
+            \item Torque on a coil in a magnetic field
+
+            \item Force between capacitor plates
+
+            \item Transient phenomena in electrical circuits
+
+            \item Measurement of diffraction grating spectra
+
+            \item The photoelectric effect
+
+            \item Absorption of gamma rays
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Computer laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2018/7000777/courses/525/}{3}
+
+    \begin{chapter}{Material}
+        \begin{itemize}
+        
+            \item Computing environment at the faculty (electronic mail, online courses and other services, software available to students, accessing computer labs)
+
+            \item Basics of operating systems: file systems, backups, networking, computer security.
+
+            \item Introduction to the C programing language: variables, conditional statements, loops, pointers, arrays, standard input/output, reading and writing files.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{How Things Work}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1151/}{3}
+
+    \begin{chapter}{Material}
+        \begin{itemize}
+        
+            \item Course summary: learning and application of basic physics concepts and laws in the context of materials and technology from everyday life.
+
+            \item Material includes: internal combustion engine, LCD monitor, fluorescent lamp, halogen bulb, LED, magnetic and piezoelectric speaker, MRI.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\newpage
+\section{Year 2}
+\begin{course}{Mathematics 3}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/522/}{8}
+
+    \begin{chapter}{Parameter-dependent integrals}
+        \begin{itemize}
+        
+            \item Definition of parameter-dependent integrals
+
+            \item Continuity and differentiability of parameter-dependent integrals; Fubini's theorem.
+
+            \item Improper parameter-dependent integrals: convergence and uniform convergence, the Weierstrass test for uniform convergence; continuity, differentiability, and integrability.
+
+            \item The gamma and beta function: definitions, properties, relationship, trigonometric identities; Stirling's formula and approximation.
+        
+        \end{itemize}
+        
+    \end{chapter}
+
+    \begin{chapter}{Multi-dimensional Riemann integration}
+        \begin{itemize}
+        
+            \item Partitions, upper and lower sums, Riemann sums; Riemann integrability; theorem: continuity implies integrability.
+
+            \item Evaluation of iterated integrals in Cartesian, cylindrical, and spherical coordinates; change of variables between coordinate systems.
+
+            \item Volume: definition of volume in $ \mathbb{R} $ and $ \mathbb{R}^{N} $; condition for existence of $ N $-dimensional volume; relationship between subsets of $ \mathbb{R}^{N} $ with zero measure and zero $ N $-volume.
+
+            \item Applications of double and triple integrals: computing volume, mass, center of mass, moment of inertia.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Curves and surfaces in Euclidean space}
+        \begin{itemize}
+        
+            \item Curves in $ \mathbb{R}^{3} $; parameterizations; line integrals and arc length.
+
+            \item The tangent, normal, and binormal vectors; normal and osculating planes; the Frenet-Serret frame.
+
+            \item Curvature and radius of curvature; torsion; the Frenet-Serret formulae.
+
+            \item Surfaces in $ \mathbb{R}^{3} $; implicitly, explicitly, and parameterically-defined surfaces; normal vector and tangent plane.
+
+            \item Surface area and surface integrals; surfaces of revolution.
+        
+        \end{itemize}
+
+    \end{chapter}
+
+    \begin{chapter}{Vector calculus}
+        \begin{itemize}
+        
+            \item Line integrals of scalar and vector fields.
+
+            \item The gradient of a vector field; conservative vector fields; the gradient theorem for line integrals.
+
+            \item Surface integrals of scalar and vector fields.
+
+            \item Vector operators: the curl, divergence, and Laplacian operators.
+
+            \item Important theorems in vector calculus: The divergence (Gauss-Ostrogradsky) theorem, Green's theorem, Stoke's theorem, Green's identities.
+
+            \item Vector operators in spherical and cylindrical coordinate systems.
+        
+        \end{itemize}
+        \end{chapter}
+
+        \begin{chapter}{Ordinary differential equations}
+            
+            \begin{itemize}
+            
+                \item Ordinary, first-order LDEs: homogeneous and exact LDEs; separation of variables; the first integral of an LDE; integrating factors; parametric differential equations; the Clairaut differential eequation.
+
+                \item Review of metric spaces; Lipshitz continuity; Banach's fixed-point theorem; Picard's existence theorem.
+
+                \item Systems of LDEs: homogeneous and non-homogeneous systems of LDEs with constant and variable coefficients; dimension of the solution set; the fundamental matrix of a system of LDEs; particular and general solutions for non-homogenous systems of LDEs; the Wronskian determinant.
+
+                \item Higher-order LDEs with constant cofficients: operator notation; trial solution and characteristic polynomial.
+
+                \item Higher-order LDEs with variable cofficients: matrix representation; dimension of the solution set; solution using the Wronskian matrix.
+
+            \end{itemize}
+
+        \end{chapter}
+
+        \begin{chapter}{Calculus of variations}
+            \begin{itemize}
+                
+                \item Definition: functionals and the Lagrangian.
+
+                \item The Euler-Lagrange equations.
+
+                \item Critical point of a functional and necessary condition for extrema.
+
+                \item Examples: the brachistochrone problem and isoperimetric problems; special cases with a Lagrangian independent of $ x $ or $ y $; calculus of variation problems with variable endpoints.
+
+                
+            \end{itemize}
+        \end{chapter}
+
+        \begin{chapter}{Introduction to Hilbert spaces}
+            \begin{itemize}
+            
+                \item Definitions: inner product, inner product space, norm, metric, and completness.
+                Definition of a Hilbert space.
+
+                \item Orthogonality, the orthogonal complement, closure of the orthogonal complement.
+
+                \item Orthogonal and oblique projection; the projection theorem.
+
+                \item The Cauchy-Schwartz inequality and the Bessel inequality.
+
+            \end{itemize}
+
+        \end{chapter}
+
+        \begin{chapter}{Introduction to Fourier series}
+            \begin{itemize}
+            
+                \item The $ \mathcal{L}^{2}[-\pi, \pi] $ and $ \mathcal{L}^{2}[-a, a] $ Hilbert spaces; complete orthonormal bases for $ \mathcal{L}^{2}[-\pi, \pi] $.
+
+                \item Definition and properties of Fourier series; properties of Fourier coefficients.
+
+                \item Convergence of Fourier series under the $ \mathcal{L}^{2} $ norm.
+
+                \item Pointwise convergence of Fourier series for continuous and piecewise-continuous functions.
+            \end{itemize}
+        \end{chapter}
+\end{course}
+
+\begin{course}{Mathematics 4}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/523/}{6}
+
+    \begin{chapter}{Complex analysis}
+        \begin{itemize}
+        
+            \item The extended complex plane
+
+            \item Differentiability in complex analysis: complex differentiation; differentiation of complex power series; convergence of complex power series.
+
+            \item The Cauchy-Riemann equations, relationship between harmonic and holomorphic functions.
+
+            \item Integration of complex functions: contour integration; parameterization of complex contours, connected combinations of contours, and closed contours; the fundamental theorem of calculus for contour integration.
+
+            \item The winding number and Cauchy's theorem: definition and properties of the winding number; Cauchy's theorem, Cauchy's integral and differentiation formula, Cauchy's inequality for derivatives; Liouville's theorem and the fundamental theorem of algebra.
+
+            \item Laurent series: definition and properties of Laurant series, the principle and regular parts of Laurent series, relationship between Taylor and Laurent series.
+
+            \item Singularities of complex functions: definition of isolated, removable, and essential singularities; poles of complex functions; the Casorati-Weierstrass theorem; definition of meromorphic functions.
+
+            \item Definition, integration, and differentiation of the complex power and logarithm functions; branches of the complex logarithm.
+
+            \item Residue: definition of the residue of a complex function; the residue theorem; computing residue at zeros and poles; examples of integration using the residue theorem.
+
+            \item The open mapping theorem and maximum modulus principle: definition of an open map; poles and zeros of meromorphic functions definition on a disk; the open mapping theorem; the bijectivity of holomorphic maps; the maximum modulus principle; the Schwarz lemma; biholomorphisms and automorphisms of the unit disk; the Moibious transform.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Harmonic functions}
+        \begin{itemize}
+        
+            \item Harmonic function in the plane: the Poisson kernel and Poisson formula on the unit disk and on arbitrary disks; properties of the Poisson kernel; the mean value property and maximum principle in the plane; the Dirichlet problem on the unit disk.
+
+            \item Harmonic function in space: fundamental solution of the Laplace equation in space; review of Gauss's and directional derivatives; Green's identities in space; the mean value property and maximum and minimum principle in space; the Dirichlet problem in space; Green's functions in space; formulation of the Poisson kernel and formula in terms of Green's functions.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Fourier analysis}
+        \begin{itemize}
+        
+            \item Convolution: definition and properties of convolution; differentiating convolution;
+            convolution of functions in $ \mathcal{L}^{1}(\mathbb{R}) $; definition of compact support; the function $ g_{\delta}(x) = \frac{1}{\delta} g(x/\delta) $ where $ g \in \mathcal{L}^{1}(\mathbb{R}) $ and $ \delta > 0 $; convergence of convolutions involving $ g_{\delta} $;
+            approximation by sequences of smooth functions and the Weierstrass approximation theorem; definition and properties of the Schwartz space $ \mathcal{S}(\mathbb{R}) $ of rapidly-decreasing functions.
+
+            \item The Fourier transform in $ \mathbb{R} $: definition of the Fourier transform; properties of the Fourier transform; the inverse Fourier transform; the Riemann-Lebesgue Lemma; the Fourier transform and Lipshitz continuity; Plancherel’s theorem.
+
+            \item The Fourier transform in $ \mathbb{R}^{N} $: definition of the spaces $ \mathcal{L}^{1}(\mathbb{R^{N}}) $ and $ \mathcal{L}^{2}(\mathbb{R^{N}}) $; convolution in $ \mathbb{R}^{N} $; the Schwartz space of rapidly-decreasing functions in $ \mathbb{R}^{N} $; definition and properties of the Fourier transform in $ \mathbb{R}^{N} $; the inverse Fourier transform in $ \mathbb{R}^{N} $; the Plancherel theorem and Riemann-Lebesgue lemma for functions in $ \mathbb{R}^{N} $.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Partial differential equations}
+
+        \begin{itemize}
+            
+            \item Definition of the heat equation; application of the Fourier transform to the heat equation.
+
+            \item Vibration of strings and the wave equation: solving the one-dimensional wave equation with the Fourier method; d'Alembert's formula for solving the wave equation.
+
+            \item Vibration of circular membranes
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Sturm-Liouville theory and second-order homogeneous LDEs}
+        \begin{itemize}
+        
+            \item Zeros of solutions to second-order homogeneous LDEs: shared zeros and linear (in)dependence; normal form of a second-order LDE; Sturm's comparison criterion; example: zeroes of the Bessel equation.
+
+            \item Linear differential operators: the space of continuous and twice-differentiable functions on $ [a, b] $; definition of linear differential operators, adjoint of a differential operation, formally self-adjoint differential operators.
+
+            \item The Sturm-Liouville problem: definition of the Sturm-Liouville problem; the SL problem with a weight; inner product, norm, and orthogonality of functions with a weight; eigenvalues and eigenfunctions of self-adjoint differential operators; the regular Sturm-Liouville problem; the Sturm-Liouville theorem.
+        
+        \end{itemize}
+        
+    \end{chapter}
+
+    \begin{chapter}{Power series solutions of second-order DEs}
+
+        \begin{itemize}
+        
+            \item The Frobenious method for power series solutions of second-order differential equations
+
+            \item Proper singular points of differential equations; behavior of series solutions near proper singular points.
+
+            \item General orthogonal polynomials: zeros and oscillation of orthogonal polynomials; orthogonal polynomials as a basis for $ \mathcal{L}^{2}(-1, 1) $.
+
+            \item The Legendre equation: definition of the Legendre equation; the Legendre polynomials and solutions to the Legendre equation; the associated Legendre polynomials; generating function and the Rodrigues formula; orthogonality and norms of the Legendre polynomials.
+
+            \item The Bessel equation: definition of the Bessel equation; the Bessel functions; the generating formula for the Bessel functions $ J_{n} $ for $ n \in \mathbb{N} $; relationship of the generating function and the integral formula for the Bessel functions.
+
+            \item The Hermite and Laguerre polynomials: generating functions; norms and orthogonality; recurrence relations.
+        
+        \end{itemize}
+        
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Modern Physics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1161/}{8}
+
+    \begin{chapter}{Special theory of relativity}
+
+        \begin{itemize}
+        
+            \item Review of the Galilean transformations and Galilean relativity; inertial and non-inertial frames of reference; the Michelson-Morley experiment.
+
+            \item The speed of light and the fundamental postulates of relativity
+
+            \item Space-time, time dilation and length contraction; the Lorentz transformation for position, time, and velocity.
+
+            \item Relativistic enery and momentum: four-vectors; definitions of relativistic momentum and energy; the scalar product of four-vectors; conservation of energy and momentum; rest energy and relativistic kinetic energy.
+
+            \item The space-time and four-vector formalism: generalization of Euclidean space to four-dimensional space-time; intervals in space-time; inveriance of space-time length; contravariant and covariant four-vectors; the Lorentz transformation matrix; four vectors for velocity and momentum; Lorentz transformation of the electric and magnetic field.
+
+            \item Relativistic dynamics: four-vector for relativistic force; the one-dimensional work-energy theorem in special relativity; relativistic particle in an electromagnetic field.
+
+
+        \end{itemize}
+        
+    \end{chapter}
+
+    \begin{chapter}{Quantum physics}
+
+        \begin{itemize}
+        
+            \item Motivation for quantum physics: the stability of atoms, black-body radiation, the photoelectric effect.
+
+            \item Particles as waves: the wave function and probability amplitude; the uncertainty principle.
+
+            \item Physical quantities and operators on wave functions.
+
+            \item The Schroedinger equation; eigenvalues and eigenstates of the Hamiltonian operator; stationary states;  expansion of a wavefunction in energy eigenstates.
+
+            \item Examples: Particle in an infinite and finite potential well and the harmonic oscillator.
+
+            \item Probability current: definition of probability current density, particles in piecewise continuous potentials; quantum tunneling throuhgh potential barriers.
+
+            \item The Schroedinger equation in 3 dimensions and the particle in a three-dimensional box. 
+
+            \item Angular momentum: commutation rules; eigenvalues and eigenfunctions of the angular momentum operator; example of the quantum rotator.
+
+            \item The hydrogen atom: energy eigenvalues and eigenstates.
+
+            \item Spin; orbital magnetic moment and the Stern-Gerlach experiment; addition of angular momentum and spin-orbit coupling; the Zeeman effect; two-state systems.
+
+            \item Radiative transitions: selection rules; width of spectral lines; Fermi's golden rule; the visible and X-ray spectra.
+
+            \item Multiple-electron atoms: single particle states; the Pauli exclusion principle; the periodic table of elements; 
+
+            \item Chemical bonds: the ionic, covalent, and Van Der Walls bond; molecular vibrations and rotations; vibrational and rotational spectra.
+
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Modern Physics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1162/}{5}
+
+    \begin{chapter}{Introduction to solid state physics}
+        \begin{itemize}
+        
+            \item Energy bands in solids: review of the energy levels of the one-electron atom; electron levels in the presence of multiple nuclei; energy bands in a periodic potential; the Kronig-Penney model
+
+            \item Bloch's theorem in one dimension.
+
+            \item Electron conduction:  review of current density, conductivity, and mobility; the Drude model equation of motion, the Drude model in a constant and alternating electric field; predictions for conductivity.
+
+            \item Review of fermion statistics: the Fermi function; Fermi energy and chemical potential; electron density of states.
+
+            \item Intrinsic semiconductors: approximate Fermi functions for electrons and holes; effective mass; charge carrier density of state; the Fermi level and energy gap.
+            \item Doped semiconductors: donor energy levels; approximate Fermi functions for donor and intrinsic electrons and holes; charge carrier density of state; the Fermi level in doped semiconductors.
+
+            \item The p-n junction: the depletion region and formation of the p-n junction; electric potential and electric field across the p-n junction; the chemical potential across the p-n junction; width of the depletion region.
+
+            \item Applications of the p-n junction: forward and reverse biasing; the p-n junction diode; the photodiode; the bipolar transistor; current-voltage characteristics for the p-n junction diode and bipolar transistors.
+
+        \end{itemize}
+        
+    \end{chapter}
+
+    \begin{chapter}{Introduction to nuclear physics}
+        \begin{itemize}
+        
+            \item Nuclei as the building blocks of matter
+
+            \item The Rutherford experiment: review of the central force problem; the Rutherford cross section; implications of the Rutherford experiment for the existence, size, and mass of nuclei.
+
+            \item Nuclear mass and composition: neutron, proton, and mass numbers; model of the nuclear radius; binding energy; the semi-emperical mass formula and its contributing factors.
+
+            \item The shell model of the nucleus: the Schroedinger equation and the shell model; magic numbers and nuclear stability; the periodic table; spin-orbit coupling and nuclear spin in the scope of the shell model.
+
+            \item Nuclear reactions and decay: alpha, beta, and gamm decay; nuclear fission and the example of the uranium nucleus; induced and spontaneous fission; nuclear fusion; the Lawson criterion.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Introduction to particle physics}
+        \begin{itemize}
+        
+            \item Basics of charged particle acceleration using electromagnetic fields: linear, cyclotron, and synchrotron accelerators.
+
+            \item Basics of particle detection: cross section; determination of momentum; measurement of mass and the use of mass for particle identification.
+
+            \item Introduction to the Standard Model: categorizaton of particles, into e.g. leptons, quarks, bosons, hadrons, baryons and mesons; properties of particles, e.g. spin, mass, electric charge, and interactions; baryon octets and decuplets; the quark model of hadrons and color charge.
+
+            \item Quantum numbers and conservation laws: charge; lepton and baryon numbers; isospin; strangeness.
+            
+
+            \item Coupling constants: the Compton wavelength; the Yukawa potential and transition matrix elements; probability and range of transitions and interactions.
+
+            \item Compton wavelength; coupling constants of interactions. Lepton number, baryon number, isospin, strangeness. 
+
+            \item The weak interaction; the parity, charge conjugation, and helicity operators; violation of charge symmetry under the weak interaction; conservation of charge-parity symmetry; the cobalt-60 experiment; the Cabibo angle and the CKM matrix.
+
+            \item Feynman diagrams: rules and notation for drawing Feynman diagrams; examples of Feynman diagrams for common interactions; estimation of branching ratios with Feynman diagrams.
+
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Classical Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1155/}{5}
+
+    \begin{chapter}{Review of Newtonian mechanics}
+        \begin{itemize}
+        
+            \item Newtonian mechanics of a single particle: momentum and force; angular momentum and torque; work, energy, and conservative forces.
+
+            \item Newtonian mechanics of systems of particles: center of mass; momentum and force on a system of particles; angular momentum and torque on a system of particles; work and energy; the virial theorem.
+
+            \item Non-inertial systems and fictitious forces: inertial and non-inertial frames; transformation of coordinates and basis vectors; fictitious forces Newton's second law in non-inertial systems; rotating coordinate systems: the centrifugal, Coriolis, and Euler forces.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Lagrangian mechanics}
+        \begin{itemize}
+        
+            \item Constraints and generalized coordinates: coordinates and degrees of freedom; holonomic constraints and generalized coordinates; Lagrange multipliers; the Lagrange equations in generalized coordinates.
+
+            \item The principle of least action: action and the Lagrangian; the principle of least action; derivation of the Lagrange equations from the principle of least action; the Lagrange equations in changing coordinate systems.
+
+            \item The d'Alembert principle: virtual displacements and virtual work; d'Alembert's principle; derivation of the Lagrange equations from d'Alembert's principle.
+
+            \item Symmetries and conserved quantities: constants of motion/conserved quantities; the Hamiltonian and conservation of energy, conservation of generalized momenta; continuous symmetries of the Lagrangian; statement and proof of Noether's theorem; examples with Noether's theorem: momentum conservation and the homogeneity of space, angular momentum conservation and the isotropy of space, energy conservation and the homogeneity of time.
+
+            % \item Small oscillations and stability:
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Dynamics of central force motion}
+        \begin{itemize}
+        
+            \item The one-body central force problem: conservation of angular momentum and energy; reduction to planar motion; deriving the orbit equation with both Newtonian and Lagrangian dynamics.
+
+            \item The two-body central force problem: conservation of energy and angular momentum; reduced mass and effective potential; reduction to an equivalent one-body problem; existence and stability of circular orbits.
+
+            \item The Kepler problem: inverse square potentials; solving the orbit equation and analysis of the conic section solutions; energy of orbit; Kepler's laws of planetary motion.
+
+            \item The Laplace-Runge-Lenz vector: derivation, conservation of the LRL vector in central force problems; alternate derivation of the orbit equation.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Rigid body dynamics}
+        \begin{itemize}
+        
+            \item Description of the rigid body: definition; degrees of freedom; the inertia tensor.
+
+            \item Describing rigid body motion: the inertial (lab) and rotating reference frames; Euler's rotation theorem and the parallel axis theorem; the Euler angles and transformation matrices; tensor formulation of angular velocity; the Euler equations for rigid body motion.
+
+            \item The free top: the symmetric free top: Euler equations, inertia tensor, and motion; the asymmetric free top: Euler equations and inertia tensor; stability and perturbations.
+
+            \item The heavy symmetric top: the Lagrangian and conserved quantities; reduced energy; uniform precession without nutation of the fast top; motion of the sleeping top.
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Small oscillations}
+        \begin{itemize}
+        
+            \item General concepts: Taylor expansion of potential energy to second order about an equilibrium position; approximation of motion using uncoupled harmonic oscillators.
+
+            \item System with $ N $ degrees of freedom: kinetic and potential energy matrices; reduction to a simplified eigenvalue problem; eigenfrequencies and normal modes; motion and stability of each normal mode.
+
+            \item The generalized eigenvalues problem; normal coordinates and transformation to normal coordinates.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Hamiltonian mechanics}
+        \begin{itemize}
+        
+            \item The Hamiltonian formalism: the Hamiltonian and the Legendre transform relating the Lagrangian and Hamiltonian; conjugate momenta and Hamilton's equations of motion.
+
+            \item Hamiltonian mechanics and conservation laws: conservation of energy for time-independent Hamiltonians; conservation of conjugate momenta for cyclic coordinates.
+
+            \item Hamiltonian formulation of the least action principle: definition of action in terms of the Hamiltonian; derivation of Hamilton's equations from the principle of least action.
+
+            \item Hamiltonian and Lagrangian functions of a charged particle in an electromagnetic field.
+
+            \item Poisson brackets: definition and properties of Poisson brackets, commutation and the Jacobi identity; Poisson brackets and angular momentum and overview of application to quantum mechanics.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Introduction to continuum mechanics}
+        \begin{itemize}
+        
+            \item Lagrangian formalism for one-dimensional continuous bodies: the Lagrangian and Lagrange energy density; action and the Lagrange equations; generalization of momenta and energy to continuous media.
+
+            \item Lagrangian formalism for one-dimensional continuous bodies: generalization of the Hamiltonian to continuous media; action and the Hamilton equations.
+
+            \item Example: longitudinal vibrations of an elastic rod.
+
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Statistical Thermodynamics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1174/}{5}
+
+    \begin{chapter}{Part 1: Classical thermodynamics}
+        \begin{itemize}
+            \item Equations of state: thermodynamic equilibrium and the zeroth law of thermodynamics; temperature scales: the gas thermometer and Carnot cycle; state variables and equations of state; the ideal gas equation and the Van Der Waals equation.
+
+            \item The first law of thermodynamics: statement of the first law; enthalpy; heat capacity; examples: Joule expansion and the Joule-Thomson-Kelvin effect.
+
+            \item The second law of thermodynamics: quasi-static, reversible, and irreversible processes; statement of the second law; the Carnot cycle and the Carnot cycle temperature scale; entropy and implications of the definition of entropy; entropy of a ideal gas.
+
+            \item Thermodynamic potentials: internal energy, enthalpy, Helmholtz free energy, and Gibbs free energy; Maxwell's relations; applications of Maxwell's relations to $ (p, V, T) $ systems: coefficients of compressibility and thermal expansion, difference of heat capacities, and the Joule-Kelvin coefficient.
+
+            \item Phase changes: definition of phase changes; the liquid-gas phase change; Gibbs free energy, chemical potential, and the conditions for phase equilibrium; the Maxwell construction; continuous and non-continuous phase changes; the Clausius-Clapeyron equation.
+
+            \item Introduction to transport phenomena: diffusion of matter, the continuity and diffusion equations for diffusion of matter; diffusion of energy, the continuity and diffusion equations for heat transfer; cross transport phenomena: the thermoelectric effect and the Peltier effect.
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Part 2: Statistical physics}
+        \begin{itemize}
+        
+            \item Concepts in statistical physics: phase space; microstates, probability density, and equilibrium; entropy at fixed energy and the microcanonical ensemble; entropy and the statistical formulation of the second law; temperature and the statistical formulation of the zeroth law.
+
+            \item The canonical ensemble: definition of the canonical ensemble; the canonical partition function; energy fluctuations in the canonical ensemble; Helmholtz free energy; the equipartition principle.
+
+            \item Entropy: the Gibbs entropy formula in the microcanonical and canonical ensembles; the Boltzmann entropy formula; separation of energy levels in macroscopic systems; the two-state system.
+
+            \item Equations of state and the virial expansion: equation of state and partition function for an ideal gas; the virial expansion and the virial equation of state; the second virial coefficient and derivation of the Van Der Waals equation from the virial expansion.
+
+            \item Quantum statistical physics: the Pauli exclusion principles; wave functions for multi-particle systems; the Bohr-Sommerfeld quantization rule; density of states; bosons and fermions.
+
+            \item Fermi-Dirac statistics: the Fermi function; the Fermi energy and Fermi sphere; internal energy, heat capacity, and chemical potential of a free electron gas; applications to electrons in metals and solid state physics.
+
+            \item Bose-Einstein statistics: the Bose-Einstein distribution; statistics of the free boson gas; applications to phonons in metals; the Einstein model and Debye model for the heat capacity of phonon gas.
+
+            \item Examples with quantum statistical physics: the harmonic oscillator; the quantum rotator; statistical analysis of the heat capacity of a diatomic gas.
+
+            \item The grand canonical ensemble: chemical potential and the definition of the grand-canonical ensemble; the grand-canonical partition function and the grand-canonical potential; derivation of the Bose-Einstein and Fermi-Dirac distributions from the grand-canonical ensemble.
+
+            \item Magnetism: coupling of spin to external magnetic fields; statistical derivation of Curie's law; application of polylogarithm functions to Fermi gases; the Ising model and the mean-field approximation; paramagnetic and ferromagnetic systems.
+
+            \item Kinetic theory of gases: the Boltzmann distribution and its derivation from the canonical partition function; mean speed and mean free path of an ideal gas; derivation of the ideal gas equation from kinetic theory; diffusion and the diffusion constant of an ideal gas; viscosity and the coefficient of viscosity; analysis of thermal conductivity with kinetic theory.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Physics Laboratory 3}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1144/}{4}
+
+    \begin{chapter}{Experiments}
+        \begin{itemize}
+        
+            \item Dynamics of the torsion pendulum
+
+            \item Flexure of rods
+
+            \item The Earth's magnetic field
+
+            \item Heat conduction
+
+            \item Magnetic field measurement with induction
+
+            \item Imaging with diffraction lens
+
+            \item The Michelson interferometer
+
+            \item Absorption of gamma and beta radiation
+
+            \item Properties of transmission lines and coaxial cables
+
+            \item Piezoelectricity, 
+
+            \item Characteristic of a silicon photodiode.        
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Physics Laboratory 4}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1145/}{4}
+
+    \begin{chapter}{Experiments}
+        \begin{itemize}
+            
+            \item Acoustic resonator
+
+            \item Measurement of the Boltzmann constant
+
+            \item Ferroelectricity
+
+            \item Ferromagnetism
+
+            \item The Franck Hertz experiment
+
+            \item The current-voltage characteristic of common electrical elements
+
+            \item Coupled electronic oscillators
+
+            \item The Millikan experiment and the elementary charge
+
+            \item Diffraction of light
+
+            \item Ultrasound imaging
+
+            \item Precession of a spinning top
+            
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Probability in Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1177/}{3}
+
+    \begin{chapter}{Fundamentals of frequentist probability}
+        \begin{itemize}
+        
+            \item Random experiments, outcomes, sample space, and events; random variables.
+
+            \item Axioms of probability; certain, impossible, and disjoint events events; the inclusion-exclusion principle
+
+            \item Conditional probability and independent events.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Probability distributions}
+
+        \begin{itemize}
+        
+            \item The concept of discrete and continuous probability distributions; the probability density function and the the cumulative distribution function.
+
+            \item Discrete and continuous joint probability distributions; conditional probability; marginal distributions and indpendent random variables
+
+            \item Normalization and transformation of distributions under and change of continuous variables.
+
+            \item Definition, properties, and applications of important discrete probability distributions: the binomial and Poisson distributions
+
+            \item Definition and properties of the normal distribution: probability density and cumulative distribution function; standardized normal distribution, the error function and complementary error function, standardized variables; standard deviation and full-width at half maximum; $ N $-$ \sigma $ intervals.
+
+            \item Convolution: convlutions of independent distributions; expectation value, variance, and higher-order moments of convolved distributions.
+
+            \item The central limit theorem.
+
+            \item Definition, properties, and applications of other important continuous probability distributions: the uniform, exponential, Cauchy, and Maxwell distribution.
+
+            \item Definition and properties of the Dirac delta distribution.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Quantifying distributions}
+        \begin{itemize}
+        
+            \item Expectation value and variance of a continuous and discrete random variables and of functions of continuous and discrete random variables.
+
+            \item Higher-order central and standardized moments of distributions; skewness and curtosis.
+
+            \item Robust measures: median, median absolute deviation, and mode of a probability distribution.
+            
+            \item Quantiles and interquantile range.
+
+            \item Expectation value in two dimensions; the covariance of random variables and its application to propagation of uncertainties; the coefficient of linear correlation; higher-order moments of bivariate distributions.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Introduction to statistics}
+        \begin{itemize}
+        
+            \item Population and samples; degrees of freedom; sampling with and without replacement; population parameters and sample statistics, sample mean and sample variance.
+            
+            \item Estimators of population parameters; bias, consistency, and efficiency of an estimator;
+            sample distributions of sums and differences; examples: parameter estimation of exponential and Gaussian distribution.
+
+            \item Confidence intervals: confidence level, risk level, and confidence intervals; Student's $ t $ distribution, the $ t $ statistic, and computation of confidence intervals for the population mean; the chi-square distribution, the chi-square statistic, and computation of confidence intervals for the population variance.
+
+            \item Linear regression: regression parameters, models, and the structure matrix; solution to the least squares problem by minimization of squared residuals; linearization of models; applications to parameter estimation and curve fitting.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Numerical Methods}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/524/}{3}
+
+    \begin{chapter}{Introduction to numerical computation}
+        \begin{itemize}
+
+            \item Floating point representation of numbers and floating point arithmetic
+
+            \item Sources of inexactness in numerical computation
+
+            \item Sensitivity/conditioning of a problem, convergence of a method, and stability of computation; error analysis.
+
+            \item Software for numerical computation.
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Systems of linear equation}
+        \begin{itemize}
+            
+            \item Matrix norms, determinants, and condition number.
+
+            \item Upper and lower-triangular systems; Gaussian elimination; pivoting, LU decomposition without pivoting and with partial pivoting.
+
+            \item Applicatoins of LU decomposition: solving systems of linear equations, solving matrix equations, computing determinants, and computing matrix inverses.
+
+            \item Methods of special linear systems: the Cholesky decomposition for positive-definite matrices; methods for tridiagonal systems.
+
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Nonlinear equations}
+        \begin{itemize}
+        
+            \item The bisection method
+
+            \item Fixed-point iteration: convergence of iterative methods; Newton's method; the secant method.
+
+            \item Roots of polynomial equations: the companion matrix; root reduction and the Laguerre method.
+
+            \item Systems of nonlinear equations: fixed-point iteration and Newton's method.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Linear least square problems}
+        \begin{itemize}
+        
+            \item General concepts: sample data points, parameters, model function, overdetermined systems, and residuals.
+
+            \item Normal systems and the normal equations.
+
+            \item QR decomposition: definition of the QR decomposition; (modified) Gram-Schmidt orthonormalization and application to QR decomposition; Givens rotations; Householder reflectoins.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The eigenvalue problem}
+        \begin{itemize}
+        
+            \item Review from linear algebra: eigenvalues and eigenvectors; characteristic polynomial; Schur form and Schur decomposition.
+
+            \item The power method for iteratively computing eigenvalues: algorithm, convergence, stopping criterion; reduction and Hotelling deflation for symmetric matrices; inverse iteration.
+
+            \item QR iteration and convergence to the Schur form.
+
+            \item Eigenvalues of symmetric matrices: tridiagonalization; Sturm sequences and the Sturm method; Jacobi iteration.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Polynomial interpolation}
+        \begin{itemize}
+        
+            \item The polynomial interpolation problem: motivation; classic form of interpolation, the Vandermonde matrix and Vandermonde system.
+
+            \item Lagrange interpolation: Lagrange polynomials; algorithm and error bound.
+
+            \item Newton interpolation: divided differences, algorithm and error bound.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Numerical methods for ODEs}
+        \begin{itemize}
+        
+            \item Methods for numerical integration: the Newton-Cotes rules; composite rules; Romberg extrapolation; Gaussian quadrature.
+
+            \item Initial value problems: explicit Euler method; Runge-Kutta methods; single-step implicit methods; discussion of local and global error.
+
+            \item Systems of first-order LDEs and initial value problems of higher order.
+
+            \item Introduction to second-order boundary problems: general form; the finite difference metod; the shooting method.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Electronics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1134/}{3}
+
+    \begin{chapter}{Analog electric circuits}
+        \begin{itemize}
+
+            \item Introductory concepts: voltage and current; the concept of electrical ground; electrical power; Ohm's law; input and output impedance; Thevenin's theorem; Kirchhoff's rules.
+
+            \item Properties and applications of common passive and active components: resistor, capacitor, inductor, diode, bipolar transistor, transformer.
+
+            \item The operational amplifier: basic model of an op-amp using bipolar transistors; input and output current and voltage characteristics, gain, and frequency response; comparison of ideal and real op-amp properties.
+
+            \item Operational amplifier circuits: comparator with and without hysteresis; voltage follower; inverting and non-inverting amplifiers; differential amplifier; instrumentation amplifier; sign inverter; absolute value circuit; logarithm and exponentiation circuit; differentiation and integration circuit; relaxation and Wien bridge oscillator.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Circuit analysis}
+        \begin{itemize}
+        
+            \item Time-domain circuit analysis: differential equations, time derivative operator notation; the delta and unit step functions; a sytem's impulse and unit step response; the convolution sum and expansion over a delta function basis; examples: time-domain analysis of first-order $ RC $ high-pass and low-pass filters.
+
+            \item Frequency domain analysis: the Laplace and Fourier transforms; frequency response and transfer function; poles and zeros of the transfer function; Bode diagrams.
+
+            \item Filters: low-pass, high-pass, and band-pass filters; implementation with analog electronic elements; examples: first and second-order $ RC $ low-pass and high-pass filters, the second-order notch filter.
+
+            \item Circuit stability: effect of transfer function poles on stability; cases of exponential decay, oscillation, and exponential growth; stability of feedback circuits: phase and gain margin; determining stability from Bode plots.
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Modulation}
+        \begin{itemize}
+        
+            \item Basic concepts: signal properties: amplitude, frequency, and phase; the concept of carrier and modulating signals; applications to information transmission.
+
+            \item Amplitude modulation: analytical expressions for the carrier and modulating signals; the spectra of an amplitude-modulated signal; amplitude demodulation.
+
+            \item Frequency modulation: analytical expressions for the carrier and modulating signals; frequency demodulation; examples of frequency demodulators: an $ LC $ circuit, averaging a comparator's square wave signal.
+
+            \item Phase modulation: expressions for carrier and modulated signals; phase demodulation; spectrum of a phase-modulated signal.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Signal propagation along coaxial cables}
+        \begin{itemize}
+        
+            \item Construction of the coaxial cable; cable parameters: impedancce and inductance and capacitance per unit length.
+
+            \item Solving the wave equation along a coaxial cable; speed of signal propagation in typical cables.
+
+            \item Reflection and transmission: characterstic and terminating impedance; reflection and transmission at cable ends; impedance matching.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Electronics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1135/}{3}
+
+    \begin{chapter}{Foundations of digital electronics}
+        \begin{itemize}
+        
+            \item The binary and hexadecimal number systems; floating point representation of numbers; floating point arithmetic; binary representation of negative numbers.
+
+            \item Hardware representation of binary numbers: conventional voltage ranges for logical one and logical zero; regulating voltage input into and output from digit circuits.
+
+            \item Fundamental logic operations: the logical NOT, AND, and OR gates and the NAND, NOR, and XOR gates.
+
+            \item Fundamentals of Boolean algebra: negation, conjunction, and disjunction; order of operations; associativity and commutativity of conjunction and disjunction; factoring; de Morgan's laws; identities for simplifying logic equations.
+
+            \item Karnaugh maps for simplification of logical expressions.
+
+            \item Addition and subtraction circuits: schematics of binary addition and subtraction; the half adder and full adder circuits; multi-bit adder; two's complement implementation of the subtraction circuit; combined addition-subtraction circuit.
+
+            \item Multiplexers: definition and construction; combination of multiple multiplexers; applications to logic circuits; multiplexors as programmable logic devices.
+
+            \item Selectors: definition and construction; use of an enable signal; combination of multiple selectors and applications to logic circuits.
+
+            \item Precoder and decoder circuits and number encodings; comparison of Gray code and standard binary encoding.
+
+            \item The monostable multivibrator: construction, circuit, and functioning mechanism; use in predictable-length pulse generation.
+
+            \item Applications of the monostable multivibrator: pulse generation; double-pulse generator; frequency measurement circuit.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Flip-flops and registers}
+        \begin{itemize}
+        
+            \item SR latches: construction, operating mechanism, and applications of the SR NOR, SR NAND, and gated SR latches.
+
+            \item D latches: construction, operating mechanism, and applications of the D latch, clocked D latch, and master-slave D flip-flop.
+
+            \item Construction, operating mechanism, and applications of the JK and T flip-flops.
+
+            \item Registers: operating mechanism and construction using flip-flops; use for storage of multi-bit data.
+
+            \item Shift registers: construction using D flip-flops; use for division-by-two and multiplication-by-two circuits.
+
+            \item Basic principles of random-access memory and read-only memory.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Counters and finite-state machines}
+        \begin{itemize}
+
+            \item Transition tables and transition diagrams for design of logical circuits.
+        
+            \item Asynchronous counters: operating mechanism and construction using toggled flip-flops; counting to powers of two and non-powers of two; signal propagation through asynchronous counters and typical delays; use of asynchronous counters as frequency dividers.
+
+            \item Synchronous counters: operating mechanism and construction using registers and a logic circuit; programmable counting methods using custom logic circuit implementation; signal propagation through asynchronous counters and typical delays; use of asynchronous counters as waveform generators.
+
+            \item Mealy and Moore machines: definition; procedure for implementing Mealy and Moore machines: well-defined states, transition diagram, truth table, use of a default-state and handling of unused states; examples: variable upward and downward counter, debouncer circuit.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Analog-digital conversion}
+        \begin{itemize}
+        
+            \item General considerations in digital-to-analog and analog-to-digital conversion: differential and integral non-linearity; resolution and effective number of bits; conversion time.
+
+            \item Construction, operating mechanism, and use cases of common DACs: weighted-resistor inverting amplifier; $ R $-$ 2R $ ladder DAC; pulse-width modulation DAC.
+
+            \item Construction, operating mechanism, and use cases of common ADCs: one-bit comparator; flash ADC; successive-approximation ADC; dual-slope DAC; charge-balancing ADC.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Fundamentals of electronic regulation}
+        \begin{itemize}
+        
+            \item Linear regulators for steady output voltage supplies and their functioning mechanism using heat dissipation; example implementation of a low-voltage DC supply using \SI{220}{\volt} AC input.
+
+            \item Switching regulators: duty cycle and its control with pulse-width modulated control signals; examples: buck step-down regulator, and boost step-up regulator, and flyback converters.
+
+            \item Theory of proportional, differential, and integral regulation; transfer functions; effects of delay; oscillation and damping; example implementation of a PID temperature regulator in a fish tank.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Fundamentals of noise}
+        \begin{itemize}
+        
+            \item Time-domain analysis of noise: noise as a stochastic process; quantification of noise with RMS voltage and power; energy and power in noisy signals; combination/superposition of multiple noise sources.
+
+            \item Frequency-domain analysis of noise: review of Fourier analysis; the spectrum of a noisy signal and spectral power density; average power; the Parseval inequality; propagation of noise through transfer functions.
+
+            \item Classification of noise: thermal (Johnson-Nyquist) noise, shot noise, pink noise, and popcorn noise; mechanisms for noise; optimizations for low-noise circuits.
+
+            \item Fundamentals of noise reduction in multi-stage amplification and filter circuits.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Electronics Laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1136/}{3}
+
+    \begin{chapter}{List of labs and projects}
+        \begin{itemize}
+        
+            \item Use of basic electronic instruments: multimeter, oscilloscope, function generator, and power supply.
+
+            \item Current-voltage characteristic of the bipolar transistor
+
+            \item Transistor implementation of a simple operational amplifier
+
+            \item Frequency characteristics of the operational amplifier
+
+            \item The instrumentation amplifier
+
+            \item Op-amp integration and differentiation circuits.
+
+            \item Relaxation oscillator
+
+            \item A sample and hold circuit
+
+            \item Amplitude detector
+
+            \item Analog control circuits
+
+            \item Switching power supply
+
+            \item Frequency measurement circuit
+
+            \item Logic gates
+
+            \item Synchronous counter
+
+            \item Monostable multivibrator
+
+            \item Capacitance meter
+
+            \item Analog multiplier
+
+            \item Lock-in detection
+
+            \item Voltage-to-frequency converter
+
+            \item Amplitude modulation and demodulation
+
+            \item Temperature regulation
+        
+        \end{itemize}
+        
+    \end{chapter}
+
+\end{course}
+
+\newpage
+\section{Year 3}
+
+\begin{course}{Electromagnetism}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1133/}{7}
+
+    \begin{chapter}{Electrostatics}
+        \begin{itemize}
+            
+            \item Coulomb's law and the electrostatic force.
+
+            \item The electric field: definition in terms of the electrostatic force; electric field lines; electric circulation; electric flux; preservation of the electric field under orthogonal transformations.
+
+            \item Electric potential and charge density: definition of the electric potential; the superposition principle for electrostatic force, field, and potential; electric charge density; examples: charge density of a point charge and electric dipole, surface and spherical charge distributions 
+
+            \item The Poisson and Laplace equations for the electric potential; Green's functions for the Poisson equation in reciprocal space; general solution to the Poisson equation in term of Green's functions.
+
+            \item Gauss's law: integral and differential forms.
+
+            \item Electrostatic energy: energy of charge distribution in an external field; total electrostatic energy; electric field energy in terms of electric field.
+
+            \item Electrostatic force and the stress-energy tensor.
+
+            \item The multipole expansion in electrostatics: expansion of electric potential, electrostatic energy, force, and torque on a charge distribution in an external electric field; energy density of the electric field.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Magnetostatics}
+
+        \begin{itemize}
+            
+            \item Ampere's force law and the magnetic force; examples: magnetic force between parallel wires and force between arbitrary current-carrying space curves.
+
+            \item Fundamental quantities in magnetostatics: electric current density; magnetic field lines; magnetic circulation; magnetic flux.
+
+            \item The Biot-Savart law for magnetic field; derivation of Ampere's law from the Biot-Savart law.
+
+            \item The magnetic vector potential; relationship between magnetic vector potential and magnetic flux; the magnetic vector potential of an inductor; gauge transformations of the vector potential; the magnetostatic analog of the Poisson equation.
+
+            \item Magnetic energy: energy of current distribution in an external magnetic field; total magnetostatic energy; magnetic field energy in terms of magnetic field; energy density of the magnetic field.
+
+            \item Magnetic force and the magnetostatic stress-energy tensor.
+
+            \item Multipole expansion of the magnetic field: the magnetic field of a magnetic dipole; Ampere equivalent for a circular current loop; multipole expansion of magnetic energy; tensor symmetrization; force and torque on a magnetic dipole in an external magnetic field.
+
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Quasi-static electromagnetic fields}
+
+        \begin{itemize}
+        
+            \item Electromagnetic induction: Lenz's law for magnetic flux; the quasi-static Maxwell equation for $ \curl \bm{E} $; Maxwell magnetic field impulse.
+
+            \item The quasi-static Maxwell equations and the electromagnetic potentials for quasi-static electric and magnetic fields.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Conductors and Ohm's law}
+        \begin{itemize}
+        
+            \item The Drude model of conductivity and the relaxation time constant of a conductor.
+
+            \item Energy dissipation in a spatial charge distribution.
+
+            \item Electric field energy and generalized, tensor form of capacitance for a conductor in space.
+
+            \item Magnetic field energy and generalized, tensor form of inductance for a conductor in space.
+
+            \item The skin effect in conductors carrying high-frequency alternating currents; electromagnetic field geometry and electric current density distribution in the skin effect.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Maxwell's equations in free space}
+        \begin{itemize}
+        
+            \item Charge conservation, the continuity equation, and displacement current.
+
+            \item Maxwell's equations in free space.
+
+            \item Electromagnetic energy: the Poynting vector; energy dissipation; conservation of electromagnetic energy; the Poynting theorem in integral and differential forms.
+
+            \item Electromagnetic momentum: definition of electromagnetic momentum; the Cauchy continuity equation for conservation of electromagnetic momentum in integral and differential form.
+
+            \item Electromagnetic angular momentum: definition of electromagnetic angular momentum; the continuity equation for conservation of electromagnetic angular momentum in integral and differential form.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Electromagnetic fields in matter}
+        \begin{itemize}
+        
+            \item Electric fields in matter: bound charge, electric polarization, and the $ \bm{D} $ field; the constitutive relation for electric fields and matter; properties of dielectric and conductors.
+
+            \item Magnetic fields in matter: bound currents, magnetization, and the $ \bm{H} $ field; the constitutive relation for electric fields and matter; magnetization and magnetic dipole density; ferromagnetic, diamagnetic, and paramagnetic materials.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Frequency dependence of the dielectric function}
+
+        \begin{itemize}
+        
+            \item General frequency dependence of the dielectric function $ \varepsilon(\omega) $ in the time and frequency domains.
+
+            \item The Kramers-Kronig relations for the real and imaginary components of $ \varepsilon(\omega) $.
+
+            \item Dissipation of electromagnetic energy and the imaginary component of the dielectric function
+
+            \item Models for the dielectric function's frequency dependence: the classical equation of motion for bound charge and its solutions; Debye relaxation, Lorentz relaxation, and plasma relaxation; example: a phenomenological model of the dielectric function in water.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Introduction to the Hamiltonian formalism for electromagnetism}
+
+        \begin{itemize}
+        
+            \item Review of the Lagrange and Hamilton equations from classical mechanics.
+
+            \item The Lagrangian function of a charged particle in an electromagnetic field.
+
+            \item The Hamiltonian function of a charged particle in an electromagnetic field.
+
+            \item The Hamiltonian formalism for continuous charge distributions: the Schwarzschild invariant; the Lagrangian of for a continuous charge distribution in an electromagnetic field; the action of the electromagnetic Lagrangian; the Euler-Lagrange and Riemann-Lorenz equations for the electromagnetic potentials $ \phi $ and $ \bm{A} $.
+        
+        \end{itemize}
+        
+    \end{chapter}
+
+    \begin{chapter}{Introduction to relativistic electromagnetism}
+        \begin{itemize}
+        
+            \item Review of special relativity, four vectors, and Minkowski space.
+
+            \item The Lorentz transformations of the electromagnetic field; invariance of Maxwell equations under Lorentz transformation.
+
+            \item Electromagnetic quantities in Minkowski space: covariant and contravariant four vectors, scalar product of four-vectors, and the d'Alembert box operator; four vectors for electric current density and the electromagnetic potential; the covariant electromagnetic field tensor.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Quantum Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1156/}{7}
+
+    \begin{chapter}{Fundamentals of quantum mechanics}
+        \begin{itemize}
+            \item The Schroedinger equation for a single particle in three dimensions. The wave function, probability density, and the continuity equation; properties of the wave function: normalization, continuity, differentiability; degeneracy and the nondegeneracy theorem.
+
+            \item Stationary states of the Hamiltonian operator; expansion of wave functions over stationary states; time evolution of the wave function.
+
+            \item Physical quantities as quantum operators; eigenvalues, eigenfunctions, and expectation values of quantum operators; the definition and properties of the momentum operator.
+
+            \item The Ehrenfest theorem and its classical limit as Newton's second law; the virial theorem in quantum mechanics.
+
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The Dirac formalism}
+        \begin{itemize}
+
+            \item Postulates of the Copenhagen interpretation of quantum mechanics.
+
+            \item Review of Hilbert spaces; the braket notation for elements of Hilbert spaces, scalar products, and matrix elements.
+
+            \item Expansion of wave functions and operators in an orthonormal basis; operator equations in an orthonormal basis.
+
+            \item Definition and properties of Hermitian, adjoint, and self-adjoint operators.
+
+            \item Definition and properties of orthogonal and unitary operators; unitary change of basis; generators of unitary transformations.
+
+            \item The position (direct space) and momentum (reciprocal space) representations of quantum mechanics: review of Fourier analysis; eigenvalues and eigenstates of the momentum and position operators; expansion in the momentum eigenbasis; differentiation and multiplication in position and momentum space.
+
+            \item Example: the quantum-harmonic oscillator: eigenvalues and eigenfunctions of the harmonic oscillator's Hamiltonian; the creation, annihilation, and counting operators; the ladder operators in matrix form; the generating formula for the harmonic oscillator's eigenfunctions in the coordinate representation; the harmonic oscillator in three dimensions; the coherent ground state.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Symmetries}
+        
+        \begin{itemize}
+        
+            \item Translational symmetry: the translation operator and one and three dimensions; problems with translation symmetry; relationship of translation symmetry to conservation of linear momentum; partial translational symmetry in a periodic potential.
+
+            \item Rotational symmetry: the quantum operator for rotation by an angle $ \varphi $ about an arbitrary axis in space; infinitesimal and macroscopic rotations; problems with rotational symmetry; relationship of translation symmetry to conservation of angular momentum.
+
+            \item Parity symmetry: definition and properties of the parity operator; relationship of the parity operator and problems with an even potential.
+
+            \item Time reversal symmetry: definition and properties of the time reversal operator; the generalized time reversal and conjugation operator; generalized time reversal as an anti-unitary operator.
+
+            \item Invariance under phase shift; change of a wave function and basis under a global translation in phase or potential energy; local and global gauge transformations; effect of gauge transformations on wave functions.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Angular momentum}
+        \begin{itemize}
+        
+            \item Definition and properties of the angular momentum operator: Hermitian, cross product identities, angular momentum commutation relations.
+
+            \item The angular momentum ladder operators: definition, commutation relations.
+
+            \item Eigenvalues and eigenfunctions of the angular momentum operators $ L_{z} $ and $ L^{2} $: derivation using the ladder operators; magnetic and orbital quantum numbers; spherical harmonics; eigenbasis formed by the momentum eigenfunctions.
+
+            \item Matrix representation of angular momentum: expansion of general wave functions in the angular momentum eigenbasis; matrix representations of $ L_{x} $, $ L_{y} $, $ L_{z} $, and $ L^{2} $.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The central potential}
+        \begin{itemize}
+
+            \item The general quantum-mechanics central potential problem: definition and properties of a central potential; the central potential Hamiltonian; transforming the Hamiltonian to spherical coordinates.
+
+            \item The radial equation: derivation of the radial equation from the central potential Schroedinger equation; the effective potential; the radial eigenvalues and eigenfunctions; solutions to the radial equation in the limit $ r \to 0 $; free and bound states in the limit $ r \to \infty $.
+
+            \item The Coulomb potential: general form of the Coulomb potential, Hamiltonian, and Schroedinger equation; the radial equation for the Coulomb potential; deriving energy eigenvalues with the Frobenius power-series method; degeneracy and eigenfunctions of the Coulomb Hamiltonian; application to the hydrogen atom.
+
+            \item The semi-classical and classical limits: the Sommerfeld quantization condition; Coulomb potential eigenfunctions in the limit of large angular momentum; expectation values of  electron radius and squared radius; spherical shape of the orbit in the classical limit.
+            
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The charged particle in an electromagnetic field}
+
+        \begin{itemize}
+        
+            \item The electrostatic potential and magnetic vector potential; the Coulomb gauge; derivation of the Hamiltonian and Schroedinger equation for a charged particle in an EM field under the Coulomb gauge.
+
+            \item The normal Zeeman effect: magnetic dipole moment operator and the Bohr magneton; coupling of magnetic moment to a homogeneous external magnetic field; the Zeeman and quadratic coupling terms; the normal Zeeman effect.
+
+            \item Landau levels: the Landau gauge potential; Landau quantization; application to a charged particle in planar cyclotron orbit; Landau levels; time evolution of Landau level eigenstates.
+
+            \item Gauge transformations for particles in an electromagnetic field: local and global gauge transformations; application to time-dependent phase shifts of the wave function; gauge transformations of the electric and magnetic potentials; the Schroedinger equation under local gauge transformations.
+
+            \item The Aharonov-Bohm effect: the Aharonov-Bohm experiment; the Schroedinger equation for a charged particle in the AB experiment; gauge transformations and analysis of the AB experiment; observable result: dependence of current branch ratio on magnetic flux.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Spin}
+        \begin{itemize}
+        
+            \item Definition of spin; relationship to angular momentum; the spin operators; important properties of spin.
+
+            \item Spin $ 1/2 $ particles: physical important of spin $ 1/2 $ particles; possible states of spin $ 1/2 $ particles; the $ \ket{\uparrow} $ and $ \ket{\downarrow} $ notation; matrix formulation of the spin operators for spin $ 1/2 $ particles.
+
+            \item The Pauli spin matrix formalism: definition of the Pauli spin matrices $ \sigma_{x} $, $ \sigma_{y} $, and $ \sigma_{z} $; spin operators in terms of the spin matrices; commutation relations for the spin matrices; expectation values of the spin matrices.
+
+            \item Spinors and spinor transformations: definition of spinors; spinors for spin $ 1/2 $ particles; transformation of spinors under rotation and time reversal; parameterization of spinor states using direction angles; transformation of the axis of quantization to arbitrary directions in space.
+
+            \item Spin-orbit coupling: the spin magnetic moment; coupling of spin to an external magnetic field; derivation of the coupling term for spin-orbit coupling.
+
+            \item The Stern-Gerlach experiment: experimental set-up; qualitative, semi-classical, and quantum-mechanical analysis of the experiment's outcome; implications for the quantization of magnetic moment.
+
+            \item Addition of angular momentum for spin $ 1/2 $ particles: commutation of angular momentum; the outer product notation for multiplication of spin subspaces; shared eigenstates: the singlet and triplet states; Heisenberg coupling; the definition and use of the Clebsch-Gordan coefficients for addition of angular momentum.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Perturbation and approximation theory}
+        \begin{itemize}
+        
+            \item The Rayleigh-Schroedinger method for first-order analysis for systems with non-degenerate spectra: motivation; Hamiltonian; first and second-order energy corrections; first-order formula for eigenvalues and eigenstates.
+
+            \item First-order perturbative analysis for systems with degenerate spectra: ansatz for the Hamiltonian; the doubly-degenerate and $ N $-times degenerate cases; reduction to an $ N \times N $ eigenvalue problem.
+
+            \item Systems with time-dependent Hamiltonians: ansatz for the Hamiltonian; the interaction picture and the general procedure for eigenfunctions; example: Rabi oscillations in a two-state system.
+
+            \item Radiative transitions: transition probabilities and matrix elements under the influence of step-function potentials; first-order perturbative analysis; Fermi's golden rule.
+
+            \item The WKB approximation: wave function ansatz; interpretation as the semiclassical limit $ \hbar \to 0 $; relationship to the Hamilton-Jacobi equation in the classical limit.
+
+            \item The variational method for energy eigenvalues: motivation and applications; derivation of the energy eigenvalue formula.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Introduction to scattering}
+        \begin{itemize}
+        
+            \item The scattering formalism in one dimension: role of the scattering potential; incoming and outgoing wave functions; expansion in plane wave states; probability current density in terms of probability amplitudes; the transfer matrix approach.
+
+            \item The scattering matrix: definition and properties; relationship to the incoming and outgoing wave functions; parameterization in terms of probability amplitudes; the scattering matrix's determinant.
+
+            \item Scattering in problems invariance under time-reversal and parity transformation.
+
+            \item Scattering states and methods for normalization of plane waves:
+
+            \item Overview of the scattering problem in three dimensions: expansion of wave functions in a basis of spherical waves; the scattering cross section and differential cross sections; the optical theorem.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Optics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1165/}{5}
+
+    \begin{chapter}{Review of geometrical optics}
+        \begin{itemize}
+        
+            \item Fermat's principle: the speed of light and the refractive index; Fermat's principle and minimization of optical action; derivation of the laws of reflection and refraction from Fermat's principle.
+
+            \item The eikonal ray equation: statement and variational derivation of the ray equation from Fermat's least action principle; the ray equation in homogeneous matter and material with a parabolic refractive index; the ray equation in the limit of the paraxial approximation.
+
+            \item Optical transfer matrices: the paraxial approximation; the transfer matrix method for propagation of light through optical interfaces; statement and derivation of transfer matrices for common optical elements.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Fundamentals of wave optics}
+        \begin{itemize}
+        
+            \item Review of Maxwell's equations in isotropic, non-conducting matter; review of the wave equation in the context of electromagnetic waves.
+
+            \item Plane waves: definition and properties of plane waves; plane waves as solutions to the electromagnetic wave equation; wave fronts and phase velocity; frequency, speed, and wavelength in matter.
+
+            \item Direction and mutual orientations of the electric field, magnetic field, and wave vector for plane wave solutions in isotropic, non-conducting matter
+
+            \item Ratio of field amplitudes and the impedance of free space.
+
+            \item Electromagnetic power: energy density in electromagnetic waves; energy current density and the Poynting vector; electromagnetic power; Poynting's theorem.
+
+            \item Polarization of plane wave solutions: mutual orientations of the electric field, magnetic field, and wave vector; quantities required to fully specify a plane wave; linear, circular, and elliptical polarization.
+
+            \item The Jones formalism for polarization: Jones vectors and Jones matrices; statement and derivation of Jones matrices for common optical elements.
+
+            \item The wave equation in conducting matter: free current density and Ohm's law; Maxwell's equations in conducting matter; generalization of the wave equation to conducting matter; the complex-valued refractive index; solutions to the wave equation in conducting matter; the imaginary refractive index and attenuation.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Reflection and refraction}
+        \begin{itemize}
+        
+            \item Boundary conditions for Maxwell's equations in matter: statement and derivation of the boundary equations for the $ \vec{E} $, $ \vec{B} $, $ \vec{D} $, and $ \vec{H} $ fields.
+
+            \item Electromagnetic wave behavior at the interface of optically distinct materials: conservation of phase, frequency, and tangential/normal field components; incident, reflected, and transmitted wave vectors and field components; derivation of the laws of reflection and refraction from wave principles.
+
+            \item The Fresnel equations: decomposition of light into transverse-electric and transverse-magnetic polarizations; the Fresnel equations for TE and TM waves, transmission and reflection coefficients.
+
+            \item Electromagnetic power in reflection and refraction: the Poynting vector at the interface of materials; transmittance and reflectance.
+
+            \item Passage into optically denser material: dependence of the reflection and transmission coefficients on angle of incidence for TE and TM waves; Brewster's angle.
+            
+            \item Passage into optically less dense material: dependence of the reflection and transmission coefficients on angle of incidence for TE and TM waves; total internal reflection and the critical angle; the evanescent field; skin depth and attenuation; electromagnetic power in total internal reflection.
+
+            \item Phase shift during reflection: relating transmission and reflection coefficients to phase shift for incident angles below the critical angle; phase shift in total internal reflection for TE and TM polarizations.
+
+            \item Reflection from metals: complex-valued ansatz for the electric field; the complex-valued wave vector and refractive indices in metals; reflection of waves from metals; attenuation and skin depth in metals.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Diffraction}
+        \begin{itemize}
+        
+            \item General concepts: definition of diffraction and its mechanism due to wave superposition; Huygen's principle; diffracting objects, aperture functions, and the optical axis; the Kirchhoff diffraction integral.
+
+            \item Fraunhofer diffraction: derivation of the Fraunhofer diffraction integral from the large-field approximation to the Kirchhoff integral; the Fraunhofer diffraction integral as the Fourier transform of the aperture function; the Fresnel number and validity of the Fraunhofer approximation; examples: Fraunhofer diffraction on a thin slit, diffraction grating, rectangular aperture, and circular aperture.
+
+            \item Fresnel diffraction: derivation of the Fresnel diffraction integral from the near-field approximation to the Kirchhoff integral; validity of the Fresnel approximation; Fresnel diffraction from a circular aperture; Fresnel zones and the Fresnel lens; Fresnel diffraction from a rectangular aperture and the Fresnel integrals.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Optical interference}
+        \begin{itemize}
+        
+            \item General concepts: definition of interference and its mechanism due to wave superposition; superposition of plane waves; dependence of total electric field and energy flux density on phase difference between superposing waves; interferometric visibility.
+
+            \item Interference via wavefront splitting: mechanisms for wavefront splitting; Young's double slit experiment and characteristics of the interference pattern; equivalence of Young's experiment and Fraunhofer diffraction.
+
+            \item Interference via amplitude splitting: mechanisms for amplitude splitting; the Michelson interferometer and dependence of interference extrema on optical path difference; corrections for non-collimated beams.
+
+            \item The Sagnac interferometer: mechanism and applications to fiber-optic gyroscopes.
+
+            \item Thin-film interference: transmission and reflection coefficients for arbitrary incidence on a single thin films; construction of the Fabry-Perot interferometer and its applications in spectroscopy; matrix method for transmission and reflection coefficients for multiple thin films; application: anti-reflective coatings.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Optical scattering}
+        \begin{itemize}
+        
+            \item General concepts: effect of three-dimensional objects on light propagation; scattering and extinction; the scattering cross section.
+
+            \item Rayleigh scattering: validity of Rayleigh scattering; dipole scattering; the dipole antenna and Hertz radiation; dependence of radiated energy current density on angle and polarization; the scattering matrix and scattering efficiency.
+
+            \item Mie scattering: validity of Rayleigh scattering; the scalar Helmholtz equation and separation of variables; solution for the electric field in terms of the associated Legendre polynomials and spherical Bessel functions; dependence of light intensity on wavelength of incident light and scatterer radius; transition between the regimes of Rayleigh scattering, Mie scattering, and geometrical optics.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Coherence}
+        \begin{itemize}
+        
+            \item Fundamentals of temporal coherence: completely coherent, partially coherent, and incoherent waves; coherence time; microscopic mechanisms for lack of coherence; measuring temporal coherence with a Twynman-Green interferometer.
+
+            \item Analysis of temporal coherence: expectation values of electric field and energy flux density; Fourier spectroscopy; the autocorrelation function and power spectral density; the Wiener-Khinchin theorem; the Van Cittert-Zernike theorem; examples: power spectral density and autocorrelation function of Gaussian and exponential pulses.
+
+            \item Spatial coherence: coherence surface and definitions of spatial coherence; measuring spatial coherence with Young's double-slit experiment; example: estimating the size of starts using Young's double slit experiment and spatial coherence.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The refractive index}
+        \begin{itemize}
+        
+            \item The Lorentz model of the refractive index: microscopic model of the refractive index: equation of motion, position, and electric dipole moment of a molecule; the electric displacement field and electric polarization.
+
+            \item The complex refractive index and its real and imaginary components.
+
+            \item The refractive index in the limit of a low-density gas; expressions for the refractive index with multiple resonances; the Cauchy and Sellmeier approximations of the refractive index.
+
+            \item The refractive index in dense materials and the near-field correction for polarization and the total electric field.
+
+            \item Introduction to optical metamaterials, negative refractive indices, and their applications.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Optical activity}
+        \begin{itemize}
+        
+            \item General concepts: rotation of electromagnetic polarization on passage through material; right-hand circular and left-hand circular polarized light; dependence of refractive index on polarization.
+
+            \item The Jones vector formalism for describing circular birefringence; dependence of phase difference on material thickness and RHC and LHC polarized refractive indices.
+
+            \item The Faraday effect: equation of motion for an electron in an electromagnetic field; decomposition of linear polarization RHC and LHC components; LHC and RHC polarizations and refractive indices and the difference of refractive indices in the Faraday effect; the Verdet constant.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Optically anisotropic materials}
+        \begin{itemize}
+        
+            \item General concepts: linear approximation to the constitutive relation; electric susceptibility and the dielectric constant; the tensor relationships between polarization and the displacement field and between the displacement and electric fields in anisotropic materials.
+
+            \item Plane waves in anisotropic matter: Maxwell's equations and the wave equation in anisotropic matter; ansatzes and solutions for the electric and magnetic fields; eigenvalues of the dielectric tensor and the principle indices of refraction; directions and mutual orientations of the principle polarizations.
+
+            \item The index ellipsoid formalism: quadratic form for electromagnetic energy density; normalized coordinates and construction of the index ellipsoid; use of the index ellipsoid for determining principle refractive indices and directions of polarization.
+
+            \item Optically biaxial materials: solutions to the generalized wave equation in anisotropic matter; surface of constant wave vector; electric field solutions and polarizations in the $ k_{x} $, $ k_{y} $, and $ k_{z} $ planes; direction and orientation of the optic axis; direction and orientation of the Poynting vector; alternative formulations: surface of constant phase velocity and surface of constant ray speed.
+
+            \item Optically uniaxial materials: ordinary and extraordinary polarizations; electric field solutions and polarizations and principle refractive indices in optically-uniaxial materials; directions and mutual orientations of the Poynting vector and the $ \vec{E} $ and $ \vec{D} $ fields; direction of the optic axis.
+
+            \item Incidence on uniaxial materials: conservation of phase, frequency, and wave vector components on passage from air into uniaxial materials; reflection and refraction for TE and TM polarized light; shift of light in position space on transmission through uniaxial materials; special cases: normal incidence with optic axis tangent and normal to boundary plane.
+
+            \item Optical components using birefringent materials: the Nicol prism polarizer; phase retarders and compensating planes, quarter waveplate and half waveplate; Glan-Taylor prism.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Introduction to lasers}
+        \begin{itemize}
+        
+            \item Review of black body radiation: boson statistics for photons; the Bose-Einstein distribution; frequency distribution of black-body radiation; the Stefan-Boltzmann law.
+
+            \item Interactions in an optical resonator: energy levels in a black-body cavity; probabilities of spontaneous emission, absorption, and stimulated emission; Fermi's golden rule and transition probabilities; the occupation equations; shape functions.
+
+            \item Optical amplification: definition of and motivation for amplification; potential for amplification in the context of the occupation equations; amplification in a three-state system; inverted occupation and the condition for optical amplification; the stimulated emission cross section; low-power, high-power, and general amplification coefficients.
+
+            \item Model of the laser: amplification module, energy inversion mechanism, and optical resonator; contributions to energy losses and condition for stationary state and stable functioning.
+        
+        \end{itemize}
+    \end{chapter}
+
+\end{course}
+
+\begin{course}{Continuum Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1160/}{5}
+
+    \begin{chapter}{Fundamentals of the theory of elasticity}
+        \begin{itemize}
+        
+            \item Tensor formalism for deformations: concept of the continuum; the displacement vector; deriving the strain tensor; the strain tensor's symmetry and transformation under rotations.
+            
+            \item Physical meaning of the strain tensor's components: deformations along principle axes and change in angle between axes; bulk volume change the strain tensor's trace.
+            
+            \item Comparison of the Euler and Lagrange formulations of the strain tensor.
+
+            \item Mechanical stress: assumption of short-range contact forces; derivation of the stress tensor; the stress tensor's symmetries; torque as a surface integral; examples: the stress tensor for isotropic, shear, and uniaxial deformations.
+            
+            \item The Cauchy equation and constitutive relation between the stress and strain tensors;
+            thermodynamics of work and free energy in deformations.
+
+            \item Elastic energy: characteristic polynomial and eigenvalues of the strain tensor in homogeneous, isotropic materials; expansion of free energy in the strain tensor's invariant quantities; the stress tensor in homogeneous, isotropic materials; the Lamé constants;
+            relating the strain and stress tensor's trace.
+
+            \item Hooke's law; the bulk, modulus, shear modulus, and inverse compressibility and their physical meaning;
+            the Young modulus and the Poisson ratio and their physical meaning; relationships between the elastic constants.
+            
+            \item Derivation of the Navier equation from the Cauchy equation in homogeneous, isotropic materials;
+            
+            \item Symmetries, Hooke's law, and elastic moduli in crystals.
+
+            \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Applications of the theory of elasticity}
+        \begin{itemize}
+
+            \item Mechanics of plate flexure: definition of a plate; first-order expansion of the strain and stress tensors in plate-like geometry; the free energy, strain tensor, and stress tensor of a bent plate; plate equilibrium: variational condition for plate equilibrium, virtual work and displacements, variation of the plate's free energy.
+
+            \item Lateral loads and plate buckling: definition of lateral loads; virtual work and displacements in plate-like geometry; strain tensor for plate flexure in lateral loads; work and critical load required for plate buckling; example: the critical lateral load on a rectangular plate.
+
+            \item Mechanics of rod torsion: definition of a rod and rod torsion; first-order approximation of the displacement vector for rod torsion; the strain and stress tensors for rod torsion; the torsion function and the Poisson equation for torsion; equilibrium condition and the Laplace equation for torsion deformation; the associated torsion function and boundary conditions for torsion deformations; elastic energy in rod torsion and the elastic torsion constant.
+
+            \item Mechanics of rod flexure: description of flexure in rod-like geometry, boundary conditions for a flexed rod; the strain and stress tensors for a flex rod; the geometrical profile of a bent rod; elastic energy in rod flexure and a rod's cross-sectional moment of inertia.
+
+            \item Global rod theory: the tangent, normal, and binormal vectors for a rod; rod curvature and radius of curvature; arc-length parameterization of rods; rod rotation and flexure in terms of the tangent and normal vectors; a deformed rod's elastic energy and elastic constants; the equilibrium conditions for force and torque for a deformed rod; Kirchhoff's theory of rods.
+
+
+            \item Elastic waves: transport of disturbances in elastic media; derivation of the wave equation from the Navier equation; wave equations and wave speeds for longitudinal and transverse wave polarizations; ratio of wave speeds and the relationship of the shear modulus and Poisson ratio to wave speeds.
+
+            \item Elastic waves at an interface between materials: conservation of frequency, phase, and wave vector components; the laws of reflection and refraction for polarized elastic waves; the mixing of wave polarizations on passage through an interface.
+
+            \item Surface waves: surface wave ansatz for the wave equation; boundary conditions for surface waves; solutions to the wave equation; attenuation and skin depth; transverse and longitudinal polarizations and their relative amplitudes for surface waves.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Mechanics of ideal fluids}
+        \begin{itemize}
+        
+            \item The description of fluids: concept of the continuum, the fluid volume element, and the control volume; the field description of fluid state and the velocity, pressure, and density fields of a fluid.
+
+            \item Conservation of mass and its implications: the mass of the fluid in control volume; volume flow rate, mass current density and volume current density through a surface or control volume; conservation of mass and the continuity equation; the continuity equation for incompressible fluids.
+
+            \item The Euler equation: definition of an ideal fluid; Newton's law for a fluid element; the material derivative and the Euler picture of fluid mechanics; derivation of the Euler equation from Newton's law on a fluid element.
+
+            \item Simplifications of the Euler equation: definition and thermodynamics of isentropic fluids, expression and simplification of the Euler equation for isentropic fluids in terms of enthalpy density; gradient-free form of the Euler equation;
+            hydrostatics: simplification of the Euler equation to hydrostatic situations; thermodynamics of hydrostatic fluids and expression of the hydrostatic Euler equation in terms of Gibbs free energy density.
+
+            \item Convection: definition of convection; condition for equilibrium under a temperature gradient; thermodynamics of convection: specific volume, entropy, heat capacities, and Maxwell's relations; condition for convection in fluids and in an ideal gas.
+
+            \item The Bernoulli equation: definition and description of streamlines; description of the Euler equation in terms of enthalpy density; derivation of the Bernoulli equation from the Euler equation.
+
+            \item Kelvin's circulation theorem: the circulation of a velocity field around a closed space curve; derivation of Kelvin's circulation theorem; vorticity.
+
+            \item Potential flow: definition of potential flow; application of Kelvin's circulation theorem to potential flow; velocity potential description of the velocity field; simplifications of the Euler equation and Bernoulli equation for potential flow; incompressible potential flow.
+
+            \item Stagnation points and the condition for analysis using incompressible flow.
+
+            \item Complex formalism for two-dimensional, incompressible flow: the continuity equation; the Cauchy-Riemann equations for the velocity potential and stream function; area flow rate in terms of the stream function; use of conformal mappings for analyzing potential flow.
+
+            \item Drag in potential flow: the dipole velocity field and its potential; decomposition of velocity field into homogeneous and dipole terms; the kinetic energy of potential dipole flow around obstacles; the induced mass tensor; d'Alembert's paradox.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Mechanics of viscous fluids}
+        \begin{itemize}
+            \item Construction and properties of the viscous stress tensor: proportionality to velocity gradient; symmetrization of the viscous tensor and vanishing for rotational flow; roles of the diagonal and off-diagonal elements; dynamical and volume viscosity; simplification of the viscous stress tensor for incompressible flow.
+
+            \item Generalization of the Euler equation to viscous fluids; computing the divergence of the viscous stress tensor; the derivation of the Navier-Stokes equation.
+
+            \item Kinetic viscosity and the velocity field for viscous fluids; the pressure field and Poisson equation for viscous fluids.
+
+            \item Energy dissipation in incompressible, viscous fluids: kinetic energy and power of viscous fluid flow around obstacles; decomposition of power into volume transport and surface terms; expression for energy dissipation in terms of the velocity field.
+
+            \item Hydrodynamic similarity: dimensionless form of the Navier-Stokes equation and characteristic dimension and velocity; the Reynold's number and the concept of hydrodynamic similarity.
+
+            \item The Stokes approximation of the Navier equation for small Reynolds numbers; derivation of the Stokes formula for linear drag from small Reynolds number approximation of the Navier-Stokes equation: transformation to spherical coordinates, boundary conditions on the velocity field, the velocity and pressure fields, the force on an obstacle in Stoke's flow.
+
+            \item Theory of the boundary layer: formation of the boundary layer; the Prandtl theory of the boundary layer; the Prandtl boundary layer equations and their transformation to dimensionless form; example: boundary layer for flow along a plate; the Blasius equation; backflow and separation of the boundary layer.
+
+            \item Hydrodynamic instabilities: qualitative description of Rayleigh–Bénard instabilities and Taylor vortices; quantitative analysis of Kelvin-Helmholtz instabilities: the Euler equation and Bernoulli equation for two neighboring fluids; dynamics equations for the shape of the boundary surface; perturbations in the velocity potential; perturbative analysis of the velocity field for each fluid; the condition for stability in terms of densities, steady-state flow velocity, and wave vector.
+
+            \item Introduction to turbulence: decomposition of the velocity field into steady-state and fluctuating terms; the Navier-Stokes equation in terms of steady and turbulent terms; time average of turbulent terms and correlation of velocity components; the Reynold's stress tensor for turbulent flow.
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Solid State Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1138/}{7}
+    \begin{chapter}{Crystal structure}
+        \begin{itemize}
+        
+            \item Description of crystal structure in position space: the Bravais lattice, primitive vectors, and the primitive unit cell; the basis and the description of physical crystals.
+
+            \item Classes of unit cells: the parallelepiped, Wigner-Seitz, and conventional unit cells.
+
+            \item Symmetries of Bravais lattices: translation, rotation, reflection, and rotation with reflection.
+
+            \item Examples of Bravais lattices and crystal structures: the simple cubic, body-centered cubic, and face-centered cubic lattices; the Honeycomb and diamond structures; simple hexagonal and hexagonal close-packed lattices.
+
+            \item Classification of Bravais lattices and crystal systems.
+
+            \item The reciprocal lattice: review of the Fourier transform; definition of the reciprocal lattice, reciprocal lattice vectors, and reciprocal primitive vectors; the Wigner-Seitz cell in reciprocal space.
+
+            \item Examples: reciprocal lattice of the simple cubic, face-centered cubic, body-centered cubic, and triangular Bravais lattices.
+
+            \item Lattice planes: definition and construction of a lattice plane; families of lattice planes; Miller indices; relationship of the direct and reciprocal lattices.
+
+            \item Scattering of x-rays: Bragg scattering and the Bragg interference condition; the Von Laue formulation of scattering and the Von Laue interference condition; equivalence of the Bragg and Von Laue formulations; the Ewald sphere formulation of scattering.
+
+            \item Structure factors: the geometric structure factor and its relationship to crystal scattering; the GSF of common lattices; the atomic structure factor.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The Sommerfeld theory of free electrons}
+        \begin{itemize}
+        
+            \item Foundational concepts: the Schroedinger equation for a free electron; energy eigenvalues and eigenfunctions of the Hamiltonian operator; periodic boundary conditions in crystals; the Fermi sphere and Fermi surface; the Fermi wave vector, energy, velocity, and volume.
+
+            \item Important quantities in the Sommerfeld theory: the Fermi-Dirac distribution; the density of states and total number of states in a free electron gas; volume-normalized density of states; internal energy and heat capacity of a free electron gas.
+
+            \item The Sommerfeld expansion: the Sommerfeld expansion of energy-dependent quantities near the Fermi energy; chemical potential, number of electrons, internal energy, and heat capacity of a free electron gas using the Sommerfeld expansion.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Electron states in a periodic potential}
+        \begin{itemize}
+        
+            \item Bloch's theorem: periodic boundary conditions and periodicity of a crystal lattice; statement of Bloch's theorem; translation operators, commutation of the Hamiltonian and translation operators, and eigenvalues of the translation operator;
+            derivation of Bloch's theorem using translation operators and the translational symmetry of crystal lattice; implications of Bloch's theorem on the quantization of reciprocal space.
+
+            \item Expansion of lattice potential and electron wave function over Fourier modes; orthogonality of plane waves; energy bands and the restricted zone scheme; alternate derivation of Bloch's theorem by explicit construction;
+
+            \item Generalized density of levels: implicit definition of the generalized density of levels; expansion of arbitrary energy-dependent quantities over the density of levels; density of levels in a fixed energy band and relationship to the gradient of the electron energy dispersion.
+
+            \item The nearly-free electron model: expansion of Bloch states over plane waves and expansion of the lattice potential over Fourier modes; solutions to the Schroedinger equation in the NFEM in the limit of free electrons; solutions to the NFEM in a weak potential for non-degenerate and degenerate energy levels; relationship of degeneracy and the Bragg plane.
+
+            \item The tight-binding model: review of the hydrogen atom problem and an atomic electron's eigenfunctions; construction of and motivation for the tight-binding model; expansion of Bloch states over atomic eigenfunctions; solutions to the Schroedinger equation in the tight-binding model; example: application of the tight-binding model to $ s $-orbital electrons.
+
+            \item The semiclassical model of electron dynamics: review of free electron dynamics; postulates of the semiclassical model; the Bloch equations for the velocity and dynamics of Bloch electrons; conditions for validity of the semiclassical model; examples: dynamics of a Bloch electron in an external magnetic field and Bloch oscillations in an external electric field.
+
+            \item Energy band occupation: condition for filled energy bands; electron current and heat current in filled bands; conditions that a material be an insulator or conductor; the concept of holes.
+
+            \item The effective mass tensor: expansion of free electron dispersion about extrema; definition of the effective mass tensor; expression for the effective mass tensor in terms of Bloch electron velocity; effective mass tensor for holes; electron and hole dispersion near energy band minima.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Semiconductor physics}
+        \begin{itemize}
+        
+            \item Foundational concepts: energy bands and energy gaps; valence band and conduction band; classification of conductors, insulators, and semiconductors by ground state energy band occupation configurations.
+
+            \item Homogeneous semiconductors: definition of homogeneous semiconductors; the Fermi function and electron and hole number densities; the non-degenerate semiconductor approximation; energy dispersion relation near conduction band minima and valence band maxima; charge carrier number densities and densities of state in the non-degenerate semiconductor approximation.
+
+            \item Intrinsic semiconductors: definition of intrinsic semiconductor; intrinsic charge carrier density; chemical potential and its temperature dependence in intrinsic semiconductors.
+
+            \item Doped, homogeneous semiconductors: differences in effective mass, chemical potential, and energy levels between doped and intrinsic semiconductors; dopant energy levels; occupation statistics of dopant energy levels in the grand canonical ensemble; density of conduction band electrons and valence band holes in doped semiconductors; equilibrium charge carrier densities in n-type and p-type semiconductor; the Fermi energy and chemical potential in doped semiconductors; the limit cases of lightly and heavily-doped semiconductors.
+
+            \item The p-n junction: coordinate system and geometry of the p-n junction; diffusion of charge carriers and the formation of the depletion region; energy levels and chemical potential across the p-n junction; relating energy band gap and the drop of electric potential; charge density, and the Poisson equation and its boundary conditions in the p-n junction; solutions for the electric potential and electric field across the p-n junction; width of the depletion region and the effects of external biasing;
+            the p-n junctions current-voltage characteristic: electron and hole generation and recombination current and total electric current across the junction.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Lattice oscillations}
+        \begin{itemize}
+        
+            \item The classical theory of lattice oscillations: equations of motion, their solution, dispersion, and propagation speeds in a one-dimensional monoatomic lattice and a one-dimensional lattice with a diatomic basis; the acoustic and optical branches for lattices with a basis; generalization of the one-dimensional analysis to three-dimensional monoatomic lattices and lattices with a basis.
+
+            \item The quantum theory of lattice oscillations: the lattice Hamiltonian; Fourier expansions of position and momentum; commutation relations of the position momentum operators and their Fourier transforms; expansion of the lattice Hamiltonian in Fourier modes; review of the quantum harmonic oscillator: Hamiltonian, energy levels, and the ladder operator formalism; decomposition of the lattice Hamiltonian into a sum of uncoupled harmonic oscillators.
+
+            \item Applications of quantum lattice oscillations: review of the canonical partition function, free energy, and internal energy from quantum statistical physics; the phonon contributions to the internal energy and free energy of a harmonic lattice.
+
+            \item The phonon contribution to specific heat: general expression for a harmonic lattice's internal energy and specific heat; low-temperature and high-temperature limits of the specific heat; the Einstein model for the specific heat of a harmonic lattice; the Debye model: approximation of lattice dispersion with linear acoustic branches, Debye temperature, energy, and wave vector; general Debye approximation for lattice specific heat and its high and low-temperature limits.
+
+            \item Introduction to anharmonic effects: thermal expansion in a 1D lattice; the kinetic theory of phonon heat conduction; phonon transitions, normal processes and umklapp processes, and low and high-temperature limits of phonon mean free time; the temperature dependence of a lattice's thermal conductivity.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Measurement Techniques}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1441/}{6}
+
+    \begin{chapter}{Error analysis and optimal combination}
+        \begin{itemize}
+        
+            \item Review of continuous and discrete random variables, probability densities, and cumulative distribution functions; expected value, variance, and higher moments of discrete and continuous random variables.
+
+            \item Jointly-distributed random variables: joint probability density and cmulative distribution functions; variance, covariance, and correlation of jointly-distributed random variables.
+
+            \item Error analysis: systematic and random errors; propagation of uncertainty; the central limit theorem and approximation of random variables with the normal distribution; combination of measurements with different uncertainties.
+
+            \item Minimum-variance combinations of independent normally-distributed random variables and minimization of the chi-squared quadratic form; correlation coefficients, covariance, and minimum variance combinations of dependent normally-distributed random variables; variance of the mean.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{The Kalman filter}
+        \begin{itemize}
+        
+            \item Optimal tracking of a constant scalar quantity: optimal estimate and its variance for a repeatedly-measured scalar constant; discrete recursive formula for online minimum-variance estimation; continuous-time approximation of variance and the differential equations for the optimal estimate and its variance.
+
+            \item Optimal tracking of a variable scalar quantity: dynamical equation for scalar variable and its difference equation approximation; process noise; prediction of a scalar variable from the dynamical equation under the influence process noise; minimum-variance update of the extrapolated estimate; transition to the continuous-time formulation; discrete and continuous recursive formulae for online minimum-variance estimate and its variance for a scalar variable.
+
+            \item The Kalman filter for a vector variable quantity: dynamical equation for a vector variable and its difference equation approximation; observation noise and process noise and the time dependence of their covariance matrices; the predict and update steps for a vector variable; transition to the continuous-time formulation; discrete and continuous Kalman filter algorithms for online, optimal tracking of a random variable. 
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Analysis of sensors and filters}
+        \begin{itemize}
+        
+            \item Definition and properties of the Laplace transform and its application to frequency-domain analysis of linear, constant coefficient differential equations.
+
+            \item Time-domain analysis of sensors: formulation of sensors in terms of constant-coefficient, linear differential equations; the order of a sensor; the impulse response of a sensor; impulse response and response to characteristic inputs (e.g. linear and quadratic inputs, the unit step, etc...) for first and second-order sensors.
+
+            \item Frequency-domain analysis of sensors: the Laplace transform of a sensor's differential equation; the frequency response and transfer function of a sensor; phase shift and amplitude response of a transfer function; the response of systems to periodic input; Bode plots.
+
+            \item Impact of sensors on a measured system: Thevenin's theorem; input and output impedance; the use of operational and instrumentation amplifiers as high input impedance buffers; transmission of signals by cables: impedance matching and the characteristic impedance of a cable.
+
+            \item Thermal noise: classification of noise (thermal (Johnson-Nyquist) noise, shot noise, pink noise, and popcorn noise), RMS voltage and power of thermal noise; the Wiener-Khinchin theorem and the power spectral density of thermal noise on a resistor; quantum-statistical interpratation of thermal noise and its high-frequency power spectral density; propagation of thermal noise through linear circuits.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Statistics}
+        \begin{itemize}
+        
+            \item Estimation of sample statistics: populations and samples; the sample mean and standard deviation; biased and unbiased estimators, maximum-likelihood estimation; estimators of the sample mean and variance; the chi-square distribution and Student's $ t $ distribution.
+
+            \item Confidence intervals and hypothesis testing; testing of the sample mean with Student's $ t $ test and testing of the sample variance with the chi-square test.
+
+            \item Goodness-of-fit tests: Pearson's Chi-Squared test; Fischer's test and the Fischer statistic; the Kolmogorov-Smirnov test.
+
+            \item Linear least squares: parameters, models, and the structure matrix; solution to the least squares problem by direct minimization of squared residuals and by using the Kalman filter formalism; linear least squares for measurements with difference variances; application of linear least squares to signal peak detection.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Important measurement techniques}
+        \begin{itemize}
+        
+            \item Negative feedback systems: principles of negative feedback; application of negative feedback to increasing a control system's stability and accuracy; gain, phase, and damping criteria for stable functioning of negative feedback systems.
+
+            \item Lock-in detection: working principles and instrumental implementation; application to detection of periodically-modulated quantities in noisy backgrounds; examples: Auger electron spectroscopy, electron spin resonance, nuclear-magnetic resonance.
+
+            \item Phase-locked loops: working principles and instrumental implementation of a phase-locked loop: phase detector, regulatory filter, and voltage-controlled oscillator; type I and type II phase detectors; choice of transfer function for the regulatory filter; transfer function of the PLL; stability and locking dynamics of a PLL; applications of PLL to frequency synthesis and division and to radio transmission.
+
+            \item Displacement sensors: working principles and instrumental implementation of resitive, capacitive, piezoelectric, and inductive displacement sensors.
+
+            \item Review of measurement techniques for frequency, time, temperature, acceleration, and angular velocity.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Measurement of Ionizing Radiation}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1446/}{5}
+    \begin{chapter}{Interaction of radiation with matter}
+        \begin{itemize}
+        
+            \item Overview of interaction processes: inelastic collistions io ionizing particles with electrons, elastic collisions with nuclei, Cherenkov radiation, brehmsstrahlung processes, and nuclear reactions.
+
+            \item Interaction of charged particles with matter: semiclassical analysis of ionizing energy losses; mean excitation potential; relativistic corrections to energy losses at high speeds and quantum corrections for electron spin; the Bethe-Bloch formula for ionizing energy losses; range of an ionizing particle in matter.
+
+            \item Interaction of photons with matter: the scattering cross section and exponential attenuation of photons in matter; the photoelectric effect; Compton scattering and the Klein-Nishina formula for the Compton scattering cross section; pair production; energy dependence of photon-matter interactions.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Particle detectors}
+        \begin{itemize}
+            
+            \item Accelerator systems: ion sources; principles of linear, cyclotron, and synchrotron accelerators; transport of charged particles in accelerators.
+
+            \item Cylindrical gas-based detectors: review of the electric field and electric potential in cylindrical geometry; construction and working principles of cylindrical gas-based detectors; mechanisms of ionization; working regimes, the multiplication factor, secondary ionization, and Geiger-Muller counters; energy resolution and the Fano factor; transport of electrons and ions in gas; dynamics of the electric signal in cylindrical gas-based detectors; shaping and filtering of the detector signal.
+
+            \item Position-sensitive detectors: multi-wire proportional chambers (construction and working principles; position resolution; wire sagging); drift chambers (construction and working principles; transport of ions in gas; position resolution).
+
+            \item Semiconducting detectors: charge density, electric potential, and electric field in diffused p-n junction diodes; width and response of diffused-junction diodes to external biasing; the photoelectric effect, built-in potential, and working principles of semiconducting detectors; signal dynamics in diffused junction diode detectors; review of common semiconducting detectors: diffused-junction diodes and PIN diodes, surface barrier detectors; Schottky diodes; compensated semiconductor detectors; silicon-lithium and germanium-lithium detectors.
+
+            \item Scintillating detectors: quantum energy levels and the mechanisms for fluorescence and phosphorescence in organic and inorganic scintillators; review of the advantages and disadvantages of organic and inorganic scintillators; time evolution of scintillation photon emission, the photoelectric effect, and the working principles of scintillating detectors; electric signal dynamics in a scintillating detector.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Particle identification}
+        \begin{itemize}
+        
+            \item Particle classification: review of the standard model; mass and charge of common particles in high-energy physics experiments.
+
+            \item Multiple measurements of ionizing losses and their application to particle mass measurement and particle identification.
+
+            \item Time-of-flight measurement: construction and working principles of time-of-flight detectors and their application to particle mass measurement.
+
+            \item Cherenkov detectors: Cherenkov radiation, the Cherenkov angle, and the spectral distribution of Cherenkov photon frequency and wavelength; construction and working principles of threshold and ring-imaging Cherenkov detectors and their application to particle mass measurement and particle identification.
+
+            \item Neutron detection: detection of thermal neutrons with shielded gas-based detectors; post-scattering energy distribution of fast neutrons; slowing fast neutrons to thermal energy and detection of fast neutrons.
+
+            \item Photon identification: the photoelectric effect; construction and working principles of photomultiplier tubes; efficiency of photomultiplier tubes; semiconducting photon detectors: microchannel plates, avalanche photodiodes, and hybrid avalanche photodiodes.
+        
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Radiation safety}
+        \begin{itemize}
+        
+            \item Review of radioactivity: activity, decay time, radiation statistics; alpha, beta and gamma radiation; isotopes and radioactive series; sources of radiation (natural and man-made isotopes, cosmic radiation).
+
+            \item Quantities involved in radiation dosimetry: radioactive activity and decay constants; absorbed dose and dose rate; equivalent dose; effective dose.
+
+            \item Review of deterministic and stochastic biological consequences of radiation exposure.
+
+            \item Legal regulations of radiation exposure for specialized occupations and for the general civilian population.
+
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Mathematical Physics Practicum}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1159/}{6}
+    \begin{chapter}{Projects}
+        \begin{enumerate}
+        
+            \item Algorithmic implementation of the Airy functions $ \mathrm{Ai}(x) $ and $ \mathrm{Bi}(x) $ with an absolute and relative error of less than $ 10^{-10} $ on the entire real line; implementation of an algorithmic routine for computing the Airy functions' first 100 zeros.
+
+            Skills: numerical implementation of the Airy function's Maclaurin and Taylor series and asymptotic series expansions; Padé approximants; numerical precision, the limitations of floating-point arithmetic, and the use of arbitrary-precision libraries; error evaluation; root-finding algorithms.
+
+            \item Random walks in two and three-dimensions and their application to diffusion; numerically computing diffusion constants and classifying random walks into normal, anomalous, and ballistic diffusion regimes.
+
+            Skills: random number generation and random seeding; distribution-generating functions and sampling from distributions; computation of Lévy flights and Lévy walks; computation of mean squared displacement and median absolute deviation; regression estimation of random walk parameters.
+
+            \item The eigenvalue problem: numerically computing the eigenvalues, eigenvectors, and eigenfunctions of a perturbed quantum harmonic oscillator and of a particle in a double-well potential.
+
+            Skills: efficient construction and computation of perturbation matrix elements;
+            implementation of numerical methods for computation of the eigenvalues of general and symmetric matrices: power iteration, QR decomposition via Givens rotations, Householder reflections, the Jacobi method for symmetric matrices, tridiagonalization schemes; stopping conditions for iterative methods;
+            computation of eigenvectors and construction of eigenfunctions using eigenvectors as coefficients of an orthormal basis expansion;
+            analysis of accuracy and computation time for eigenvalue methods; 
+            practical experience with perturbed Hamiltonians in quantum mechanics.
+
+            \item The discrete Fourier transform, sampling, and spectral analysis.
+
+            Skills: numerical computation of the DFT and inverse DFT (in $ \mathcal{O}(N^{2}) $ time using the Fourier transform matrix; the FFT follows in the next project); familiarity with sampling, aliasing, spectral leakage, frequency shifting, zero-padding, and spectral peak detection; computation time analysis.
+            Spectral analysis of audio signals (e.g. detecting frequency and names of guitar notes and classifying modes of an acoustic resonator)
+        
+            \item The fast Fourier transform and its application to efficient computation of convolution, cross-correlation, and auto-correlation; spectral analysis.
+
+            Skills: numerical computation of the FFT and inverse FFT in $ \mathcal{O}(N \log N) $ time; linear and circular convolution and efficient implementation of linear convolution with the FFT; cross-correlation and auto-correlation and their computation with the FFT; auto-correlation and spectral methods for detection of periodic signals embedded in a noisy background.
+
+            \item The first-order initial value problem and its application to the temperature distribution on a rod.
+
+            Skills: discretization of time and position; explicit and implicit numerical methods for linear differential equations (including implementation of the explicit and implicit Euler; the trapezoid method; Heun's method; the explicit and implicit midpoint method; the RK2 and RK4 Runge-Kutta methods; Ralston's 3rd-order RK3 method; the 3/8 4-th order RK method); embedded, adaptive step methods (including implementation of the 2nd order Bogacki-Shampine method used in Matlab's \texttt{ode23}; the 4-5th order Runge-Kutta-Fehlberg method; the 4-5th order Cash-Karp method; the 4-5th order Dorman-Prince method used in Matlab's \texttt{ode45}); the multi-step Adams-Bashforth-Moulton predictor-corrector method; error analysis; computation time analysis; stability analysis.
+
+            \item The non-linear second-order initial value problem and its application to the dynamics of the non-linear mathematical pendulum, a driven, damped mathematical pendulum, and the Van Der Pol oscillator.
+
+            Skills: numerical solutions of higher-order and vector-valued ordinary differential equations;
+            implementation of symplectic integration methods (the 2nd-order Verlet method and the 4-th order position-extended Forest-Ruth method)
+            implementation of standard numericla methods for ODEs (explicit Euler, Heun's method, the 2nd-order Runge-Kutta midpoint method, Ralston's 3rd-order RK3 method, 3rd-order strong, stability-preserving RK method, the classic and Ralston verssion of RK4, adaptive-step Runge-Kutta-Fehlberg and Cash-Karp methods, the 4th-order multistep predictor-corrector Adams-Bashforth-Moulton method)
+            computation and plotting of phase spaces and vector fields
+            numerical computation of elliptic integrals with arbitrary-precision libraries;
+            analysis of solution accuracy and algorithmic efficiency.
+
+            \item The second-order boundary value problem in the context of second-order differential operators and their eigenvalues and eigenfunctions.
+            Application to quantum mechanics: numerically computing the energy eigenvalues and eigenfunctions of a particle in an infinite and finite potential well.
+
+            Skills: implementation of the finite difference method and shooting method for second-order boundary value problems; discretization of position space; numerically computing the eigenvalues and eigenfunctions of a differential operator; error analysis of the finite difference method.
+
+            \item Spectral methods for partial differential equations and their application to solving the heat equation for time evolution of the temperature distribution on a rod for various initial conditions and boundary conditions.
+
+            Skills: implementation of the Fourier spectral method for partial differential equations and the collocation method using cubic B-splines;
+            familiarity with periodic boundary conditions and Dirichlet boundary conditions;
+            analysis of computational efficiency.
+
+            \item The Crank-Nicolson methods and its higher-order generalizations for partial differential equations, and their application to quantum mechanics in solving the Schroedinger equation for time evolution of a coherent Gaussian initial state in a harmonic potential and for the time evolution of a Gaussian wave packet propagating through free space.
+
+            Skills: numerical implementation of the Crank-Nicolson method for PDEs; unitary approximations of the Hamiltonian operator;
+            Padé approximation of the exponential function and implementation of higher-order position and time generalizations of the Crank-Nicolson method (a reproduction of the results in W. van Dijk and F. M. Toyama. ``Accurate numerical solutions of the time-dependent Schrödinger equation.'' Phys. Rev. E \textbf{75}, 036707 (2007).);
+            analysis of computation time and solution accuracy.
+
+            \item The Galerkin method for partial differential equations and its application to solving for the velocity profile and Poiseuille coefficient of laminar flow in a pipe with a semi-circular cross section and to solving the first-order wave equation on a string.
+
+            Skills: numerical implementation of the Galerkin method for PDEs and its applications to computational fluid dynamics; computation of Galerkin basis functions and Bessel functions; extensive use of vectorization for efficient implementation of operations on arrays; analysis of solution error and computation time.
+
+            \item Feed-forward deep neural networks (aka multilayer perceptrons aka fully-connected neural networks) for classification problems and their application to classification of collision products in high-energy particle physics (a reproduction of the results in Baldi, P., P. Sadowski, and D. Whiteson. “Searching for Exotic Particles in High-Energy Physics with Deep Learning.” Nature Communications 5 (July 2, 2014).).
+
+            Skills: feature engineering; data normalization and scaling; the problem of under-fitting and over-fitting; practical experience with common loss functions and optimization algorithms; evaluating classifiers with confusion matrices and receiver-operating characteristic curves; regularization and early stopping for prevention of over-training.
+        
+        \end{enumerate}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Collecting and Processing Data}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1178/}{3}
+
+    \begin{chapter}{Model of the processor}
+        \begin{itemize}
+        
+            \item Digital representation of numbers: the binary and hexadecimal number systems; common number formats: 8-bit and 16-bit integer, 32-bit and 64-bit floating point; precision in floating point arithmetic.
+
+            \item High and low logic levels in digital circuits; power supply and grounding of sensors;
+            non-referenced single-ended, referenced single-ended, and differential measurement systems.
+
+            \item Properties of operational and instrumentation amplifiers; the input and output impedance of an amplifier; application of amplifier stages to measurement systems.
+
+            \item Buses: motivation for the use of buses for data transfer; three-state switches and buss access; read and write signals, selectors, and the read-write cycle; time delays in data transfer through buses: typical orders of magnitude, glitches, and accounting for time delays.
+
+            \item Types of buses: parallel buses and the parallel bus interface; serial bus and the serial peripheral interface; the universal serial bus (USB) and peripheral component interconnect (PCI).
+
+            \item Components of the processor: the arithmetic logic unit; registers; status register and the FLAGS register; the control unit; read-only memory (ROM) and random-access memory (RAM); operations in the central processing unit.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Analog-digital conversion}
+        (Material like in Electronics 2)
+        \begin{itemize}
+        
+            \item General considerations in digital-to-analog and analog-to-digital conversion: differential and integral non-linearity; resolution, effective number of bits, accuracy, and conversion time.
+
+            \item Construction, operating mechanism, and use cases of common DACs: weighted-resistor inverting amplifier; $ R $-$ 2R $ ladder DAC; pulse-width modulation DAC; the selection and use of a DAC in practice.
+
+            \item Construction, operating mechanism, and use cases of common ADCs: one-bit comparator; flash ADC; successive-approximation ADC; dual-slope ADC; charge-balancing ADC; the selection and use of a ADC in practice.
+
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Data acquisition}
+        \begin{itemize}
+
+            \item Sampling: sample rate; spectrum and bandwidth of an analog input signal; the Nyquist criteria and the sampling theorem.
+
+            \item Decimation and interpolation, i.e. downsampling and upsampling.
+
+            \item Aliasing; pre-processing and filtering before sampling; impedance matching; band pass of the measurement system.
+
+            \item Working principles and practical use of common sensors: temperature, light, displacement, sound, acceleration, pressure, mechanical strain.
+            
+        \end{itemize}
+    \end{chapter}
+
+    \begin{chapter}{Digital signal processing}
+        \begin{itemize}
+
+            \item Discrete signals and systems in the time domain: important discrete signals and expansion of an arbitrary distrete signal over a basis of unit impulses; definition and properties of linear, shift-invariant systems; convolution, impulse response, and the convolution sum for an LSI system; discrete-time systems described by linear, constant-coefficient difference equations.
+
+            \item The frequency response of a discrete system; frequency response of LSI systems to complex exponential and sinusoidal inputs; amplitude and phase response of a discrete-time system.
+
+            \item The discrete-time Fourier transform: definition and properties of the DTFT; relationship of the continuous and discrete-time Fourier transforms.
+            
+            \item The Z-transform: definition and properties of the Z-transform; the region of convergence; relationship of the Z-transform and DTFT.
+
+            \item The discrete Fourier transform: periodic and finite-length sequences; the discrete Fourier series of a periodic signal; properties of the Fourier series; definition and properties of the discrete Fourier transform; circular convolution and the implementation of linear convolution using the DFT.
+
+            \item Filtering: impulse and frequency response of low-pass, high-pass, band-pass, band-stop filters, and all-pass filters; filter transition band and stopband; frequency-domain analysis of filters; time domain implementation of filtering with convolution;
+            the overlap-add method and real-time implementation of filters.
+            
+            \item FIR filtering: properties of FIR filters; window functions and the window method for FIR filter design; the least-mean-square error method; FIR implementation of Hilbert transformers.
+
+            \item IIR digital filtering: transfer function and properties of an IIR filter; poles and stability of IIR filters; impulse-invariance, matched Z-transform, and bilinear transform methods for IIR filter design;
+            choosing an filter in practice, comparision of the advantages and disadvantages of FIR and IIR filters.
+
+            \item Amplitude, frequency, and phase modulation and demodulation.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Physics Laboratory 5}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1146/}{4}
+    \begin{chapter}{Experiments}
+        \begin{itemize}
+            
+            \item Electronic spin resonance
+
+            \item The diffusion of liquids
+
+            \item Holography
+
+            \item The electro-optical effect
+
+            \item Propagation of microwaves in waveguides
+
+            \item Nuclear magnetic resonance
+
+            \item X-rays
+
+            \item Gamma ray spectroscopy
+
+            \item Angular correlation of annihilation gamma rays
+
+            \item The Hall effect
+            
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Applied/Industrial Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1149/}{3}
+
+    \begin{chapter}{Material}
+        \begin{itemize}
+        
+            \item The innovation process, intellectual property, and patents.
+
+            \item Introduction to medical physics: X-ray imaging, magnetic resonance imaging, ultrasound, nuclear medicine, radiotherapy.
+
+            \item Building engineering physics: acoustics in rooms, thermal insulation, heating, water vapour transport, illumination in rooms.
+
+            \item Introduction to nanotechnology: microscopy, nanomaterials, devices at the nanoscale. 
+
+            \item Liquid-crystal displays: principles and applications.
+
+            \item Photonic crystals: synthesis and applications.
+
+            \item Miscellaneous topics: photovoltaics; Superconductivity; Non-invasive investigations of materials and constructions.
+        
+        \end{itemize}
+    \end{chapter}
+\end{course}
+
+\begin{course}{Seminar}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1173/}{3}
+
+    \begin{chapter}{Course description}
+        Students, under the guidance of a faculty mentor, prepare a short undergraduate thesis and presentation on a theme from physics and related interdisciplinary fields.
+        The subjects are suggested by a mentor or chosen by the student, preferably from newer fields not yet incorporated into the undergraduate curriculum.
+        The presentation is oral in Slovene or English, after submission of an accepted written text and presentation graphics.
+
+        The course is intended primarily as an exercise in clear scientific writing and presentation---a training, in some sense, for writing papers and giving presentations at scientific conferences.
+        However, students are neither expected nor encouraged to produce original research in the scope of the Seminar course.
+
+    \end{chapter}
+\end{course}
+
+\end{document}
