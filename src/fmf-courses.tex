@@ -15,16 +15,17 @@
 \sisetup{separate-uncertainty=true, exponent-product=\cdot, range-units=single}
 \setlength{\parindent}{0pt}
 \setlist{itemsep=-3.0pt, topsep=3pt}
-\setcounter{section}{-1}
+% \setcounter{section}{-1}
 % --------------------------------------------- %
 
 % Header configuration
 % --------------------------------------------- %
 \usepackage{fancyhdr}
-\pagestyle{fancy}
+\usepackage{extramarks}
+\setlength{\headheight}{13.6pt}
 \fancyhf{}
 \fancyhead[L]{\leftmark}  % section
-% \fancyhead[R]{\rightmark}  % subsection
+% \fancyhead[R]{\firstrightmark}  % subsection
 \fancyfoot[C]{\thepage} 
 % --------------------------------------------- %
 
@@ -32,7 +33,7 @@
 % --------------------------------------------- %
 \newenvironment{course}[3]{
 \subsection{#1}%
-Link: \href{#2}{official FMF page}\\%
+Link: \href{#2}{Official FMF page}\\%
 ECTS: #3%
 \vspace{1ex}
 \\
@@ -57,103 +58,79 @@ ECTS: #3%
 {\end{tcolorbox}}
 % --------------------------------------------- %
 
-
 \begin{document}
 
-\tableofcontents
-\section{Overview}
-
-\href{https://telecos.upc.edu/en/study-programs/degrees/bachelor2019s-degree-in-engineering-physics}{ETSETB Engineering physics bachelors curriculum}
-
-\href{https://telecos.upc.edu/en/study-programs/degrees/bachelors-degree-in-telecommunications-technologies-and-services-engineering}{ETSETB Telecom bachelors curriculum}
-\vspace{2ex}
-
-\begin{tabular}{|l|c|}
-
+\pagestyle{empty}
+\begin{table}[htb!]
+    \centering
+    \begin{tabular}{|l|l|c|c|}
     \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
-    \textbf{Course} & \textbf{ECTS}\\
+
+    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    Electronics 1 & 3 \\
-    Electronics 2 & 3 \\
-    Electronics Laboratory & 3 \\
-    Collecting and Processing Data & 3 \\
-    Measurement Techniques & 7 \\
-    Numerical Methods & 3 \\
-    Computational Mathematical Physics & 6 \\
+    \hyperref[mathematics-1]{Mathematics 1} & Real analysis & 10 & 1\\
+    \hyperref[mathematics-2]{Mathematics 2} & Linear algebra \& and vector spaces & 8 & 1\\
+    \hyperref[classical-physics]{Classical Physics} & General physics & 20 & 1\\
+    \hyperref[computational-tools-in-physics]{Computational Tools in Physics} & & 3 & 1\\
+    \hyperref[proseminar-a]{Proseminar A} & & 3 & 1\\
+    \hyperref[physics-laboratory-1]{Physics Laboratory 1} & & 4 & 1\\
+    \hyperref[physics-laboratory-2]{Physics Laboratory 2} & & 4 & 1\\
+    \hyperref[computing-laboratory]{Computing Laboratory} & & 3 & 1\\
+    \hyperref[chemistry-1]{Chemistry 1} & & 3 & 1\\
+    \hyperref[how-things-work]{How Things Work} & & 3 & 1\\
+    \hline
     \hline
 
-\end{tabular}
-
-\begin{tabular}{|l|c|}
-
+    % Year 2
     \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
-    \textbf{Course} & \textbf{ECTS}\\
+    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    Mathematics 1 & 10\\
-    Mathematics 2 & 8\\
-    Classical Physics & 20\\
-    Computational Tools in Physics & 3\\
-    Proseminar A & 3\\
-    Physics Laboratory 1 & 4\\
-    Physics Laboratory 2 & 4\\
-    Computing Laboratory & 3\\
-    Chemistry 1 & 3\\
-    How Things Work & 3\\
+    \hyperref[mathematics-3]{Mathematics 3} & Vector calculus, LDEs, Fourier analysis & 8 & 2\\
+    \hyperref[mathematics-4]{Mathematics 4} & Complex analysis, PDEs & 6 & 2\\
+    \hyperref[modern-physics-1]{Modern Physics 1} & Special relativity \& quantum mechanics & 8 & 2\\
+    \hyperref[modern-physics-2]{Modern Physics 2} & Solid state, nuclear, \& particle physics & 5 & 2\\
+    \hyperref[classical-mechanics]{Classical Mechanics} & & 5 & 2\\
+    \hyperref[statistical-thermodynamics]{Statistical Thermodynamics} & & 5 & 2\\
+    \hyperref[physics-laboratory-3]{Physics Laboratory 3} & & 4 & 2\\
+    \hyperref[physics-laboratory-4]{Physics Laboratory 4} & & 4 & 2\\
+    \hyperref[probability-in-physics]{Probability in Physics} & & 3 & 2\\
+    \hyperref[numerical-methods]{Numerical Methods} & & 3 & 2\\
+    \hyperref[electronics-1]{Electronics 1} & Analog electronics & 3 & 2\\
+    \hyperref[electronics-2]{Electronics 2} & Digital electronics & 3 & 2\\
+    \hyperref[electronics-laboratory]{Electronics Laboratory} & & 3 & 2\\
+    \hline
     \hline
 
-\end{tabular}
-
-\begin{tabular}{|l|c|}
+    % Year 3
     \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
-    \textbf{Course} & \textbf{ECTS}\\
+    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    Mathematics 3 & 8\\
-    Mathematics 4 & 6\\
-    Modern Physics 1 & 8\\
-    Modern Physics 2 & 5\\
-    Classical Mechanics & 5\\
-    Statistical Thermodynamics & 5\\
-    Physics Laboratory 3 & 4\\
-    Physics Laboratory 4 & 4\\
-    Probability in Physics & 3\\
-    Numerical Methods & 3\\
-    Electronics 1 & 3\\
-    Electronics 2 & 3\\
-    Electronics Laboratory & 3\\
+    \hyperref[electromagnetic-fields]{Electromagnetic Fields} & & 7 & 3\\
+    \hyperref[quantum-mechanics]{Quantum Mechanics} & & 7 & 3\\
+    \hyperref[optics]{Optics} & & 5 & 3\\
+    \hyperref[mechanics-of-continuous-media]{Mechanics of Continuous Media} & & 5 & 3\\
+    \hyperref[solid-state-physics]{Solid State Physics} & & 7 & 3\\
+    \hyperref[mathematical-physics-lab]{Mathematical Physics Lab} & Computational mathematical physics & 6 & 3\\
+    \hyperref[physics-laboratory-5]{Physics Laboratory 5} & & 7 & 3\\
+    \hyperref[industrial-physics]{Industrial Physics} & & 3 & 3\\
+    \hyperref[measurement-of-ionizing-radiation]{Measurement of Ionizing Radiation} & & 5 & 3\\
+    \hyperref[collecting-and-processing-data]{Collecting and Processing Data} & Data acquisition \& DSP & 3 & 3\\
+    \hyperref[measurement-techniques]{Measurement Techniques} & Instrumentation \& data processing & 7 & 3\\
+    \hyperref[seminar]{Seminar} & & 3 & 3\\
     \hline
 \end{tabular}
-
-
-\begin{tabular}{|l|c|}
-
-    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
-    \textbf{Course} & \textbf{ECTS}\\
-    \hline
-    \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    Electromagnetic Fields & 7\\
-    Quantum Mechanics & 7\\
-    Optics & 5\\
-    Mechanics of Continuous Media & 5\\
-    Solid State Physics & 7\\
-    Mathematical Physics Lab & 6\\
-    Physics Laboratory 5 & 7\\
-    Industrial Physics & 3\\
-    Measurement of Ionizing Radiation & 5\\
-    Collecting and Processing Data & 3\\
-    Measurement Techniques & 7\\
-    Seminar & 3\\
-    \hline
-
-\end{tabular}
+\end{table}
 
 
 \newpage
+\pagestyle{fancy}
 \section{Year 1}
 
-\begin{course}{Mathematics 1 (Real Analysis)}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/520/}{10}
+\begin{course}{Mathematics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/520/}{10}
+    \label{mathematics-1}
     
     \begin{chapter}{Sets and functions}
         \begin{itemize}
@@ -314,7 +291,8 @@ ECTS: #3%
     \end{chapter}
 \end{course}
 
-\begin{course}{Mathematics 2 (Linear Algebra and Vector Spaces)}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/521/}{7}
+\begin{course}{Mathematics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/521/}{7}
+    \label{mathematics-2}
 
     \begin{chapter}{Matrices}
         \begin{itemize}
@@ -436,6 +414,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Classical Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1154/}{20}
+    \label{classical-physics}
 
 \begin{chapter}{Mechanics}
 
@@ -550,6 +529,8 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Proseminar A}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1170/}{3}
+    \label{proseminar-a}
+
     \begin{chapter}{Material}
         \begin{itemize}
             
@@ -571,6 +552,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Chemistry 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1152/}{3}
+    \label{chemistry-1}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -609,6 +591,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Computational Tools in Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1172/}{3}
+    \label{computational-tools-in-physics}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -637,6 +620,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Physics Laboratory 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1142/}{4}
+    \label{physics-laboratory-1}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -663,6 +647,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Physics Laboratory 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1143/}{4}
+    \label{physics-laboratory-2}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -689,7 +674,8 @@ ECTS: #3%
     \end{chapter}
 \end{course}
 
-\begin{course}{Computer laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2018/7000777/courses/525/}{3}
+\begin{course}{Computing laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2018/7000777/courses/525/}{3}
+    \label{computing-laboratory}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -705,6 +691,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{How Things Work}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1151/}{3}
+    \label{how-things-work}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -720,6 +707,7 @@ ECTS: #3%
 \newpage
 \section{Year 2}
 \begin{course}{Mathematics 3}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/522/}{8}
+    \label{mathematics-3}
 
     \begin{chapter}{Parameter-dependent integrals}
         \begin{itemize}
@@ -849,6 +837,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Mathematics 4}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/523/}{6}
+    \label{mathematics-4}
 
     \begin{chapter}{Complex analysis}
         \begin{itemize}
@@ -949,6 +938,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Modern Physics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1161/}{8}
+    \label{modern-physics-1}
 
     \begin{chapter}{Special theory of relativity}
 
@@ -1007,6 +997,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Modern Physics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1162/}{5}
+    \label{modern-physics-2}
 
     \begin{chapter}{Introduction to solid state physics}
         \begin{itemize}
@@ -1072,6 +1063,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Classical Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1155/}{5}
+    \label{classical-mechanics}
 
     \begin{chapter}{Review of Newtonian mechanics}
         \begin{itemize}
@@ -1170,6 +1162,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Statistical Thermodynamics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1174/}{5}
+    \label{statistical-thermodynamics}
 
     \begin{chapter}{Part 1: Classical thermodynamics}
         \begin{itemize}
@@ -1219,6 +1212,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Physics Laboratory 3}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1144/}{4}
+    \label{physics-laboratory-3}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -1251,6 +1245,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Physics Laboratory 4}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1145/}{4}
+    \label{physics-laboratory-4}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -1282,6 +1277,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Probability in Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1177/}{3}
+    \label{probability-in-physics}
 
     \begin{chapter}{Fundamentals of frequentist probability}
         \begin{itemize}
@@ -1353,6 +1349,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Numerical Methods}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/524/}{3}
+    \label{numerical-methods}
 
     \begin{chapter}{Introduction to numerical computation}
         \begin{itemize}
@@ -1452,6 +1449,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Electronics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1134/}{3}
+    \label{electronics-1}
 
     \begin{chapter}{Analog electric circuits}
         \begin{itemize}
@@ -1508,6 +1506,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Electronics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1135/}{3}
+    \label{electronics-2}
 
     \begin{chapter}{Foundations of digital electronics}
         \begin{itemize}
@@ -1610,6 +1609,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Electronics Laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1136/}{3}
+    \label{electronics-laboratory}
 
     \begin{chapter}{List of labs and projects}
         \begin{itemize}
@@ -1665,7 +1665,8 @@ ECTS: #3%
 \newpage
 \section{Year 3}
 
-\begin{course}{Electromagnetism}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1133/}{7}
+\begin{course}{Electromagnetic fields}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1133/}{7}
+    \label{electromagnetic-fields}
 
     \begin{chapter}{Electrostatics}
         \begin{itemize}
@@ -1810,6 +1811,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Quantum Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1156/}{7}
+    \label{quantum-mechanics}
 
     \begin{chapter}{Fundamentals of quantum mechanics}
         \begin{itemize}
@@ -1965,6 +1967,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Optics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1165/}{5}
+    \label{optics}
 
     \begin{chapter}{Review of geometrical optics}
         \begin{itemize}
@@ -2135,10 +2138,10 @@ ECTS: #3%
         
         \end{itemize}
     \end{chapter}
-
 \end{course}
 
-\begin{course}{Continuum Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1160/}{5}
+\begin{course}{Mechanics of Continuous Media}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1160/}{5}
+    \label{mechanics-of-continuous-media}
 
     \begin{chapter}{Fundamentals of the theory of elasticity}
         \begin{itemize}
@@ -2243,6 +2246,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Solid State Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1138/}{7}
+    \label{solid-state-physics}
     \begin{chapter}{Crystal structure}
         \begin{itemize}
         
@@ -2339,6 +2343,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Measurement Techniques}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1441/}{6}
+    \label{measurement-techniques}
 
     \begin{chapter}{Error analysis and optimal combination}
         \begin{itemize}
@@ -2414,6 +2419,8 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Measurement of Ionizing Radiation}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1446/}{5}
+    \label{measurement-of-ionizing-radiation}
+
     \begin{chapter}{Interaction of radiation with matter}
         \begin{itemize}
         
@@ -2475,7 +2482,9 @@ ECTS: #3%
     \end{chapter}
 \end{course}
 
-\begin{course}{Mathematical Physics Practicum}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1159/}{6}
+\begin{course}{Mathematical Physics Lab}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1159/}{6}
+    \label{mathematical-physics-lab}
+    
     \begin{chapter}{Projects}
         \begin{enumerate}
         
@@ -2547,6 +2556,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Collecting and Processing Data}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1178/}{3}
+    \label{collecting-and-processing-data}
 
     \begin{chapter}{Model of the processor}
         \begin{itemize}
@@ -2622,6 +2632,8 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Physics Laboratory 5}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1146/}{4}
+    \label{physics-laboratory-5}
+
     \begin{chapter}{Experiments}
         \begin{itemize}
             
@@ -2649,7 +2661,8 @@ ECTS: #3%
     \end{chapter}
 \end{course}
 
-\begin{course}{Applied/Industrial Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1149/}{3}
+\begin{course}{Industrial Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1149/}{3}
+    \label{industrial-physics}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -2673,6 +2686,7 @@ ECTS: #3%
 \end{course}
 
 \begin{course}{Seminar}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1173/}{3}
+    \label{seminar}
 
     \begin{chapter}{Course description}
         Students, under the guidance of a faculty mentor, prepare a short undergraduate thesis and presentation on a theme from physics and related interdisciplinary fields.
