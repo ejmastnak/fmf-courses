@@ -1,5 +1,5 @@
 # fmf-courses
-An 60-page English-language summary of the undergraduate physics curriculum 
+A 60-page English-language summary of the undergraduate physics curriculum 
 at the University of Ljubljana's Faculty of Mathematics and Physics (FMF).
 
 To compile, change into the `src` directory and run `latexmk fmf-courses.tex`.
