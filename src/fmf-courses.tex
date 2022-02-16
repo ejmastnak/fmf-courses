@@ -1,6 +1,7 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
+\usepackage{microtype}
 \usepackage{multicol}
 \usepackage[breakable]{tcolorbox}
 \usepackage[shortlabels]{enumitem}
@@ -60,6 +61,67 @@ ECTS: #3%
 
 \begin{document}
 
+\pagestyle{empty}  % remove headers from title page
+
+\begin{center}
+\thispagestyle{empty}
+\null
+\vspace{20ex}
+{\Huge Description of Courses}
+\rule{0.7\textwidth}{0.5pt}
+\vspace{2ex}
+
+\begin{minipage}[t]{0.90\textwidth}
+    Description of courses taken by Elijan Mastnak in the scope of the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics at the University of Ljubljana,
+    prepared for application to the MET masters program at the Barcelona School of Telecommunications Engineering.
+    The curriculum shares many similarities to the (probably more familiar) ETSETB bachelors degree in \textit{Engineering Physics}; for orientation, a comparison of the two programs appears in the \hyperref[s:comparison]{Appendix}.
+
+    \vspace{3ex}
+    \textbf{Navigating the table of contents}\\[0.5ex]
+    The table of contents appears on the next page and is fully hyperlinked for easier document navigation.
+    The table of contents contains the following four columns:
+    \begin{itemize}
+        \item The \textbf{Course} column contains the course name exactly as it appears on my official academic transcript issued by the University of Ljubljana;
+        each blue course name is a clickable hyperlink to the position in the document at which the course is described.
+
+        \item The \textbf{Clarification} column describes the course content in situations where the official name is ambiguous (e.g. \textit{Mathematics I} covers real analysis).
+
+        \item The \textbf{ETCS} column shows the number of ETCS credits awarded for completing the course.
+
+        \item The \textbf{Year} column shows the year of study in which the course was taken.
+    \end{itemize}
+
+    \vspace{2ex}
+    \textbf{About the course descriptions}\\[0.5ex]
+    Each course's material is divided by chapter and presented in bullet-point form.
+    Two things are worth mentioning:
+    \begin{itemize}
+    
+        \item A link to an official University of Ljubljana description is provided for each course.
+        Note, however, that the official descriptions are less thorough than those given in this document and may contain typos or poor English.
+        % is in general less thorough than the descriptions in this document, but can serve as an official verification of the authenticity of the descriptions here.
+
+        \item When available, a link to lecture notes and/or solved exercises from the course is provided so that, if desired, one can see the unabridged course contents.
+
+    \end{itemize}
+\end{minipage}
+
+\vfill
+
+\rule{7cm}{0.4pt}
+
+Elijan Mastnak\\
+Faculty of Mathematics and Physics, University of Ljubljana\\
+Last update: \today
+
+\end{center}
+\newpage
+% --------------------------------------------- %
+% END TITLEPAGE
+
+% BEGIN TOC
+% --------------------------------------------- %
+\section*{Contents}
 \pagestyle{empty}
 \begin{table}[htb!]
     \centering
@@ -69,15 +131,15 @@ ECTS: #3%
     \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[mathematics-1]{Mathematics 1} & Real analysis & 10 & 1\\
-    \hyperref[mathematics-2]{Mathematics 2} & Linear algebra \& multivariable calculus & 8 & 1\\
+    \hyperref[mathematics-1]{Mathematics I} & Real analysis & 10 & 1\\
+    \hyperref[mathematics-2]{Mathematics II} & Linear algebra \& multivariable calculus & 8 & 1\\
     \hyperref[classical-physics]{Classical Physics} & General physics & 20 & 1\\
     \hyperref[computational-tools-in-physics]{Computational Tools in Physics} & & 3 & 1\\
     \hyperref[proseminar-a]{Proseminar A} & Mathematical methods for classical physics & 3 & 1\\
-    \hyperref[physics-laboratory-1]{Physics Laboratory 1} & & 4 & 1\\
-    \hyperref[physics-laboratory-2]{Physics Laboratory 2} & & 4 & 1\\
+    \hyperref[physics-laboratory-1]{Physics Laboratory I} & & 4 & 1\\
+    \hyperref[physics-laboratory-2]{Physics Laboratory II} & & 4 & 1\\
     \hyperref[computing-laboratory]{Computing Laboratory} & Introduction to programming in C & 3 & 1\\
-    \hyperref[chemistry-1]{Chemistry 1} & Inorganic chemistry & 3 & 1\\
+    \hyperref[chemistry-1]{Chemistry I} & Inorganic chemistry & 3 & 1\\
     \hyperref[how-things-work]{How Things Work} & & 3 & 1\\
     \hline
     \hline
@@ -87,18 +149,18 @@ ECTS: #3%
     \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[mathematics-3]{Mathematics 3} & Vector calculus, LDEs, Hilbert spaces & 8 & 2\\
-    \hyperref[mathematics-4]{Mathematics 4} & Complex analysis, Fourier analysis, PDEs & 6 & 2\\
-    \hyperref[modern-physics-1]{Modern Physics 1} & Special relativity \& quantum mechanics & 8 & 2\\
-    \hyperref[modern-physics-2]{Modern Physics 2} & Solid state, nuclear, \& particle physics & 5 & 2\\
+    \hyperref[mathematics-3]{Mathematics III} & Vector calculus, LDEs, Hilbert spaces & 8 & 2\\
+    \hyperref[mathematics-4]{Mathematics IV} & Complex analysis, Fourier analysis, PDEs & 6 & 2\\
+    \hyperref[modern-physics-1]{Modern Physics I} & Special relativity \& quantum mechanics & 8 & 2\\
+    \hyperref[modern-physics-2]{Modern Physics II} & Solid state, nuclear, \& particle physics & 5 & 2\\
     \hyperref[classical-mechanics]{Classical Mechanics} & & 5 & 2\\
     \hyperref[statistical-thermodynamics]{Statistical Thermodynamics} & & 5 & 2\\
-    \hyperref[physics-laboratory-3]{Physics Laboratory 3} & & 4 & 2\\
-    \hyperref[physics-laboratory-4]{Physics Laboratory 4} & & 4 & 2\\
+    \hyperref[physics-laboratory-3]{Physics Laboratory III} & & 4 & 2\\
+    \hyperref[physics-laboratory-4]{Physics Laboratory IV} & & 4 & 2\\
     \hyperref[probability-in-physics]{Probability in Physics} & Probability and statistics & 3 & 2\\
     \hyperref[numerical-methods]{Numerical Methods} & & 3 & 2\\
-    \hyperref[electronics-1]{Electronics 1} & Analog electronics & 3 & 2\\
-    \hyperref[electronics-2]{Electronics 2} & Digital electronics and control theory & 3 & 2\\
+    \hyperref[electronics-1]{Electronics I} & Analog electronics & 3 & 2\\
+    \hyperref[electronics-2]{Electronics II} & Digital electronics and control theory & 3 & 2\\
     \hyperref[electronics-laboratory]{Electronics Laboratory} & & 3 & 2\\
     \hline
     \hline
@@ -114,7 +176,7 @@ ECTS: #3%
     \hyperref[mechanics-of-continuous-media]{Mechanics of Continuous Media} & & 5 & 3\\
     \hyperref[solid-state-physics]{Solid State Physics} & & 7 & 3\\
     \hyperref[mathematical-physics-lab]{Mathematical Physics Lab} & Computational mathematical physics & 6 & 3\\
-    \hyperref[physics-laboratory-5]{Physics Laboratory 5} & & 7 & 3\\
+    \hyperref[physics-laboratory-5]{Physics Laboratory V} & & 7 & 3\\
     \hyperref[industrial-physics]{Industrial Physics} & & 3 & 3\\
     \hyperref[measurement-of-ionizing-radiation]{Measurement of Ionizing Radiation} & & 5 & 3\\
     \hyperref[collecting-and-processing-data]{Collecting and Processing Data} & Data acquisition \& DSP & 3 & 3\\
@@ -123,13 +185,14 @@ ECTS: #3%
     \hline
 \end{tabular}
 \end{table}
-
+% --------------------------------------------- %
+% END TOC
 
 \newpage
 \pagestyle{fancy}
 \section{Year 1}
 
-\begin{course}{Mathematics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/520/}{10}
+\begin{course}{Mathematics I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/520/}{10}
     \label{mathematics-1}
     
     \begin{chapter}{Sets and functions}
@@ -137,7 +200,7 @@ ECTS: #3%
         
             \item Fundamentals of set theory: operations on sets (intersection, difference, union, Cartesian product); complement of a set; indexed families of sets; de Morgan's laws; relations and equivalence relations; set cardinality.
 
-            \item Introduction to functions: definition of a function; the domain, codomain, and graph of a function; image of a function and subset of a function's domain; restriction of a function to a subset and inclusion of a function into a superset; injective, surjective, and bijective functions; composition of functions; the inverse and left and right inverse of a function.
+            \item Set-based formulation of functions: definition of a function as a mapping between sets; the domain, codomain, and graph of a function; image of a function and subset of a function's domain; restriction of a function to a subset and inclusion of a function into a superset; injective, surjective, and bijective functions; composition of functions; the inverse and left and right inverse of a function.
         
         \end{itemize}
     \end{chapter}
@@ -291,7 +354,7 @@ ECTS: #3%
     \end{chapter}
 \end{course}
 
-\begin{course}{Mathematics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/521/}{7}
+\begin{course}{Mathematics II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/521/}{7}
     \label{mathematics-2}
 
     \begin{chapter}{Matrices}
@@ -551,7 +614,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Chemistry 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1152/}{3}
+\begin{course}{Chemistry I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1152/}{3}
     \label{chemistry-1}
 
     \begin{chapter}{Material}
@@ -619,7 +682,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Physics Laboratory 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1142/}{4}
+\begin{course}{Physics Laboratory I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1142/}{4}
     \label{physics-laboratory-1}
 
     \begin{chapter}{Experiments}
@@ -646,7 +709,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Physics Laboratory 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1143/}{4}
+\begin{course}{Physics Laboratory II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1143/}{4}
     \label{physics-laboratory-2}
 
     \begin{chapter}{Experiments}
@@ -684,7 +747,7 @@ ECTS: #3%
 
             \item Basics of operating systems: file systems, backups, networking, computer security.
 
-            \item Introduction to the C programing language: variables, conditional statements, loops, pointers, arrays, standard input/output, reading and writing files.
+            \item Introduction to the C programming language: variables, conditional statements, loops, pointers, arrays, standard input/output, reading and writing files.
         
         \end{itemize}
     \end{chapter}
@@ -706,7 +769,7 @@ ECTS: #3%
 
 \newpage
 \section{Year 2}
-\begin{course}{Mathematics 3}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/522/}{8}
+\begin{course}{Mathematics III}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/522/}{8}
     \label{mathematics-3}
 
     \begin{chapter}{Parameter-dependent integrals}
@@ -747,7 +810,7 @@ ECTS: #3%
 
             \item Curvature and radius of curvature; torsion; the Frenet-Serret formulae.
 
-            \item Surfaces in $ \mathbb{R}^{3} $; implicitly, explicitly, and parameterically-defined surfaces; normal vector and tangent plane.
+            \item Surfaces in $ \mathbb{R}^{3} $; implicitly, explicitly, and parametrically-defined surfaces; normal vector and tangent plane.
 
             \item Surface area and surface integrals; surfaces of revolution.
         
@@ -777,15 +840,15 @@ ECTS: #3%
             
             \begin{itemize}
             
-                \item Ordinary, first-order LDEs: homogeneous and exact LDEs; separation of variables; the first integral of an LDE; integrating factors; parametric differential equations; the Clairaut differential eequation.
+                \item Ordinary, first-order LDEs: homogeneous and exact LDEs; separation of variables; the first integral of an LDE; integrating factors; parametric differential equations; the Clairaut differential equation.
 
                 \item Review of metric spaces; Lipshitz continuity; Banach's fixed-point theorem; Picard's existence theorem.
 
-                \item Systems of LDEs: homogeneous and non-homogeneous systems of LDEs with constant and variable coefficients; dimension of the solution set; the fundamental matrix of a system of LDEs; particular and general solutions for non-homogenous systems of LDEs; the Wronskian determinant.
+                \item Systems of LDEs: homogeneous and non-homogeneous systems of LDEs with constant and variable coefficients; dimension of the solution set; the fundamental matrix of a system of LDEs; particular and general solutions for non-homogeneous systems of LDEs; the Wronskian determinant.
 
-                \item Higher-order LDEs with constant cofficients: operator notation; trial solution and characteristic polynomial.
+                \item Higher-order LDEs with constant coefficients: operator notation; trial solution and characteristic polynomial.
 
-                \item Higher-order LDEs with variable cofficients: matrix representation; dimension of the solution set; solution using the Wronskian matrix.
+                \item Higher-order LDEs with variable coefficients: matrix representation; dimension of the solution set; solution using the Wronskian matrix.
 
             \end{itemize}
 
@@ -809,7 +872,7 @@ ECTS: #3%
         \begin{chapter}{Introduction to Hilbert spaces}
             \begin{itemize}
             
-                \item Definitions: inner product, inner product space, norm, metric, and completness.
+                \item Definitions: inner product, inner product space, norm, metric, and completeness.
                 Definition of a Hilbert space.
 
                 \item Orthogonality, the orthogonal complement, closure of the orthogonal complement.
@@ -836,7 +899,7 @@ ECTS: #3%
         \end{chapter}
 \end{course}
 
-\begin{course}{Mathematics 4}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/523/}{6}
+\begin{course}{Mathematics IV}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/523/}{6}
     \label{mathematics-4}
 
     \begin{chapter}{Complex analysis}
@@ -852,7 +915,7 @@ ECTS: #3%
 
             \item The winding number and Cauchy's theorem: definition and properties of the winding number; Cauchy's theorem, Cauchy's integral and differentiation formula, Cauchy's inequality for derivatives; Liouville's theorem and the fundamental theorem of algebra.
 
-            \item Laurent series: definition and properties of Laurant series, the principle and regular parts of Laurent series, relationship between Taylor and Laurent series.
+            \item Laurent series: definition and properties of Laurent series, the principle and regular parts of Laurent series, relationship between Taylor and Laurent series.
 
             \item Singularities of complex functions: definition of isolated, removable, and essential singularities; poles of complex functions; the Casorati-Weierstrass theorem; definition of meromorphic functions.
 
@@ -937,7 +1000,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Modern Physics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1161/}{8}
+\begin{course}{Modern Physics I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1161/}{8}
     \label{modern-physics-1}
 
     \begin{chapter}{Special theory of relativity}
@@ -950,9 +1013,9 @@ ECTS: #3%
 
             \item Space-time, time dilation and length contraction; the Lorentz transformation for position, time, and velocity.
 
-            \item Relativistic enery and momentum: four-vectors; definitions of relativistic momentum and energy; the scalar product of four-vectors; conservation of energy and momentum; rest energy and relativistic kinetic energy.
+            \item Relativistic energy and momentum: four-vectors; definitions of relativistic momentum and energy; the scalar product of four-vectors; conservation of energy and momentum; rest energy and relativistic kinetic energy.
 
-            \item The space-time and four-vector formalism: generalization of Euclidean space to four-dimensional space-time; intervals in space-time; inveriance of space-time length; contravariant and covariant four-vectors; the Lorentz transformation matrix; four vectors for velocity and momentum; Lorentz transformation of the electric and magnetic field.
+            \item The space-time and four-vector formalism: generalization of Euclidean space to four-dimensional space-time; intervals in space-time; invariance of space-time length; contravariant and covariant four-vectors; the Lorentz transformation matrix; four vectors for velocity and momentum; Lorentz transformation of the electric and magnetic field.
 
             \item Relativistic dynamics: four-vector for relativistic force; the one-dimensional work-energy theorem in special relativity; relativistic particle in an electromagnetic field.
 
@@ -975,7 +1038,7 @@ ECTS: #3%
 
             \item Examples: Particle in an infinite and finite potential well and the harmonic oscillator.
 
-            \item Probability current: definition of probability current density, particles in piecewise continuous potentials; quantum tunneling throuhgh potential barriers.
+            \item Probability current: definition of probability current density, particles in piecewise continuous potentials; quantum tunneling through potential barriers.
 
             \item The Schroedinger equation in 3 dimensions and the particle in a three-dimensional box. 
 
@@ -996,7 +1059,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Modern Physics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1162/}{5}
+\begin{course}{Modern Physics II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1162/}{5}
     \label{modern-physics-2}
 
     \begin{chapter}{Introduction to solid state physics}
@@ -1032,7 +1095,7 @@ ECTS: #3%
 
             \item The shell model of the nucleus: the Schroedinger equation and the shell model; magic numbers and nuclear stability; the periodic table; spin-orbit coupling and nuclear spin in the scope of the shell model.
 
-            \item Nuclear reactions and decay: alpha, beta, and gamm decay; nuclear fission and the example of the uranium nucleus; induced and spontaneous fission; nuclear fusion; the Lawson criterion.
+            \item Nuclear reactions and decay: alpha, beta, and gamma decay; nuclear fission and the example of the uranium nucleus; induced and spontaneous fission; nuclear fusion; the Lawson criterion.
         
         \end{itemize}
     \end{chapter}
@@ -1044,7 +1107,7 @@ ECTS: #3%
 
             \item Basics of particle detection: cross section; determination of momentum; measurement of mass and the use of mass for particle identification.
 
-            \item Introduction to the Standard Model: categorizaton of particles, into e.g. leptons, quarks, bosons, hadrons, baryons and mesons; properties of particles, e.g. spin, mass, electric charge, and interactions; baryon octets and decuplets; the quark model of hadrons and color charge.
+            \item Introduction to the Standard Model: categorization of particles, into e.g. leptons, quarks, bosons, hadrons, baryons and mesons; properties of particles, e.g. spin, mass, electric charge, and interactions; baryon octets and decuplets; the quark model of hadrons and color charge.
 
             \item Quantum numbers and conservation laws: charge; lepton and baryon numbers; isospin; strangeness.
             
@@ -1211,7 +1274,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Physics Laboratory 3}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1144/}{4}
+\begin{course}{Physics Laboratory III}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1144/}{4}
     \label{physics-laboratory-3}
 
     \begin{chapter}{Experiments}
@@ -1244,7 +1307,7 @@ ECTS: #3%
 
 \end{course}
 
-\begin{course}{Physics Laboratory 4}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1145/}{4}
+\begin{course}{Physics Laboratory IV}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1145/}{4}
     \label{physics-laboratory-4}
 
     \begin{chapter}{Experiments}
@@ -1295,9 +1358,9 @@ ECTS: #3%
 
         \begin{itemize}
         
-            \item The concept of discrete and continuous probability distributions; the probability density function and the the cumulative distribution function.
+            \item The concept of discrete and continuous probability distributions; the probability density function and the cumulative distribution function.
 
-            \item Discrete and continuous joint probability distributions; conditional probability; marginal distributions and indpendent random variables
+            \item Discrete and continuous joint probability distributions; conditional probability; marginal distributions and independent random variables
 
             \item Normalization and transformation of distributions under and change of continuous variables.
 
@@ -1305,7 +1368,7 @@ ECTS: #3%
 
             \item Definition and properties of the normal distribution: probability density and cumulative distribution function; standardized normal distribution, the error function and complementary error function, standardized variables; standard deviation and full-width at half maximum; $ N $-$ \sigma $ intervals.
 
-            \item Convolution: convlutions of independent distributions; expectation value, variance, and higher-order moments of convolved distributions.
+            \item Convolution: convolutions of independent distributions; expectation value, variance, and higher-order moments of convolved distributions.
 
             \item The central limit theorem.
 
@@ -1372,7 +1435,7 @@ ECTS: #3%
 
             \item Upper and lower-triangular systems; Gaussian elimination; pivoting, LU decomposition without pivoting and with partial pivoting.
 
-            \item Applicatoins of LU decomposition: solving systems of linear equations, solving matrix equations, computing determinants, and computing matrix inverses.
+            \item Applications of LU decomposition: solving systems of linear equations, solving matrix equations, computing determinants, and computing matrix inverses.
 
             \item Methods of special linear systems: the Cholesky decomposition for positive-definite matrices; methods for tridiagonal systems.
 
@@ -1401,7 +1464,7 @@ ECTS: #3%
 
             \item Normal systems and the normal equations.
 
-            \item QR decomposition: definition of the QR decomposition; (modified) Gram-Schmidt orthonormalization and application to QR decomposition; Givens rotations; Householder reflectoins.
+            \item QR decomposition: definition of the QR decomposition; (modified) Gram-Schmidt orthonormalization and application to QR decomposition; Givens rotations; Householder reflections.
         
         \end{itemize}
     \end{chapter}
@@ -1441,14 +1504,14 @@ ECTS: #3%
 
             \item Systems of first-order LDEs and initial value problems of higher order.
 
-            \item Introduction to second-order boundary problems: general form; the finite difference metod; the shooting method.
+            \item Introduction to second-order boundary problems: general form; the finite difference method; the shooting method.
         
         \end{itemize}
     \end{chapter}
 
 \end{course}
 
-\begin{course}{Electronics 1}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1134/}{3}
+\begin{course}{Electronics I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1134/}{3}
     \label{electronics-1}
 
     \begin{chapter}{Analog electric circuits}
@@ -1468,7 +1531,7 @@ ECTS: #3%
     \begin{chapter}{Circuit analysis}
         \begin{itemize}
         
-            \item Time-domain circuit analysis: differential equations, time derivative operator notation; the delta and unit step functions; a sytem's impulse and unit step response; the convolution sum and expansion over a delta function basis; examples: time-domain analysis of first-order $ RC $ high-pass and low-pass filters.
+            \item Time-domain circuit analysis: differential equations, time derivative operator notation; the delta and unit step functions; a system's impulse and unit step response; the convolution sum and expansion over a delta function basis; examples: time-domain analysis of first-order $ RC $ high-pass and low-pass filters.
 
             \item Frequency domain analysis: the Laplace and Fourier transforms; frequency response and transfer function; poles and zeros of the transfer function; Bode diagrams.
 
@@ -1495,17 +1558,17 @@ ECTS: #3%
     \begin{chapter}{Signal propagation along coaxial cables}
         \begin{itemize}
         
-            \item Construction of the coaxial cable; cable parameters: impedancce and inductance and capacitance per unit length.
+            \item Construction of the coaxial cable; cable parameters: impedance and inductance and capacitance per unit length.
 
             \item Solving the wave equation along a coaxial cable; speed of signal propagation in typical cables.
 
-            \item Reflection and transmission: characterstic and terminating impedance; reflection and transmission at cable ends; impedance matching.
+            \item Reflection and transmission: characteristic and terminating impedance; reflection and transmission at cable ends; impedance matching.
         
         \end{itemize}
     \end{chapter}
 \end{course}
 
-\begin{course}{Electronics 2}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1135/}{3}
+\begin{course}{Electronics II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1135/}{3}
     \label{electronics-2}
 
     \begin{chapter}{Foundations of digital electronics}
@@ -2350,7 +2413,7 @@ ECTS: #3%
         
             \item Review of continuous and discrete random variables, probability densities, and cumulative distribution functions; expected value, variance, and higher moments of discrete and continuous random variables.
 
-            \item Jointly-distributed random variables: joint probability density and cmulative distribution functions; variance, covariance, and correlation of jointly-distributed random variables.
+            \item Jointly-distributed random variables: joint probability density and cumulative distribution functions; variance, covariance, and correlation of jointly-distributed random variables.
 
             \item Error analysis: systematic and random errors; propagation of uncertainty; the central limit theorem and approximation of random variables with the normal distribution; combination of measurements with different uncertainties.
 
@@ -2382,7 +2445,7 @@ ECTS: #3%
 
             \item Impact of sensors on a measured system: Thevenin's theorem; input and output impedance; the use of operational and instrumentation amplifiers as high input impedance buffers; transmission of signals by cables: impedance matching and the characteristic impedance of a cable.
 
-            \item Thermal noise: classification of noise (thermal (Johnson-Nyquist) noise, shot noise, pink noise, and popcorn noise), RMS voltage and power of thermal noise; the Wiener-Khinchin theorem and the power spectral density of thermal noise on a resistor; quantum-statistical interpratation of thermal noise and its high-frequency power spectral density; propagation of thermal noise through linear circuits.
+            \item Thermal noise: classification of noise (thermal (Johnson-Nyquist) noise, shot noise, pink noise, and popcorn noise), RMS voltage and power of thermal noise; the Wiener-Khinchin theorem and the power spectral density of thermal noise on a resistor; quantum-statistical interpretation of thermal noise and its high-frequency power spectral density; propagation of thermal noise through linear circuits.
         
         \end{itemize}
     \end{chapter}
@@ -2410,7 +2473,7 @@ ECTS: #3%
 
             \item Phase-locked loops: working principles and instrumental implementation of a phase-locked loop: phase detector, regulatory filter, and voltage-controlled oscillator; type I and type II phase detectors; choice of transfer function for the regulatory filter; transfer function of the PLL; stability and locking dynamics of a PLL; applications of PLL to frequency synthesis and division and to radio transmission.
 
-            \item Displacement sensors: working principles and instrumental implementation of resitive, capacitive, piezoelectric, and inductive displacement sensors.
+            \item Displacement sensors: working principles and instrumental implementation of resistive, capacitive, piezoelectric, and inductive displacement sensors.
 
             \item Review of measurement techniques for frequency, time, temperature, acceleration, and angular velocity.
         
@@ -2424,7 +2487,7 @@ ECTS: #3%
     \begin{chapter}{Interaction of radiation with matter}
         \begin{itemize}
         
-            \item Overview of interaction processes: inelastic collistions io ionizing particles with electrons, elastic collisions with nuclei, Cherenkov radiation, brehmsstrahlung processes, and nuclear reactions.
+            \item Overview of interaction processes: inelastic collisions of ionizing particles with electrons, elastic collisions with nuclei, Cherenkov radiation, brehmsstrahlung processes, and nuclear reactions.
 
             \item Interaction of charged particles with matter: semiclassical analysis of ionizing energy losses; mean excitation potential; relativistic corrections to energy losses at high speeds and quantum corrections for electron spin; the Bethe-Bloch formula for ionizing energy losses; range of an ionizing particle in matter.
 
@@ -2500,7 +2563,7 @@ ECTS: #3%
 
             Skills: efficient construction and computation of perturbation matrix elements;
             implementation of numerical methods for computation of the eigenvalues of general and symmetric matrices: power iteration, QR decomposition via Givens rotations, Householder reflections, the Jacobi method for symmetric matrices, tridiagonalization schemes; stopping conditions for iterative methods;
-            computation of eigenvectors and construction of eigenfunctions using eigenvectors as coefficients of an orthormal basis expansion;
+            computation of eigenvectors and construction of eigenfunctions using eigenvectors as coefficients of an orthonormal basis expansion;
             analysis of accuracy and computation time for eigenvalue methods; 
             practical experience with perturbed Hamiltonians in quantum mechanics.
 
@@ -2521,7 +2584,7 @@ ECTS: #3%
 
             Skills: numerical solutions of higher-order and vector-valued ordinary differential equations;
             implementation of symplectic integration methods (the 2nd-order Verlet method and the 4-th order position-extended Forest-Ruth method)
-            implementation of standard numericla methods for ODEs (explicit Euler, Heun's method, the 2nd-order Runge-Kutta midpoint method, Ralston's 3rd-order RK3 method, 3rd-order strong, stability-preserving RK method, the classic and Ralston verssion of RK4, adaptive-step Runge-Kutta-Fehlberg and Cash-Karp methods, the 4th-order multistep predictor-corrector Adams-Bashforth-Moulton method)
+            implementation of standard numericla methods for ODEs (explicit Euler, Heun's method, the 2nd-order Runge-Kutta midpoint method, Ralston's 3rd-order RK3 method, 3rd-order strong, stability-preserving RK method, the classic and Ralston version of RK4, adaptive-step Runge-Kutta-Fehlberg and Cash-Karp methods, the 4th-order multistep predictor-corrector Adams-Bashforth-Moulton method)
             computation and plotting of phase spaces and vector fields
             numerical computation of elliptic integrals with arbitrary-precision libraries;
             analysis of solution accuracy and algorithmic efficiency.
@@ -2607,7 +2670,7 @@ ECTS: #3%
     \begin{chapter}{Digital signal processing}
         \begin{itemize}
 
-            \item Discrete signals and systems in the time domain: important discrete signals and expansion of an arbitrary distrete signal over a basis of unit impulses; definition and properties of linear, shift-invariant systems; convolution, impulse response, and the convolution sum for an LSI system; discrete-time systems described by linear, constant-coefficient difference equations.
+            \item Discrete signals and systems in the time domain: important discrete signals and expansion of an arbitrary discrete signal over a basis of unit impulses; definition and properties of linear, shift-invariant systems; convolution, impulse response, and the convolution sum for an LSI system; discrete-time systems described by linear, constant-coefficient difference equations.
 
             \item The frequency response of a discrete system; frequency response of LSI systems to complex exponential and sinusoidal inputs; amplitude and phase response of a discrete-time system.
 
@@ -2623,7 +2686,7 @@ ECTS: #3%
             \item FIR filtering: properties of FIR filters; window functions and the window method for FIR filter design; the least-mean-square error method; FIR implementation of Hilbert transformers.
 
             \item IIR digital filtering: transfer function and properties of an IIR filter; poles and stability of IIR filters; impulse-invariance, matched Z-transform, and bilinear transform methods for IIR filter design;
-            choosing an filter in practice, comparision of the advantages and disadvantages of FIR and IIR filters.
+            choosing an filter in practice, comparison of the advantages and disadvantages of FIR and IIR filters.
 
             \item Amplitude, frequency, and phase modulation and demodulation.
         
@@ -2631,7 +2694,7 @@ ECTS: #3%
     \end{chapter}
 \end{course}
 
-\begin{course}{Physics Laboratory 5}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1146/}{4}
+\begin{course}{Physics Laboratory V}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1146/}{4}
     \label{physics-laboratory-5}
 
     \begin{chapter}{Experiments}
@@ -2698,5 +2761,7 @@ ECTS: #3%
 
     \end{chapter}
 \end{course}
+
+\newpage
 
 \end{document}
