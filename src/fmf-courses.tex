@@ -1,6 +1,6 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage[T1]{fontenc}
-\usepackage{geometry, multicol}
+\usepackage{geometry, multicol, adjustbox}
 \usepackage{microtype, xspace}
 \usepackage[breakable]{tcolorbox}
 \usepackage[shortlabels]{enumitem}
@@ -73,13 +73,13 @@ ECTS: #3%
 \vspace{2ex}
 
 \begin{minipage}[t]{0.90\textwidth}
-    This document describes the courses taken by Elijan Mastnak to complete the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics (FMF) at the University of Ljubljana
-    and is prepared for application to the MET masters program at the Barcelona School of Telecommunications Engineering.
-    The curriculum shares many similarities to the (probably more familiar) ETSETB bachelors degree in \textit{Engineering Physics}; for orientation, a comparison of the FMF and ETSETB programs appears in the \hyperref[s:comparison]{Appendix}.
+    This document, which I have prepared for application to the MET masters program at the Barcelona School of Telecommunications Engineering, 
+    describes the courses I (i.e. Elijan Mastnak) took to complete the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics (FMF) at the University of Ljubljana.
+    The curriculum shares many similarities to the probably more familiar ETSETB bachelors degree in \textit{Engineering Physics}, so, for orientation, I have included a comparison of the FMF and ETSETB programs in the \hyperref[s:comparison]{Appendix}.
 
     \vspace{3ex}
     \textbf{\large Navigating the table of contents}\\[0.5ex]
-    The table of contents appears on the next page, is fully hyperlinked for easier document navigation, and contains the following four columns:
+    The table of contents appears on the next page, is fully hyperlinked for easier document navigation, and contains the following five columns:
     \begin{itemize}
         \item The \textbf{Course} column contains the course name exactly as it appears on the official academic transcript issued by the University of Ljubljana;
         each blue course name is a clickable hyperlink to the position in the document at which the course is described.
@@ -89,6 +89,9 @@ ECTS: #3%
         \item The \textbf{ETCS} column shows the number of ETCS credits awarded for completing the course.
 
         \item The \textbf{Year} column shows the year of study in which the course was taken.
+
+        \item The \textbf{Page} column is a clickable hyperlink to the page number where the course is described.
+
     \end{itemize}
 
     \vspace{2ex}
@@ -102,7 +105,7 @@ ECTS: #3%
 
         \item the ETCS awarded for completing the course; and
 
-        \item when available, a link to lecture notes and/or solved exercises from the course so that, if desired, one can see the full course material.
+        \item when available, a link to lecture notes and/or solved exercises from the course so that, if desired, the reader can view the full course material.
 
     \end{itemize}
 \end{minipage}
@@ -124,68 +127,67 @@ Last update: \today
 % --------------------------------------------- %
 \section*{Contents}
 \pagestyle{empty}
-\begin{table}[htb!]
-    \centering
-    \begin{tabular}{|l|l|c|c|}
-    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
 
-    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
+\begin{adjustbox}{center}
+    \small
+    \begin{tabular}{|l|l|c|c|c|}
+    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
+    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year} & \textbf{Page}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[mathematics_1]{Mathematics I} & Real analysis & 10 & 1\\
-    \hyperref[mathematics_2]{Mathematics II} & Linear algebra \& multivariable calculus & 8 & 1\\
-    \hyperref[classical_physics]{Classical Physics} & General physics & 20 & 1\\
-    \hyperref[computational_tools_in_physics]{Computational Tools in Physics} & & 3 & 1\\
-    \hyperref[proseminar_a]{Proseminar A} & Mathematical methods for classical physics & 3 & 1\\
-    \hyperref[physics_laboratory_1]{Physics Laboratory I} & & 4 & 1\\
-    \hyperref[physics_laboratory_2]{Physics Laboratory II} & & 4 & 1\\
-    \hyperref[computing_laboratory]{Computing Laboratory} & Introduction to programming in \texttt{C} & 3 & 1\\
-    \hyperref[chemistry_1]{Chemistry I} & Inorganic chemistry & 3 & 1\\
-    \hyperref[how_things_work]{How Things Work} & & 3 & 1\\
+    \hyperref[mathematics_1]{Mathematics I} & Real analysis & 10 & 1 & \pageref{mathematics_1} \\
+    \hyperref[mathematics_2]{Mathematics II} & Linear algebra \& multivariable calculus & 8 & 1 & \pageref{mathematics_2} \\
+    \hyperref[classical_physics]{Classical Physics} & General physics & 20 & 1 & \pageref{classical_physics} \\
+    \hyperref[computational_tools_in_physics]{Computational Tools in Physics} & & 3 & 1 & \pageref{computational_tools_in_physics} \\
+    \hyperref[proseminar_a]{Proseminar A} & Mathematical methods for classical physics & 3 & 1 & \pageref{proseminar_a} \\
+    \hyperref[physics_laboratory_1]{Physics Laboratory I} & & 4 & 1 & \pageref{physics_laboratory_1} \\
+    \hyperref[physics_laboratory_2]{Physics Laboratory II} & & 4 & 1 & \pageref{physics_laboratory_2} \\
+    \hyperref[computing_laboratory]{Computing Laboratory} & Introduction to programming in \texttt{C} & 3 & 1 & \pageref{computing_laboratory} \\
+    \hyperref[chemistry_1]{Chemistry I} & Inorganic chemistry & 3 & 1 & \pageref{chemistry_1} \\
+    \hyperref[how_things_work]{How Things Work} & & 3 & 1 & \pageref{how_things_work} \\
     \hline
     \hline
 
     % Year 2
-    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
-    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
+    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year} & \textbf{Page}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[mathematics_3]{Mathematics III} & Vector calculus, LDEs, Hilbert spaces & 8 & 2\\
-    \hyperref[mathematics_4]{Mathematics IV} & Complex analysis, Fourier analysis, PDEs & 6 & 2\\
-    \hyperref[modern_physics_1]{Modern Physics I} & Special relativity \& quantum mechanics & 8 & 2\\
-    \hyperref[modern_physics_2]{Modern Physics II} & Solid state, nuclear, \& particle physics & 5 & 2\\
-    \hyperref[classical_mechanics]{Classical Mechanics} & & 5 & 2\\
-    \hyperref[statistical_thermodynamics]{Statistical Thermodynamics} & & 5 & 2\\
-    \hyperref[physics_laboratory_3]{Physics Laboratory III} & & 4 & 2\\
-    \hyperref[physics_laboratory_4]{Physics Laboratory IV} & & 4 & 2\\
-    \hyperref[probability_in_physics]{Probability in Physics} & Probability and statistics & 3 & 2\\
-    \hyperref[numerical_methods]{Numerical Methods} & & 3 & 2\\
-    \hyperref[electronics_1]{Electronics I} & Analog electronics & 3 & 2\\
-    \hyperref[electronics_2]{Electronics II} & Digital electronics and control theory & 3 & 2\\
-    \hyperref[electronics_laboratory]{Electronics Laboratory} & & 3 & 2\\
+    \hyperref[mathematics_3]{Mathematics III} & Vector calculus, LDEs, Hilbert spaces & 8 & 2 & \pageref{mathematics_3} \\
+    \hyperref[mathematics_4]{Mathematics IV} & Complex analysis, Fourier analysis, PDEs & 6 & 2 & \pageref{mathematics_4} \\
+    \hyperref[modern_physics_1]{Modern Physics I} & Special relativity \& quantum mechanics & 8 & 2 & \pageref{modern_physics_1} \\
+    \hyperref[modern_physics_2]{Modern Physics II} & Solid state, nuclear, \& particle physics & 5 & 2 & \pageref{modern_physics_2} \\
+    \hyperref[classical_mechanics]{Classical Mechanics} & & 5 & 2 & \pageref{classical_mechanics} \\
+    \hyperref[statistical_thermodynamics]{Statistical Thermodynamics} & & 5 & 2 & \pageref{statistical_thermodynamics} \\
+    \hyperref[physics_laboratory_3]{Physics Laboratory III} & & 4 & 2 & \pageref{physics_laboratory_3} \\
+    \hyperref[physics_laboratory_4]{Physics Laboratory IV} & & 4 & 2 & \pageref{physics_laboratory_4} \\
+    \hyperref[probability_in_physics]{Probability in Physics} & Probability and statistics & 3 & 2 & \pageref{probability_in_physics} \\
+    \hyperref[numerical_methods]{Numerical Methods} & & 3 & 2 & \pageref{numerical_methods} \\
+    \hyperref[electronics_1]{Electronics I} & Analog electronics & 3 & 2 & \pageref{electronics_1} \\
+    \hyperref[electronics_2]{Electronics II} & Digital electronics and control theory & 3 & 2 & \pageref{electronics_2} \\
+    \hyperref[electronics_laboratory]{Electronics Laboratory} & & 3 & 2 & \pageref{electronics_laboratory} \\
     \hline
     \hline
 
     % Year 3
-    \hline {\rule{0pt}{2.0ex}} \hspace{-7pt}
-    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
+    \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year} & \textbf{Page}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[electromagnetic_fields]{Electromagnetic Fields} & & 7 & 3\\
-    \hyperref[quantum_mechanics]{Quantum Mechanics} & & 7 & 3\\
-    \hyperref[optics]{Optics} & & 5 & 3\\
-    \hyperref[mechanics_of_continuous_media]{Mechanics of Continuous Media} & & 5 & 3\\
-    \hyperref[solid_state_physics]{Solid State Physics} & & 7 & 3\\
-    \hyperref[mathematical_physics_lab]{Mathematical Physics Lab} & Computational mathematical physics & 6 & 3\\
-    \hyperref[physics_laboratory_5]{Physics Laboratory V} & & 7 & 3\\
-    \hyperref[industrial_physics]{Industrial Physics} & & 3 & 3\\
-    \hyperref[measurement_of_ionizing_radiation]{Msmnt. of Ionizing Radiation} & & 5 & 3\\
-    \hyperref[collecting_and_processing_data]{Collecting and Processing Data} & Data acquisition \& DSP & 3 & 3\\
-    \hyperref[measurement_techniques]{Measurement Techniques} & Instrumentation \& data processing & 7 & 3\\
-    \hyperref[seminar]{Seminar} & & 3 & 3\\
+    \hyperref[electromagnetic_fields]{Electromagnetic Fields} & & 7 & 3 & \pageref{electromagnetic_fields} \\
+    \hyperref[quantum_mechanics]{Quantum Mechanics} & & 7 & 3 & \pageref{quantum_mechanics} \\
+    \hyperref[optics]{Optics} & & 5 & 3 & \pageref{optics} \\
+    \hyperref[mechanics_of_continuous_media]{Mechanics of Continuous Media} & & 5 & 3 & \pageref{mechanics_of_continuous_media} \\
+    \hyperref[solid_state_physics]{Solid State Physics} & & 7 & 3 & \pageref{solid_state_physics} \\
+    \hyperref[mathematical_physics_lab]{Mathematical Physics Lab} & Computational mathematical physics & 6 & 3 & \pageref{mathematical_physics_lab} \\
+    \hyperref[physics_laboratory_5]{Physics Laboratory V} & & 7 & 3 & \pageref{physics_laboratory_5} \\
+    \hyperref[industrial_physics]{Industrial Physics} & & 3 & 3 & \pageref{industrial_physics} \\
+    \hyperref[measurement_of_ionizing_radiation]{Msmnt. of Ionizing Radiation} & & 5 & 3 & \pageref{measurement_of_ionizing_radiation} \\
+    \hyperref[collecting_and_processing_data]{Collecting and Processing Data} & Data acquisition \& DSP & 3 & 3 & \pageref{collecting_and_processing_data} \\
+    \hyperref[measurement_techniques]{Measurement Techniques} & Instrumentation \& data processing & 7 & 3 & \pageref{measurement_techniques} \\
+    \hyperref[seminar]{Seminar} & & 3 & 3 & \pageref{seminar} \\
     \hline
 \end{tabular}
-\end{table}
+\end{adjustbox}
+
 % --------------------------------------------- %
 % END TOC
 
@@ -2762,3 +2764,130 @@ Last update: \today
 
     \end{chapter}
 \end{course}
+
+\newpage
+\appendix
+\section{Comparison to ETSETB Engineering Physics} \label{s:comparison}
+Following is a comparison of the University of Ljubljana Faculty of Mathematics and Physics (FMF) bachelors degree in \textit{Physics} to the ETSETB bachelors degree in \textit{Engineering Physics}.
+The chief difference: the FMF program lasts three years instead of the ETSETB program's four years, as a result of which:
+\begin{itemize}
+
+    \item FMF lacks the courses in biophysics and organic chemistry taught at ETSETB.
+
+    \item FMF lacks the advanced elective courses offered in the 7th semester at ETSETB.
+
+    \item ETSETB's full-semester undergraduate thesis is replaced by FMF's \hyperref[seminar]{Seminar} course.
+    The length of the Seminar paper is less than a traditional undergraduate thesis, but the Seminar is still a project of considerable scope.
+
+\end{itemize}
+
+\vspace{1ex}
+\textbf{How the comparison is organized}
+\begin{itemize}
+
+    \item The ETSETB \textit{Engineering Physics} curriculum is divided into its eight semesters.
+
+    \item Each ETSETB semester's courses appear in italics in a bulleted list.
+
+    \item The FMF course(s) covering the same material as the ETSETB course appear as blue hyperlinks to the course description earlier in this document.
+
+\end{itemize}
+\vspace{2ex}
+
+\begin{chapter}{First semester}
+\begin{itemize}
+    \item \textit{Calculus 1}\correspondsto \hyperref[mathematics_1]{Mathematics I}
+    \item \textit{Inorganic Chemistry}\correspondsto \hyperref[chemistry_1]{Chemistry I}
+    \item \textit{Linear Algebra and Geometry}\correspondsto \hyperref[mathematics_2]{Mathematics II}
+    \item \textit{Numerical and Computational Methods 1}\correspondsto \hyperref[numerical_methods]{Numerical Methods} (with some material covered more thoroughly in \hyperref[mathematical_physics_lab]{Mathematical Physics Lab})
+    \item \textit{Physics 1}\correspondsto \hyperref[classical_physics]{Classical Physics}
+\end{itemize}  
+\end{chapter}
+
+\begin{chapter}{Second semester}
+\begin{itemize}
+
+    \item \textit{Biophysics 1}\correspondsto Not covered at FMF
+    \item \textit{Calculus 2}\correspondsto A combination of \hyperref[mathematics_1]{Mathematics I}, \hyperref[mathematics_2]{II}, and \hyperref[mathematics_3]{III}
+    \item \textit{Mathematical Methods 1}\correspondsto Differential equations are covered \hyperref[mathematics_3]{Mathematics III}, though systems of non-linear ODEs and n-th order ODEs seem to be covered in less scope in \hyperref[mathematics_3]{Mathematics III} than in \textit{Mathematical Methods 1}.
+    \item \textit{Organic Chemistry and Biochemistry}\correspondsto Not covered at FMF
+    \item \textit{Physics 2}\correspondsto \hyperref[classical_physics]{Classical Physics}
+
+\end{itemize}   
+\end{chapter}
+
+\begin{chapter}{Third semester}
+\begin{itemize}
+
+    \item \textit{Mathematical Methods 2}\correspondsto \hyperref[mathematics_4]{Mathematics IV}
+    \item \textit{Mechanics}\correspondsto \hyperref[classical_mechanics]{Classical Mechanics}
+    \item \textit{Probability and Statistics}\correspondsto Covered partly in \hyperref[probability_in_physics]{Probability in Physics} and in the chapter on Statistics in \hyperref[measurement_techniques]{Measurement Techniques}.
+    The ETSETB chapters ``Introduction to Stochastic Processes'' and ``The Poisson Process'' are not covered at FMF; I have self-studied them based on MIT Open CourseWare's 6.041 SC.
+    \item \textit{Quantum Physics}\correspondsto \hyperref[modern_physics_1]{Modern Physics I} and \hyperref[modern_physics_2]{II}
+    \item \textit{Thermodynamics}\correspondsto Covered initially in \hyperref[classical_physics]{Classical Physics} and more thoroughly in \hyperref[statistical_thermodynamics]{Statistical Thermodynamics}.
+    % although the ETSETB chapter ``Absolute zero and the third law of thermodynamics'' is not covered in the FMF curriculum.
+
+\end{itemize}   
+\end{chapter}
+
+\begin{chapter}{Fourth semester}
+\begin{itemize}
+
+    \item \textit{Circuit Theory}\correspondsto Covered in the scope of \hyperref[electronics_1]{Electronics I}, \hyperref[measurement_techniques]{Measurement Techniques}, and \hyperref[collecting_and_processing_data]{Collecting and Processing Data}.
+    \item \textit{Electromagnetism}\correspondsto Covered initially in \hyperref[classical_physics]{Classical Physics} and more thoroughly in \hyperref[electromagnetic_fields]{Electromagnetic Fields} and \hyperref[optics]{Optics}.
+    \item \textit{Instrumentation}\correspondsto Covered in the scope of \hyperref[measurement_techniques]{Measurement Techniques}, \hyperref[collecting_and_processing_data]{Collecting and Processing Data}, and \hyperref[physics_laboratory_1]{Physics Laboratory 1}, \hyperref[physics_laboratory_2]{II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
+    \item \textit{Numerical and Computational Methods 2}\correspondsto Covered in \hyperref[numerical_methods]{Numerical Methods} and \hyperref[mathematical_physics_lab]{Mathematical Physics Lab}, although the ETSETB chapter on ``Approximation Theory'' is covered in less detail in the FMF curriculum.
+
+    \item \textit{Statistical Physics}\correspondsto \hyperref[statistical_thermodynamics]{Statistical Thermodynamics}
+
+\end{itemize}
+\end{chapter}
+
+\begin{chapter}{Fifth semester}
+\begin{itemize}
+
+    \item \textit{Electromagnetic Waves}\correspondsto \hyperref[electromagnetic_fields]{Electromagnetic Fields} and \hyperref[optics]{Optics}; the ETSETB chapter on ``Transmission Lines'' is covered in \hyperref[electronics_1]{Electronics I}, but in less detail than at ETSETB.
+    \item \textit{Physical Electronics}\correspondsto The ETSETB chapters ``Semiconductor Physics'' and ``PN Junction Diode'' are covered in \hyperref[solid_state_physics]{Solid State Physics}, and some applications of the p-n junction diode are covered in \hyperref[measurement_of_ionizing_radiation]{Measurement of Ionizing Radiation}; the ETSETB chapters on ``Field Effect Transistors'' and the ``Bipolar Junction Transistor'' are covered, albeit lightly, in \hyperref[electronics_1]{Electronics I}).
+    \item \textit{Projects of Engineering Physics 1}\correspondsto \hyperref[electronics_laboratory]{Electronics Laboratory} and \hyperref[physics_laboratory_1]{Physics Laboratory I}, \hyperref[physics_laboratory_2]{II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
+
+    \item \textit{Signal Theory}\correspondsto The ETSETB chapters ``Signals and System in the Time Domain'', ``Signals and System in the Transfer Domain'', and ``A/D D/A Conversion'' are covered in \hyperref[collecting_and_processing_data]{Collecting and Processing Data} and in \hyperref[electronics_1]{Electronics I} and \hyperref[electronics_2]{II};
+    I am also familiar with the Hilbert space geometric formulation of signals and systems from Vetterli, Kova\v{c}evi\'{c}, and Goyal's book \textit{Foundations of Signal Processing}.
+
+    The ETSETB chapters ``Stochastic Processes -- Random Signals'', ``Fundamentals of Estimation Theory'', ``Spectral Estimation'', and ``Optimal Wiener Filtering'' are not covered in the FMF curriculum, although I have self-studied the material, to some extent, from MIT Open CourseWare's 6.041 SC and Vetterli, Kova\v{c}evi\'{c}, and Goyal's \textit{Foundations of Signal Processing}.
+
+    \item \textit{Solid State}\correspondsto \hyperref[solid_state_physics]{Solid State Physics}
+
+\end{itemize}
+\end{chapter}
+
+\begin{chapter}{Sixth semester}
+\begin{itemize}
+    \item \textit{Biophysics 2}\correspondsto Not covered at FMF
+    \item \textit{Control Theory}\correspondsto The material is mostly covered in \hyperref[electronics_1]{Electronics I} and \hyperref[electronics_2]{II}, but in less detail than at ETSETB.
+    \item \textit{Photonics}\correspondsto The contents of ``Part I'' are covered in \hyperref[optics]{Optics}; although ``Part II'' is not formally covered in the FMF curriculum, applications of photonics appear in the experiments in \hyperref[physics_laboratory_2]{Physics Laboratory II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
+
+    \item \textit{Projects of Engineering Physics 2}\correspondsto The projects at ETSETB are not covered in the FMF curriculum, but see the potentially relevant experiments in \hyperref[physics_laboratory_1]{Physics Laboratory I}, \hyperref[physics_laboratory_2]{II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
+
+    \item \textit{Quantum Mechanics}\correspondsto \hyperref[quantum_mechanics]{Quantum Mechanics}
+\end{itemize}
+\end{chapter}
+
+\begin{chapter}{Seventh semester}
+\begin{itemize}
+    \item \textit{Advanced Materials}\correspondsto Not covered at FMF
+    \item \textit{Astrophysics and Cosmology}\correspondsto Not covered at FMF
+    \item \textit{Biomedical Photonics}\correspondsto Not covered at FMF
+    \item \textit{Computational Biophysics}\correspondsto Not covered at FMF
+    \item \textit{Computer Simulation of Condensed Matter}\correspondsto Not covered at FMF
+    \item \textit{General Relativity}\correspondsto Not covered at FMF
+    \item \textit{Nanotechnology}\correspondsto Not covered at FMF
+    \item \textit{Physics of Fluids}\correspondsto \hyperref[mechanics_of_continuous_media]{Mechanics of Continuous Media} covers Chapters 1 and 2 in detail, but Chapters 3-5 only in passing.
+    \item \textit{Quantum Optical Technologies}\correspondsto Not covered at FMF
+\end{itemize}   
+\end{chapter}
+
+\begin{chapter}{Eighth Semester}
+    Seminar in place of undergraduate thesis.
+\end{chapter}
+
+\end{document}
