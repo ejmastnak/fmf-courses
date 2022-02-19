@@ -1,13 +1,14 @@
 \documentclass[11pt, a4paper]{article}
 \usepackage[T1]{fontenc}
-\usepackage{geometry}
-\usepackage{microtype}
-\usepackage{multicol}
+\usepackage{geometry, multicol}
+\usepackage{microtype, xspace}
 \usepackage[breakable]{tcolorbox}
 \usepackage[shortlabels]{enumitem}
 \usepackage{amsmath, amssymb, bm}
 \usepackage{physics, siunitx}
 \usepackage{hyperref}
+
+\newcommand{\correspondsto}{$ \iff $}
 
 % Package options
 % --------------------------------------------- %
@@ -72,16 +73,15 @@ ECTS: #3%
 \vspace{2ex}
 
 \begin{minipage}[t]{0.90\textwidth}
-    Description of courses taken by Elijan Mastnak in the scope of the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics at the University of Ljubljana,
-    prepared for application to the MET masters program at the Barcelona School of Telecommunications Engineering.
-    The curriculum shares many similarities to the (probably more familiar) ETSETB bachelors degree in \textit{Engineering Physics}; for orientation, a comparison of the two programs appears in the \hyperref[s:comparison]{Appendix}.
+    This document describes the courses taken by Elijan Mastnak to complete the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics (FMF) at the University of Ljubljana
+    and is prepared for application to the MET masters program at the Barcelona School of Telecommunications Engineering.
+    The curriculum shares many similarities to the (probably more familiar) ETSETB bachelors degree in \textit{Engineering Physics}; for orientation, a comparison of the FMF and ETSETB programs appears in the \hyperref[s:comparison]{Appendix}.
 
     \vspace{3ex}
-    \textbf{Navigating the table of contents}\\[0.5ex]
-    The table of contents appears on the next page and is fully hyperlinked for easier document navigation.
-    The table of contents contains the following four columns:
+    \textbf{\large Navigating the table of contents}\\[0.5ex]
+    The table of contents appears on the next page, is fully hyperlinked for easier document navigation, and contains the following four columns:
     \begin{itemize}
-        \item The \textbf{Course} column contains the course name exactly as it appears on my official academic transcript issued by the University of Ljubljana;
+        \item The \textbf{Course} column contains the course name exactly as it appears on the official academic transcript issued by the University of Ljubljana;
         each blue course name is a clickable hyperlink to the position in the document at which the course is described.
 
         \item The \textbf{Clarification} column describes the course content in situations where the official name is ambiguous (e.g. \textit{Mathematics I} covers real analysis).
@@ -92,16 +92,17 @@ ECTS: #3%
     \end{itemize}
 
     \vspace{2ex}
-    \textbf{About the course descriptions}\\[0.5ex]
-    Each course's material is divided by chapter and presented in bullet-point form.
-    Two things are worth mentioning:
+    \textbf{\large About the course descriptions}\\[0.5ex]
+    Each course's material is divided by chapter and presented in bullet-point form, with the following information included at the start of each course description:
     \begin{itemize}
     
-        \item A link to an official University of Ljubljana description is provided for each course.
-        Note, however, that the official descriptions are less thorough than those given in this document and may contain typos or poor English.
+        \item A link to an online, official University of Ljubljana description of each course
+        (note that the official descriptions are less complete than those given in this document and may contain occasional typos or poor English);
         % is in general less thorough than the descriptions in this document, but can serve as an official verification of the authenticity of the descriptions here.
 
-        \item When available, a link to lecture notes and/or solved exercises from the course is provided so that, if desired, one can see the unabridged course contents.
+        \item the ETCS awarded for completing the course; and
+
+        \item when available, a link to lecture notes and/or solved exercises from the course so that, if desired, one can see the full course material.
 
     \end{itemize}
 \end{minipage}
@@ -131,16 +132,16 @@ Last update: \today
     \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[mathematics-1]{Mathematics I} & Real analysis & 10 & 1\\
-    \hyperref[mathematics-2]{Mathematics II} & Linear algebra \& multivariable calculus & 8 & 1\\
-    \hyperref[classical-physics]{Classical Physics} & General physics & 20 & 1\\
-    \hyperref[computational-tools-in-physics]{Computational Tools in Physics} & & 3 & 1\\
-    \hyperref[proseminar-a]{Proseminar A} & Mathematical methods for classical physics & 3 & 1\\
-    \hyperref[physics-laboratory-1]{Physics Laboratory I} & & 4 & 1\\
-    \hyperref[physics-laboratory-2]{Physics Laboratory II} & & 4 & 1\\
-    \hyperref[computing-laboratory]{Computing Laboratory} & Introduction to programming in C & 3 & 1\\
-    \hyperref[chemistry-1]{Chemistry I} & Inorganic chemistry & 3 & 1\\
-    \hyperref[how-things-work]{How Things Work} & & 3 & 1\\
+    \hyperref[mathematics_1]{Mathematics I} & Real analysis & 10 & 1\\
+    \hyperref[mathematics_2]{Mathematics II} & Linear algebra \& multivariable calculus & 8 & 1\\
+    \hyperref[classical_physics]{Classical Physics} & General physics & 20 & 1\\
+    \hyperref[computational_tools_in_physics]{Computational Tools in Physics} & & 3 & 1\\
+    \hyperref[proseminar_a]{Proseminar A} & Mathematical methods for classical physics & 3 & 1\\
+    \hyperref[physics_laboratory_1]{Physics Laboratory I} & & 4 & 1\\
+    \hyperref[physics_laboratory_2]{Physics Laboratory II} & & 4 & 1\\
+    \hyperref[computing_laboratory]{Computing Laboratory} & Introduction to programming in \texttt{C} & 3 & 1\\
+    \hyperref[chemistry_1]{Chemistry I} & Inorganic chemistry & 3 & 1\\
+    \hyperref[how_things_work]{How Things Work} & & 3 & 1\\
     \hline
     \hline
 
@@ -149,19 +150,19 @@ Last update: \today
     \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[mathematics-3]{Mathematics III} & Vector calculus, LDEs, Hilbert spaces & 8 & 2\\
-    \hyperref[mathematics-4]{Mathematics IV} & Complex analysis, Fourier analysis, PDEs & 6 & 2\\
-    \hyperref[modern-physics-1]{Modern Physics I} & Special relativity \& quantum mechanics & 8 & 2\\
-    \hyperref[modern-physics-2]{Modern Physics II} & Solid state, nuclear, \& particle physics & 5 & 2\\
-    \hyperref[classical-mechanics]{Classical Mechanics} & & 5 & 2\\
-    \hyperref[statistical-thermodynamics]{Statistical Thermodynamics} & & 5 & 2\\
-    \hyperref[physics-laboratory-3]{Physics Laboratory III} & & 4 & 2\\
-    \hyperref[physics-laboratory-4]{Physics Laboratory IV} & & 4 & 2\\
-    \hyperref[probability-in-physics]{Probability in Physics} & Probability and statistics & 3 & 2\\
-    \hyperref[numerical-methods]{Numerical Methods} & & 3 & 2\\
-    \hyperref[electronics-1]{Electronics I} & Analog electronics & 3 & 2\\
-    \hyperref[electronics-2]{Electronics II} & Digital electronics and control theory & 3 & 2\\
-    \hyperref[electronics-laboratory]{Electronics Laboratory} & & 3 & 2\\
+    \hyperref[mathematics_3]{Mathematics III} & Vector calculus, LDEs, Hilbert spaces & 8 & 2\\
+    \hyperref[mathematics_4]{Mathematics IV} & Complex analysis, Fourier analysis, PDEs & 6 & 2\\
+    \hyperref[modern_physics_1]{Modern Physics I} & Special relativity \& quantum mechanics & 8 & 2\\
+    \hyperref[modern_physics_2]{Modern Physics II} & Solid state, nuclear, \& particle physics & 5 & 2\\
+    \hyperref[classical_mechanics]{Classical Mechanics} & & 5 & 2\\
+    \hyperref[statistical_thermodynamics]{Statistical Thermodynamics} & & 5 & 2\\
+    \hyperref[physics_laboratory_3]{Physics Laboratory III} & & 4 & 2\\
+    \hyperref[physics_laboratory_4]{Physics Laboratory IV} & & 4 & 2\\
+    \hyperref[probability_in_physics]{Probability in Physics} & Probability and statistics & 3 & 2\\
+    \hyperref[numerical_methods]{Numerical Methods} & & 3 & 2\\
+    \hyperref[electronics_1]{Electronics I} & Analog electronics & 3 & 2\\
+    \hyperref[electronics_2]{Electronics II} & Digital electronics and control theory & 3 & 2\\
+    \hyperref[electronics_laboratory]{Electronics Laboratory} & & 3 & 2\\
     \hline
     \hline
 
@@ -170,17 +171,17 @@ Last update: \today
     \textbf{Course} & \multicolumn{1}{c}{\textbf{Clarification}} & \textbf{ECTS} & \textbf{Year}\\
     \hline
     \hline {\rule{0pt}{2.5ex}} \hspace{-7pt}
-    \hyperref[electromagnetic-fields]{Electromagnetic Fields} & & 7 & 3\\
-    \hyperref[quantum-mechanics]{Quantum Mechanics} & & 7 & 3\\
+    \hyperref[electromagnetic_fields]{Electromagnetic Fields} & & 7 & 3\\
+    \hyperref[quantum_mechanics]{Quantum Mechanics} & & 7 & 3\\
     \hyperref[optics]{Optics} & & 5 & 3\\
-    \hyperref[mechanics-of-continuous-media]{Mechanics of Continuous Media} & & 5 & 3\\
-    \hyperref[solid-state-physics]{Solid State Physics} & & 7 & 3\\
-    \hyperref[mathematical-physics-lab]{Mathematical Physics Lab} & Computational mathematical physics & 6 & 3\\
-    \hyperref[physics-laboratory-5]{Physics Laboratory V} & & 7 & 3\\
-    \hyperref[industrial-physics]{Industrial Physics} & & 3 & 3\\
-    \hyperref[measurement-of-ionizing-radiation]{Measurement of Ionizing Radiation} & & 5 & 3\\
-    \hyperref[collecting-and-processing-data]{Collecting and Processing Data} & Data acquisition \& DSP & 3 & 3\\
-    \hyperref[measurement-techniques]{Measurement Techniques} & Instrumentation \& data processing & 7 & 3\\
+    \hyperref[mechanics_of_continuous_media]{Mechanics of Continuous Media} & & 5 & 3\\
+    \hyperref[solid_state_physics]{Solid State Physics} & & 7 & 3\\
+    \hyperref[mathematical_physics_lab]{Mathematical Physics Lab} & Computational mathematical physics & 6 & 3\\
+    \hyperref[physics_laboratory_5]{Physics Laboratory V} & & 7 & 3\\
+    \hyperref[industrial_physics]{Industrial Physics} & & 3 & 3\\
+    \hyperref[measurement_of_ionizing_radiation]{Msmnt. of Ionizing Radiation} & & 5 & 3\\
+    \hyperref[collecting_and_processing_data]{Collecting and Processing Data} & Data acquisition \& DSP & 3 & 3\\
+    \hyperref[measurement_techniques]{Measurement Techniques} & Instrumentation \& data processing & 7 & 3\\
     \hyperref[seminar]{Seminar} & & 3 & 3\\
     \hline
 \end{tabular}
@@ -193,7 +194,7 @@ Last update: \today
 \section{Year 1}
 
 \begin{course}{Mathematics I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/520/}{10}
-    \label{mathematics-1}
+    \label{mathematics_1}
     
     \begin{chapter}{Sets and functions}
         \begin{itemize}
@@ -355,7 +356,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Mathematics II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/521/}{7}
-    \label{mathematics-2}
+    \label{mathematics_2}
 
     \begin{chapter}{Matrices}
         \begin{itemize}
@@ -477,7 +478,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Classical Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1154/}{20}
-    \label{classical-physics}
+    \label{classical_physics}
 
 \begin{chapter}{Mechanics}
 
@@ -592,7 +593,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Proseminar A}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1170/}{3}
-    \label{proseminar-a}
+    \label{proseminar_a}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -615,7 +616,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Chemistry I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1152/}{3}
-    \label{chemistry-1}
+    \label{chemistry_1}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -654,7 +655,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Computational Tools in Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1172/}{3}
-    \label{computational-tools-in-physics}
+    \label{computational_tools_in_physics}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -683,7 +684,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Physics Laboratory I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1142/}{4}
-    \label{physics-laboratory-1}
+    \label{physics_laboratory_1}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -710,7 +711,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Physics Laboratory II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1143/}{4}
-    \label{physics-laboratory-2}
+    \label{physics_laboratory_2}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -738,7 +739,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Computing laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2018/7000777/courses/525/}{3}
-    \label{computing-laboratory}
+    \label{computing_laboratory}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -754,7 +755,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{How Things Work}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1151/}{3}
-    \label{how-things-work}
+    \label{how_things_work}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -770,7 +771,7 @@ Last update: \today
 \newpage
 \section{Year 2}
 \begin{course}{Mathematics III}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/522/}{8}
-    \label{mathematics-3}
+    \label{mathematics_3}
 
     \begin{chapter}{Parameter-dependent integrals}
         \begin{itemize}
@@ -900,7 +901,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Mathematics IV}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/523/}{6}
-    \label{mathematics-4}
+    \label{mathematics_4}
 
     \begin{chapter}{Complex analysis}
         \begin{itemize}
@@ -1001,7 +1002,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Modern Physics I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1161/}{8}
-    \label{modern-physics-1}
+    \label{modern_physics_1}
 
     \begin{chapter}{Special theory of relativity}
 
@@ -1060,7 +1061,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Modern Physics II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1162/}{5}
-    \label{modern-physics-2}
+    \label{modern_physics_2}
 
     \begin{chapter}{Introduction to solid state physics}
         \begin{itemize}
@@ -1126,7 +1127,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Classical Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1155/}{5}
-    \label{classical-mechanics}
+    \label{classical_mechanics}
 
     \begin{chapter}{Review of Newtonian mechanics}
         \begin{itemize}
@@ -1225,7 +1226,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Statistical Thermodynamics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1174/}{5}
-    \label{statistical-thermodynamics}
+    \label{statistical_thermodynamics}
 
     \begin{chapter}{Part 1: Classical thermodynamics}
         \begin{itemize}
@@ -1275,7 +1276,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Physics Laboratory III}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1144/}{4}
-    \label{physics-laboratory-3}
+    \label{physics_laboratory_3}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -1308,7 +1309,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Physics Laboratory IV}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1145/}{4}
-    \label{physics-laboratory-4}
+    \label{physics_laboratory_4}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -1340,7 +1341,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Probability in Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1177/}{3}
-    \label{probability-in-physics}
+    \label{probability_in_physics}
 
     \begin{chapter}{Fundamentals of frequentist probability}
         \begin{itemize}
@@ -1412,7 +1413,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Numerical Methods}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/524/}{3}
-    \label{numerical-methods}
+    \label{numerical_methods}
 
     \begin{chapter}{Introduction to numerical computation}
         \begin{itemize}
@@ -1512,7 +1513,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Electronics I}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1134/}{3}
-    \label{electronics-1}
+    \label{electronics_1}
 
     \begin{chapter}{Analog electric circuits}
         \begin{itemize}
@@ -1569,7 +1570,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Electronics II}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1135/}{3}
-    \label{electronics-2}
+    \label{electronics_2}
 
     \begin{chapter}{Foundations of digital electronics}
         \begin{itemize}
@@ -1672,7 +1673,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Electronics Laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1136/}{3}
-    \label{electronics-laboratory}
+    \label{electronics_laboratory}
 
     \begin{chapter}{List of labs and projects}
         \begin{itemize}
@@ -1729,7 +1730,7 @@ Last update: \today
 \section{Year 3}
 
 \begin{course}{Electromagnetic fields}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1133/}{7}
-    \label{electromagnetic-fields}
+    \label{electromagnetic_fields}
 
     \begin{chapter}{Electrostatics}
         \begin{itemize}
@@ -1874,7 +1875,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Quantum Mechanics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1156/}{7}
-    \label{quantum-mechanics}
+    \label{quantum_mechanics}
 
     \begin{chapter}{Fundamentals of quantum mechanics}
         \begin{itemize}
@@ -2204,7 +2205,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Mechanics of Continuous Media}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1160/}{5}
-    \label{mechanics-of-continuous-media}
+    \label{mechanics_of_continuous_media}
 
     \begin{chapter}{Fundamentals of the theory of elasticity}
         \begin{itemize}
@@ -2309,7 +2310,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Solid State Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1138/}{7}
-    \label{solid-state-physics}
+    \label{solid_state_physics}
     \begin{chapter}{Crystal structure}
         \begin{itemize}
         
@@ -2406,7 +2407,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Measurement Techniques}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1441/}{6}
-    \label{measurement-techniques}
+    \label{measurement_techniques}
 
     \begin{chapter}{Error analysis and optimal combination}
         \begin{itemize}
@@ -2482,7 +2483,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Measurement of Ionizing Radiation}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1446/}{5}
-    \label{measurement-of-ionizing-radiation}
+    \label{measurement_of_ionizing_radiation}
 
     \begin{chapter}{Interaction of radiation with matter}
         \begin{itemize}
@@ -2546,7 +2547,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Mathematical Physics Lab}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1159/}{6}
-    \label{mathematical-physics-lab}
+    \label{mathematical_physics_lab}
     
     \begin{chapter}{Projects}
         \begin{enumerate}
@@ -2619,7 +2620,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Collecting and Processing Data}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1178/}{3}
-    \label{collecting-and-processing-data}
+    \label{collecting_and_processing_data}
 
     \begin{chapter}{Model of the processor}
         \begin{itemize}
@@ -2695,7 +2696,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Physics Laboratory V}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1146/}{4}
-    \label{physics-laboratory-5}
+    \label{physics_laboratory_5}
 
     \begin{chapter}{Experiments}
         \begin{itemize}
@@ -2725,7 +2726,7 @@ Last update: \today
 \end{course}
 
 \begin{course}{Industrial Physics}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1149/}{3}
-    \label{industrial-physics}
+    \label{industrial_physics}
 
     \begin{chapter}{Material}
         \begin{itemize}
@@ -2761,7 +2762,3 @@ Last update: \today
 
     \end{chapter}
 \end{course}
-
-\newpage
-
-\end{document}
