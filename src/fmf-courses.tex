@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 
 \newcommand{\correspondsto}{$ \iff $}
+\renewcommand{\vec}{\bm}
 
 % Package options
 % --------------------------------------------- %
@@ -35,22 +36,13 @@
 % --------------------------------------------- %
 \newenvironment{course}[3]{
 \subsection{#1}%
-Link: \href{#2}{Official FMF page}\\%
+Link: \href{#2}{Official FMF description}\\%
 ECTS: #3%
 \vspace{1ex}
 \\
 {\large \textsc{Contents}}\\[-0.9ex]%
 \rule{\textwidth}{0.5pt}
 \vspace{-3ex}
-}
-{}
-
-\newenvironment{shortcourse}[3]{
-\subsection{#1}%
-Link: \href{#2}{official FMF page}\\%
-ECTS: #3%
-\vspace{1ex}
-\\
 }
 {}
 
@@ -73,11 +65,10 @@ ECTS: #3%
 \vspace{2ex}
 
 \begin{minipage}[t]{0.90\textwidth}
-    This document, which I have prepared for application to the MET masters program at the Barcelona School of Telecommunications Engineering, 
-    describes the courses I (i.e. Elijan Mastnak) took to complete the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics (FMF) at the University of Ljubljana.
+    This document describes the courses I (i.e. Elijan Mastnak) took to complete the bachelor's degree in \textit{Physics} offered by the Faculty of Mathematics and Physics (FMF) at the University of Ljubljana.
     The curriculum shares many similarities to the probably more familiar ETSETB bachelors degree in \textit{Engineering Physics}, so, for orientation, I have included a comparison of the FMF and ETSETB programs in the \hyperref[s:comparison]{Appendix}.
 
-    \vspace{3ex}
+    \vspace{2ex}
     \textbf{\large Navigating the table of contents}\\[0.5ex]
     The table of contents appears on the next page, is fully hyperlinked for easier document navigation, and contains the following five columns:
     \begin{itemize}
@@ -103,9 +94,7 @@ ECTS: #3%
         (note that the official descriptions are less complete than those given in this document and may contain occasional typos or poor English);
         % is in general less thorough than the descriptions in this document, but can serve as an official verification of the authenticity of the descriptions here.
 
-        \item the ETCS awarded for completing the course; and
-
-        \item when available, a link to lecture notes and/or solved exercises from the course so that, if desired, the reader can view the full course material.
+        \item the ETCS awarded for completing the course.
 
     \end{itemize}
 \end{minipage}
@@ -188,6 +177,9 @@ Last update: \today
 \end{tabular}
 \end{adjustbox}
 
+\vspace{2ex}
+The \hyperref[s:comparison]{Appendix}, beginning on page \pageref{s:comparison}, gives a comparison of the University of Ljubljana's bachelors degree in \textit{Physics} to the ETSETB's bachelors degree in \textit{Engineering Physics}.
+
 % --------------------------------------------- %
 % END TOC
 
@@ -236,7 +228,7 @@ Last update: \today
         \end{itemize}
     \end{chapter}
 
-    \begin{chapter}{Number sequences}
+    \begin{chapter}{Sequences of numbers}
         \begin{itemize}
         
             \item Foundational concepts: definition of a sequence of numbers as a function from $ \mathbb{N} $ to $ \mathbb{C} $; bounded sequences; supremum and infimum of a sequence; (strictly) increasing, decreasing, and monotone sequences.
@@ -740,7 +732,7 @@ Last update: \today
     \end{chapter}
 \end{course}
 
-\begin{course}{Computing laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2018/7000777/courses/525/}{3}
+\begin{course}{Computing Laboratory}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2018/7000777/courses/525/}{3}
     \label{computing_laboratory}
 
     \begin{chapter}{Material}
@@ -1522,7 +1514,7 @@ Last update: \today
 
             \item Introductory concepts: voltage and current; the concept of electrical ground; electrical power; Ohm's law; input and output impedance; Thevenin's theorem; Kirchhoff's rules.
 
-            \item Properties and applications of common passive and active components: resistor, capacitor, inductor, diode, bipolar transistor, transformer.
+            \item Definition, properties, and applications of common passive and active components: resistor, capacitor, inductor, diode, bipolar transistor, transformer.
 
             \item The operational amplifier: basic model of an op-amp using bipolar transistors; input and output current and voltage characteristics, gain, and frequency response; comparison of ideal and real op-amp properties.
 
@@ -1579,7 +1571,7 @@ Last update: \today
         
             \item The binary and hexadecimal number systems; floating point representation of numbers; floating point arithmetic; binary representation of negative numbers.
 
-            \item Hardware representation of binary numbers: conventional voltage ranges for logical one and logical zero; regulating voltage input into and output from digit circuits.
+            \item Hardware representation of binary numbers: conventional voltage ranges for logical one and logical zero; regulating voltage input into and output from digital circuits.
 
             \item Fundamental logic operations: the logical NOT, AND, and OR gates and the NAND, NOR, and XOR gates.
 
@@ -1731,7 +1723,7 @@ Last update: \today
 \newpage
 \section{Year 3}
 
-\begin{course}{Electromagnetic fields}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1133/}{7}
+\begin{course}{Electromagnetic Fields}{https://www.fmf.uni-lj.si/en/study-physics/programmes/1fiz/2020/7000777/courses/1133/}{7}
     \label{electromagnetic_fields}
 
     \begin{chapter}{Electrostatics}
@@ -2767,17 +2759,17 @@ Last update: \today
 
 \newpage
 \appendix
-\section{Comparison to ETSETB Engineering Physics} \label{s:comparison}
+\section*{Comparison to ETSETB Engineering Physics} \label{s:comparison}
 Following is a comparison of the University of Ljubljana Faculty of Mathematics and Physics (FMF) bachelors degree in \textit{Physics} to the ETSETB bachelors degree in \textit{Engineering Physics}.
 The chief difference: the FMF program lasts three years instead of the ETSETB program's four years, as a result of which:
 \begin{itemize}
 
     \item FMF lacks the courses in biophysics and organic chemistry taught at ETSETB.
 
-    \item FMF lacks the advanced elective courses offered in the 7th semester at ETSETB.
+    \item FMF lacks the advanced and/or specialized elective courses offered in the 7th semester at ETSETB (e.g. \textit{General Relativity}, \textit{Advanced Materials}, \textit{Computer Simulation of Condensed Matter} etc...).
 
     \item ETSETB's full-semester undergraduate thesis is replaced by FMF's \hyperref[seminar]{Seminar} course.
-    The length of the Seminar paper is less than a traditional undergraduate thesis, but the Seminar is still a project of considerable scope.
+    (Although the length of the Seminar paper is less than a traditional undergraduate thesis, the Seminar is still a project of appreciable scope.)
 
 \end{itemize}
 
@@ -2785,11 +2777,10 @@ The chief difference: the FMF program lasts three years instead of the ETSETB pr
 \textbf{How the comparison is organized}
 \begin{itemize}
 
-    \item The ETSETB \textit{Engineering Physics} curriculum is divided into its eight semesters.
+    \item The courses in the ETSETB \textit{Engineering Physics} curriculum appear in italics.
 
-    \item Each ETSETB semester's courses appear in italics in a bulleted list.
-
-    \item The FMF course(s) covering the same material as the ETSETB course appear as blue hyperlinks to the course description earlier in this document.
+    \item The FMF course(s) covering the same material as each ETSETB course appear in blue text linking to the course description earlier in this document;
+    when an ETSETB course is not covered at FMF, this is noted with the text ``Not covered at FMF''.
 
 \end{itemize}
 \vspace{2ex}
@@ -2822,7 +2813,7 @@ The chief difference: the FMF program lasts three years instead of the ETSETB pr
     \item \textit{Mathematical Methods 2}\correspondsto \hyperref[mathematics_4]{Mathematics IV}
     \item \textit{Mechanics}\correspondsto \hyperref[classical_mechanics]{Classical Mechanics}
     \item \textit{Probability and Statistics}\correspondsto Covered partly in \hyperref[probability_in_physics]{Probability in Physics} and in the chapter on Statistics in \hyperref[measurement_techniques]{Measurement Techniques}.
-    The ETSETB chapters ``Introduction to Stochastic Processes'' and ``The Poisson Process'' are not covered at FMF; I have self-studied them based on MIT Open CourseWare's 6.041 SC.
+    The ETSETB chapters ``Introduction to Stochastic Processes'' and ``The Poisson Process'' are not covered at FMF; I have self-studied them from MIT OpenCourseWare's course \href{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/}{6.041SC Probabilistic Systems Analysis and Applied Probability}.
     \item \textit{Quantum Physics}\correspondsto \hyperref[modern_physics_1]{Modern Physics I} and \hyperref[modern_physics_2]{II}
     \item \textit{Thermodynamics}\correspondsto Covered initially in \hyperref[classical_physics]{Classical Physics} and more thoroughly in \hyperref[statistical_thermodynamics]{Statistical Thermodynamics}.
     % although the ETSETB chapter ``Absolute zero and the third law of thermodynamics'' is not covered in the FMF curriculum.
@@ -2836,7 +2827,7 @@ The chief difference: the FMF program lasts three years instead of the ETSETB pr
     \item \textit{Circuit Theory}\correspondsto Covered in the scope of \hyperref[electronics_1]{Electronics I}, \hyperref[measurement_techniques]{Measurement Techniques}, and \hyperref[collecting_and_processing_data]{Collecting and Processing Data}.
     \item \textit{Electromagnetism}\correspondsto Covered initially in \hyperref[classical_physics]{Classical Physics} and more thoroughly in \hyperref[electromagnetic_fields]{Electromagnetic Fields} and \hyperref[optics]{Optics}.
     \item \textit{Instrumentation}\correspondsto Covered in the scope of \hyperref[measurement_techniques]{Measurement Techniques}, \hyperref[collecting_and_processing_data]{Collecting and Processing Data}, and \hyperref[physics_laboratory_1]{Physics Laboratory 1}, \hyperref[physics_laboratory_2]{II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
-    \item \textit{Numerical and Computational Methods 2}\correspondsto Covered in \hyperref[numerical_methods]{Numerical Methods} and \hyperref[mathematical_physics_lab]{Mathematical Physics Lab}, although the ETSETB chapter on ``Approximation Theory'' is covered in less detail in the FMF curriculum.
+    \item \textit{Numerical and Computational Methods 2}\correspondsto Covered in \hyperref[numerical_methods]{Numerical Methods} and \hyperref[mathematical_physics_lab]{Mathematical Physics Lab}, although the ETSETB chapter ``Approximation Theory'' is covered in less detail in the FMF curriculum.
 
     \item \textit{Statistical Physics}\correspondsto \hyperref[statistical_thermodynamics]{Statistical Thermodynamics}
 
@@ -2851,9 +2842,8 @@ The chief difference: the FMF program lasts three years instead of the ETSETB pr
     \item \textit{Projects of Engineering Physics 1}\correspondsto \hyperref[electronics_laboratory]{Electronics Laboratory} and \hyperref[physics_laboratory_1]{Physics Laboratory I}, \hyperref[physics_laboratory_2]{II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
 
     \item \textit{Signal Theory}\correspondsto The ETSETB chapters ``Signals and System in the Time Domain'', ``Signals and System in the Transfer Domain'', and ``A/D D/A Conversion'' are covered in \hyperref[collecting_and_processing_data]{Collecting and Processing Data} and in \hyperref[electronics_1]{Electronics I} and \hyperref[electronics_2]{II};
-    I am also familiar with the Hilbert space geometric formulation of signals and systems from Vetterli, Kova\v{c}evi\'{c}, and Goyal's book \textit{Foundations of Signal Processing}.
-
-    The ETSETB chapters ``Stochastic Processes -- Random Signals'', ``Fundamentals of Estimation Theory'', ``Spectral Estimation'', and ``Optimal Wiener Filtering'' are not covered in the FMF curriculum, although I have self-studied the material, to some extent, from MIT Open CourseWare's 6.041 SC and Vetterli, Kova\v{c}evi\'{c}, and Goyal's \textit{Foundations of Signal Processing}.
+    I have also self-studied the Hilbert space geometric formulation of signals and systems from Vetterli, Kova\v{c}evi\'{c}, and Goyal's book \href{https://www.fourierandwavelets.org/FSP_v1.1_2014.pdf}{\textit{Foundations of Signal Processing}}.
+    The ETSETB chapters ``Stochastic Processes -- Random Signals'', ``Fundamentals of Estimation Theory'', ``Spectral Estimation'', and ``Optimal Wiener Filtering'' are not covered in the FMF curriculum; I have self-studied the material from a combination of MIT OpenCourseWare's \href{https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/}{6.041SC} and \href{https://www.fourierandwavelets.org/FSP_v1.1_2014.pdf}{\textit{Foundations of Signal Processing}}.
 
     \item \textit{Solid State}\correspondsto \hyperref[solid_state_physics]{Solid State Physics}
 
@@ -2863,10 +2853,11 @@ The chief difference: the FMF program lasts three years instead of the ETSETB pr
 \begin{chapter}{Sixth semester}
 \begin{itemize}
     \item \textit{Biophysics 2}\correspondsto Not covered at FMF
-    \item \textit{Control Theory}\correspondsto The material is mostly covered in \hyperref[electronics_1]{Electronics I} and \hyperref[electronics_2]{II}, but in less detail than at ETSETB.
-    \item \textit{Photonics}\correspondsto The contents of ``Part I'' are covered in \hyperref[optics]{Optics}; although ``Part II'' is not formally covered in the FMF curriculum, applications of photonics appear in the experiments in \hyperref[physics_laboratory_2]{Physics Laboratory II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
+    \item \textit{Control Theory}\correspondsto \hyperref[electronics_1]{Electronics I}, \hyperref[electronics_2]{II}, and \hyperref[measurement_techniques]{Measurement Techniques}, although material is covered in less detail than at ETSETB.
+    \item \textit{Photonics}\correspondsto The contents of ``Part I'' are covered in \hyperref[optics]{Optics}.
+    ``Part II'' is not formally covered in the FMF curriculum, but applications of photonics appear regularly in the measurement techniques and experiments in \hyperref[physics_laboratory_2]{Physics Laboratory II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
 
-    \item \textit{Projects of Engineering Physics 2}\correspondsto The projects at ETSETB are not covered in the FMF curriculum, but see the potentially relevant experiments in \hyperref[physics_laboratory_1]{Physics Laboratory I}, \hyperref[physics_laboratory_2]{II}, \hyperref[physics_laboratory_3]{III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
+    \item \textit{Projects of Engineering Physics 2}\correspondsto The exact ETSETB projects are not covered in the FMF curriculum, but see the potentially relevant experiments in \hyperref[physics_laboratory_3]{Physics Laboratory III}, \hyperref[physics_laboratory_4]{IV}, and \hyperref[physics_laboratory_5]{V}.
 
     \item \textit{Quantum Mechanics}\correspondsto \hyperref[quantum_mechanics]{Quantum Mechanics}
 \end{itemize}
@@ -2887,7 +2878,8 @@ The chief difference: the FMF program lasts three years instead of the ETSETB pr
 \end{chapter}
 
 \begin{chapter}{Eighth Semester}
-    Seminar in place of undergraduate thesis.
+    The FMF \hyperref[seminar]{Seminar} course replaces the ETSETB undergraduate thesis.
+    You can view my Seminar project at \href{https://ejmastnak.github.io/seminar/seminar.html}{\texttt{www.ejmastnak.github.io/seminar/seminar.html}}
 \end{chapter}
 
 \end{document}
